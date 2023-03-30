@@ -4,7 +4,7 @@ date: '2020-12-23'
 slug: 'year-rewind-2020'
 thumbnail: '/thumbnails/writing.png'
 tag: 'year-review'
-canonicalUrl: 'https://amanhimself.dev/blog/year-rewind-2020/'
+canonicalUrl: 'https://sanjaycnagi.dev/blog/year-rewind-2020/'
 ---
 
 ![cover](https://i.imgur.com/Qfd1K4M.png)
@@ -37,22 +37,22 @@ Most of the posts I wrote are in the long form of tutorials to accomplish one th
 
 Here are some of the posts that I wrote this year:
 
-- [Styling the React Native Way](https://amanhimself.dev/blog/styling-the-react-native-way/). I revamped this post, which I originally published in 2019. React Native has changed quite a bit since this year started and I thought it was the right time to update one of my most-read posts.
-- [React Native and Firebase Chat app series](https://amanhimself.dev/blog/chat-app-with-react-native-part-2/). With an introduction to React Hooks last year, and the react-navigation library being updated to `v5`, I wanted to cover both of them in some detail. Thus, I ended up writing a series of six blog posts.
+- [Styling the React Native Way](https://sanjaycnagi.dev/blog/styling-the-react-native-way/). I revamped this post, which I originally published in 2019. React Native has changed quite a bit since this year started and I thought it was the right time to update one of my most-read posts.
+- [React Native and Firebase Chat app series](https://sanjaycnagi.dev/blog/chat-app-with-react-native-part-2/). With an introduction to React Hooks last year, and the react-navigation library being updated to `v5`, I wanted to cover both of them in some detail. Thus, I ended up writing a series of six blog posts.
 - Writing and taking steps in the Animation side of React Native is fun. There is a lot to do and a lot is happening when it comes to animations but I did a fair job on the usage of React Native's Animated API from a beginner's point of view in these two posts:
-  - [How to create a custom scrollbar with React Native Animated API](https://amanhimself.dev/blog/custom-scroll-bar-indicator-with-react-native-animated-api/)
-  - [How to Animate a Header View on Scroll With React Native Animated](https://amanhimself.dev/blog/animate-header-view-on-scroll-with-react-native-animated-api/)
-- Serverless databases or tech stacks excite me. Don't get me wrong here. I am not against the idea of writing an API from scratch. In fact, I started my career on the backend side of JavaScript. But seeing the line of serverless architectures getting advance and trying to fulfill most of our needs is exciting. Thus, I was introduced to HarperDB this year. A database service that supports both SQL and NoSQL queries for CRUD operations. I ended up writing two posts, covering [the API part with Node.js](https://amanhimself.dev/blog/build-rest-api-with-nodejs-harperdb/) and using it with a frontend [library like React](https://amanhimself.dev/blog/harperdb-with-react-hooks/).
-- I am not using React Hooks that much at work, but I did try to explore hooks from my own perspective. I wrote two posts, one on explaining how [`useState` hook works](https://amanhimself.dev/blog/react-app-with-localstorage-api-and-hooks/) and another on [managing state in React apps with `useReducer` and `useContext` hooks](https://amanhimself.dev/blog/manage-state-with-usecontext-usereducer-in-react-apps/).
-- Expo came out with ease of [using fonts as hook](https://github.com/byCedric/use-expo/blob/main/packages/font/docs/use-fonts.md). I shared using it in [Creating "Quarantine Pro" — A Fun Learning Experiment in React Native](https://amanhimself.dev/blog/quarantine-pro-app/).
+  - [How to create a custom scrollbar with React Native Animated API](https://sanjaycnagi.dev/blog/custom-scroll-bar-indicator-with-react-native-animated-api/)
+  - [How to Animate a Header View on Scroll With React Native Animated](https://sanjaycnagi.dev/blog/animate-header-view-on-scroll-with-react-native-animated-api/)
+- Serverless databases or tech stacks excite me. Don't get me wrong here. I am not against the idea of writing an API from scratch. In fact, I started my career on the backend side of JavaScript. But seeing the line of serverless architectures getting advance and trying to fulfill most of our needs is exciting. Thus, I was introduced to HarperDB this year. A database service that supports both SQL and NoSQL queries for CRUD operations. I ended up writing two posts, covering [the API part with Node.js](https://sanjaycnagi.dev/blog/build-rest-api-with-nodejs-harperdb/) and using it with a frontend [library like React](https://sanjaycnagi.dev/blog/harperdb-with-react-hooks/).
+- I am not using React Hooks that much at work, but I did try to explore hooks from my own perspective. I wrote two posts, one on explaining how [`useState` hook works](https://sanjaycnagi.dev/blog/react-app-with-localstorage-api-and-hooks/) and another on [managing state in React apps with `useReducer` and `useContext` hooks](https://sanjaycnagi.dev/blog/manage-state-with-usecontext-usereducer-in-react-apps/).
+- Expo came out with ease of [using fonts as hook](https://github.com/byCedric/use-expo/blob/main/packages/font/docs/use-fonts.md). I shared using it in [Creating "Quarantine Pro" — A Fun Learning Experiment in React Native](https://sanjaycnagi.dev/blog/quarantine-pro-app/).
 
 ## I moved my blog from Gatsby to Next.js and back to Gatsby again 🤪
 
-My personal blog has been the most consistent thing over course of these 12 months in my life. It deserves more credit than I give it. Also, I never planned to have a self-hosted blog until a friend of mine, [Valentin](https://twitter.com/RadValentin), casually suggested its importance. I started writing on [Medium](https://medium.com/@amanhimself) when I was getting into web development back in late 2016 and early 2017. At that time, I did not think much about pursuing writing posts or the importance of sharing via creating content. It was all new to me. I was just exploring horizons and wanted to document the good things about it.
+My personal blog has been the most consistent thing over course of these 12 months in my life. It deserves more credit than I give it. Also, I never planned to have a self-hosted blog until a friend of mine, [Valentin](https://twitter.com/RadValentin), casually suggested its importance. I started writing on [Medium](https://medium.com/@sanjaycnagi) when I was getting into web development back in late 2016 and early 2017. At that time, I did not think much about pursuing writing posts or the importance of sharing via creating content. It was all new to me. I was just exploring horizons and wanted to document the good things about it.
 
 ![ss4](https://i.imgur.com/Yf8jr0o.png)
 
-Three years forward, in 2020, I did not give much emphasis on Medium this year as my primary blog publishing platform. Even though I did reach an exploding [2 million views](https://twitter.com/amanhimself/status/1285554115464982528), I do not like how some publications (that I think have an impact in terms of audience) are forcing down to have a payment wall associated with a post published under their publication. I am not against getting the original author paid for their work but as a popular publication with a significant audience, it should not force a contributing writer and be open about it. That said, some publications are not forcing down and are still enjoyable to write for.
+Three years forward, in 2020, I did not give much emphasis on Medium this year as my primary blog publishing platform. Even though I did reach an exploding [2 million views](https://twitter.com/sanjaycnagi/status/1285554115464982528), I do not like how some publications (that I think have an impact in terms of audience) are forcing down to have a payment wall associated with a post published under their publication. I am not against getting the original author paid for their work but as a popular publication with a significant audience, it should not force a contributing writer and be open about it. That said, some publications are not forcing down and are still enjoyable to write for.
 
 This gave me an opportunity to continue to build and maintain my own blog which was initially created using [Gatsby](https://www.gatsbyjs.com/). However, in the desire to explore things, I migrated my blog to [Next.js](https://nextjs.org/) in the middle of the year. I wanted to continue using it. As a framework built over React, I think Next.js is more flexible than Gatsby but in the month of November, I decided to migrate back to Gatsby since I feel more comfortable using it since I have been closely following its development for quite some years, and I was able to cut down the 10 minutes of build time that was happening with Next.js by 70% with Gatsby. I am sure that it was my fault that the build time was around 10 minutes with Next.js and I was too lazy and uninterested to actually debug it. Nonetheless, I am glad for the opportunity to try out Next.js for the first time and will try to use it in some other projects next year.
 
@@ -60,10 +60,10 @@ I also realized that Markdown is definitely one of the best things to happen in 
 
 Not focusing on Medium enough, also gave me the opportunity to explore two awesome blogging platforms that are meant for developers:
 
-- [Dev.to](https://dev.to/amanhimself)
-- [Hashnode](https://hashnode.com/@amanhimself)
+- [Dev.to](https://dev.to/sanjaycnagi)
+- [Hashnode](https://hashnode.com/@sanjaycnagi)
 
-I started cross-posting on Dev.to [last year](https://dev.to/amanhimself/getting-started-with-react-native-in-2019-build-your-first-app-542d) and in this year I have managed to get around 100k+ views.
+I started cross-posting on Dev.to [last year](https://dev.to/sanjaycnagi/getting-started-with-react-native-in-2019-build-your-first-app-542d) and in this year I have managed to get around 100k+ views.
 
 ![ss1](https://i.imgur.com/3PmkutV.png)
 
@@ -99,13 +99,13 @@ In 2019, I made 939 commits. What changed this year? I started using GitHub at m
 
 ### Highlights from my GitHub 🙀
 
-I have also started maintaining [one single GitHub repo](https://github.com/amandeepmittal/react-native-examples) for all the demos and examples I write using React Native and Expo blog posts.
+I have also started maintaining [one single GitHub repo](https://github.com/sanjaynagi/react-native-examples) for all the demos and examples I write using React Native and Expo blog posts.
 
 Continued to maintain the [expo-community project on integrating Firebase SDK in an Expo app](https://github.com/expo-community/expo-firebase-starter), thanks to my friend [Cedric](https://github.com/byCedric) and awesome people at Expo. I have seen it was helpful to some folks as they were getting started with Expo and Firebase. Will try continue maintaining it over the next and year include more Expo related stuff.
 
 ## Newsletter saga continues 💌
 
-I run [a weekly newsletter](https://amanhimself.substack.com/) that is of late, has become a bi-weekly newsletter due to my inconsistency of publishing blog posts. I don't send out newsletters when I don't have anything to share in terms of blog articles or tutorials. I don't like getting spam and I don't want to spam anyone. I started taking sending out newsletters seriously in 2019 and at the end of that year, I had [845 subscribers](https://twitter.com/amanhimself/status/1201933182070874112). This year, it did manage to grow to 1201 subscribers. I did not count how many newsletters in total I send out and now it's too late.
+I run [a weekly newsletter](https://sanjaycnagi.substack.com/) that is of late, has become a bi-weekly newsletter due to my inconsistency of publishing blog posts. I don't send out newsletters when I don't have anything to share in terms of blog articles or tutorials. I don't like getting spam and I don't want to spam anyone. I started taking sending out newsletters seriously in 2019 and at the end of that year, I had [845 subscribers](https://twitter.com/sanjaycnagi/status/1201933182070874112). This year, it did manage to grow to 1201 subscribers. I did not count how many newsletters in total I send out and now it's too late.
 
 I did move from [Tinyletter](http://tinyletter.com/) to [Substack](https://substack.com/). After using Tinyletter for 22 months, I was missing out on somethings, but importantly, I was not able to provide a good reading experience to my readers who open the email they receive and spend time reading it. Both are free, but I find Substack has a more modern UI and a pleasing to the eye approach. Thanks to my friend [Alex Kallaway](https://twitter.com/ka11away) for making me realize this and convincing me to make the move.
 
@@ -113,7 +113,7 @@ I also took a free seven day email course called [**Blogging for Devs**](https:/
 
 ## Coffee ☕️
 
-I have received a lifetime of **26** coffee donations on [**Ko-Fi**](https://ko-fi.com/amanhimself). Thank you so much 🙏 .
+I have received a lifetime of **26** coffee donations on [**Ko-Fi**](https://ko-fi.com/sanjaycnagi). Thank you so much 🙏 .
 
 ## Reading 📚
 

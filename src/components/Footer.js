@@ -35,7 +35,7 @@ const Footer = () => {
       >
         <Text color={linkColor}>
           Copyright &copy;&nbsp; 2019-
-          {`${new Date().getFullYear()} Aman Mittal · All Rights Reserved.`}
+          {`${new Date().getFullYear()} Sanjay Curtis · All Rights Reserved.`}
         </Text>
       </Stack>
       <HStack

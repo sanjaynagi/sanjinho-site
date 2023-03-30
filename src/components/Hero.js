@@ -1,16 +1,5 @@
 import { Box, Stack, VStack, Heading, Text } from '@chakra-ui/react';
-import styled from '@emotion/styled';
-import Image from 'next/image';
-
-import ExternalLink from './ExternalLink';
-import ExternalLinksCloud from './ExternalLinksCloud';
 import HeroImage from './HeroImage';
-
-const RotateBox = styled.span`
-  &:hover img {
-    transform: rotate(20deg);
-  }
-`;
 
 const Hero = () => {
   return (
@@ -31,39 +20,21 @@ const Hero = () => {
             alignItems="center"
           >
             <Heading size="lg" as="h1">
-              <RotateBox>
-                <Image
-                  src="/handwave.png"
-                  width={24}
-                  height={24}
-                  alt="Hand Wave Emoji"
-                />
-              </RotateBox>{' '}
-              Hey, I&apos;m Aman
+              Hey, I&apos;m Sanjay
             </Heading>
           </Stack>
 
           <Text lineHeight="175%" as="h2" fontSize="lg">
-            I&apos;m a software developer and a technical writer. I love working
-            with open source technologies and writing about what I learn.
+            I&apos;m a Post-Doc studying the major malaria mosquito, <em>Anopheles gambiae. </em> 
+            at the Liverpool School of Tropical Medicine. 
           </Text>
           <Text lineHeight="175%" as="h2" fontSize="lg">
-            I&apos;ve been writing online since 2017, mostly cross-platform
-            mobile development and sometimes on web. I&apos;ve written over 150
-            articles and tutorials for more than 30 publications and
-            organizations across the internet. Hence, I started this blog to
-            share my software development journey.
+            A major focus of my research is the rapid evolution and spread of resistance 
+            in the major malaria vector, cus, and how we can use population genomics to 
+            ultimately inform malaria control programmes. I enjoy developing open-source 
+            computational tools that can aid the community and empower researchers to analyse 
+            their own data.
           </Text>
-          <Text lineHeight="175%" as="h2" fontSize="lg">
-            Currently, working on documentation at Expo. Previously, I&apos;ve
-            worked as{' '}
-            <ExternalLink href="https://amanhimself.dev/blog/first-three-months-as-developer-advocate/">
-              Developer Advocate
-            </ExternalLink>
-            , and Senior Content Developer with companies like Draftbit and
-            Vercel.
-          </Text>
-          <ExternalLinksCloud />
         </VStack>
         <HeroImage />
       </Stack>

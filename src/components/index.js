@@ -4,7 +4,6 @@ import Fonts from './Fonts';
 import Hero from './Hero';
 import ProjectsSectionList from './ProjectsSectionList';
 import ThemeToggleButton from './ThemeToggleButton';
-import CountriesVisitedSection from './CountriesVisitedSection';
 import BlogPostCard from './BlogPostCard';
 import MDXComponents from './MDXComponents';
 import LatestPostsSection from './LatestPostsSection';
@@ -18,7 +17,6 @@ export {
   Hero,
   ProjectsSectionList,
   ThemeToggleButton,
-  CountriesVisitedSection,
   BlogPostCard,
   MDXComponents,
   LatestPostsSection,

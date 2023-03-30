@@ -6,7 +6,6 @@ import matter from 'gray-matter';
 import readingTime from 'reading-time';
 
 import { BlogPostCard, DocumentHead } from '../../src/components';
-import TagsCloud from '../../src/components/BlogIndexPage/TagsCloud';
 
 // Fetch all posts
 export const getAllBlogPosts = async () => {
@@ -68,19 +67,19 @@ const Blog = ({ posts }) => {
 
   return (
     <>
-      <DocumentHead pageTitle="Aman Mittal - Blog" postPath="/blog" />
+      <DocumentHead pageTitle="Sanjay Curtis - Blog" postPath="/blog" />
       <VStack spacing={3} alignItems="flex-start" w="full" as="section" pt={28}>
         <Heading size="xl" as="h1">
           Blog
         </Heading>
         <Text fontSize="xl">
-          Recent Web development and React Native tutorials and blog posts.
+          Recent blog posts. I write about vector control, genomic surveillance and bioinformatics, and sometimes 
+          my favourite food, paranthas. 
         </Text>
-        <Text fontSize="xl">
+        {/* <Text fontSize="xl">
           In total I&#39;ve written <strong>{Object.keys(posts).length}</strong>{' '}
-          tutorials and posts on internet. This site is a collection of most of
-          the them.
-        </Text>
+          tutorials and posts.
+        </Text> */}
         {/* <InputGroup>
           <InputLeftElement pointerEvents="none">
             <Icon as={HiOutlineSearch} color="gray.400" />
@@ -92,7 +91,6 @@ const Blog = ({ posts }) => {
           />
         </InputGroup> */}
         {/* Common Tags cloud */}
-        <TagsCloud />
       </VStack>
       <List spacing={1} w="full">
         {displayPosts.map(post => (

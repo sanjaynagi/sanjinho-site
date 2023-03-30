@@ -4,9 +4,9 @@ import { FaTwitterSquare } from 'react-icons/fa';
 const ShareArticle = ({ title, slug }) => {
   const textMode = useColorModeValue('black', 'white');
 
-  let productSlug = `https://amanhimself.dev/blog/${slug}/`;
+  let productSlug = `https://sanjaycnagi.dev/blog/${slug}/`;
 
-  let twitterShareString = `https://twitter.com/intent/tweet?text=I'm currently reading 👉 ${title}&url=${productSlug} via @amanhimself`;
+  let twitterShareString = `https://twitter.com/intent/tweet?text=I'm currently reading 👉 ${title}&url=${productSlug} via @sanjaycnagi`;
   return (
     <Link isExternal href={twitterShareString}>
       <HStack justifyContent="flex-start" paddingTop='10'>

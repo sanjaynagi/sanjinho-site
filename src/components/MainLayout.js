@@ -1,12 +1,15 @@
 import { Box, Container, VStack } from '@chakra-ui/react';
+import PropTypes from 'prop-types';
 
 import Navbar from './Navbar';
 import Footer from './Footer';
+import SideBar from './SideBar';
 
 const MainLayout = ({ children }) => {
   return (
     <Box as="main" pb={8}>
       <Navbar />
+      {/* <SideBar /> */}
       <Container
         maxW="container.md"
         minH={{ base: 'auto', md: '100vh' }}
@@ -19,6 +22,23 @@ const MainLayout = ({ children }) => {
       </Container>
     </Box>
   );
+};
+
+MainLayout.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+  fullPage: PropTypes.bool,
+  title: PropTypes.string,
+  description: PropTypes.string,
+};
+
+MainLayout.defaultProps = {
+  children: null,
+  fullPage: false,
+  title: null,
+  description: "Sanjay Curtis Nagi's personal website.",
 };
 
 export default MainLayout;

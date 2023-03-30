@@ -29,7 +29,7 @@ const App = ({ Component, pageProps }) => {
     //  - This must be an exact match of your domain.
     //  - If you're using www. for your domain, make sure you include that here.
     Fathom.load('HABFBPUB', {
-      includedDomains: ['amanhimself.dev', 'www.amanhimself.dev']
+      includedDomains: ['sanjaycnagi.github.io', 'www.sanjaycnagi.github.io']
     });
 
     function onRouteChangeComplete() {

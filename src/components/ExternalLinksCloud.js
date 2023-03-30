@@ -6,27 +6,27 @@ const ExternalLinksCloud = () => {
   return (
     <HStack>
       <Text>
-        <ExternalLink href="https://amanhimself.dev/about">
+        <ExternalLink href="https://sanjaycnagi.dev/about">
           🤙 More about me
         </ExternalLink>
       </Text>
       <Text>
-        <ExternalLink href="https://amanhimself.substack.com/">
+        <ExternalLink href="https://sanjaycnagi.substack.com/">
           📧 Newsletter
         </ExternalLink>
       </Text>
       <Text>
-        <ExternalLink href="https://twitter.com/amanhimself">
+        <ExternalLink href="https://twitter.com/sanjaycnagi">
           🐦 Twitter
         </ExternalLink>
       </Text>
       <Text>
-        <ExternalLink href="https://github.com/amandeepmittal">
+        <ExternalLink href="https://github.com/sanjaynagi">
           🐙 GitHub
         </ExternalLink>
       </Text>
       <Text>
-        <ExternalLink href="mailto:amanmittal.work@gmail.com">
+        <ExternalLink href="mailto:sanjaymittal.work@gmail.com">
           ✉️ Email
         </ExternalLink>
       </Text>

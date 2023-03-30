@@ -29,7 +29,6 @@ import {
   Tag,
   SponsorCard
 } from '../../src/components/BlogPostPage';
-import CarbonAds from '../../src/components/Carbon';
 
 export const readBlogPost = async slug => {
   const postPath = path.join(process.cwd(), './content/posts', `${slug}.md`);
@@ -95,7 +94,7 @@ const BlogPostPage = ({
   return (
     <>
       <DocumentHead
-        pageTitle={`${title} by Aman Mittal`}
+        pageTitle={`${title} by Sanjay Curtis Nagi`}
         postPath={`/${slug}/`}
         canonicalUrl={canonicalUrl}
       />
@@ -120,11 +119,8 @@ const BlogPostPage = ({
           </HStack>
         </VStack>
         <Center>
-          <CarbonAds />
         </Center>
         <MDXRemote {...source} components={MDXComponents} />
-        {/* Sponsor - only uncomment when there is an actual sponsor */}
-        {/* <SponsorCard /> */}
         {/* Share article on Twitter */}
         <HStack justifyContent="center">
           <ShareArticle title={title} slug={slug} />
@@ -135,8 +131,6 @@ const BlogPostPage = ({
           previousArticle={previousArticle}
           nextArticle={nextArticle}
         />
-        {/* Subscribe Card */}
-        {/* <SubscribeCard /> */}
         {/* Author Card */}
         <AuthorCard />
       </VStack>

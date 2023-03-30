@@ -1,10 +1,10 @@
 import Head from 'next/head';
 
-const siteURL = 'https://amanhimself.dev';
-const author = 'Aman Mittal';
-const shortname = 'amanhimself';
+const siteURL = 'https://sanjaycnagi.github.io';
+const author = 'Sanjay Curtis';
+const shortname = 'sanjaycnagi';
 const description =
-  "I'm Aman Mittal (@amanhimself). Software Developer and Tech Writer. Welcome to my blog!";
+  "I'm Sanjay Curtis (@sanjaycnagi). researcher and helooooo. Welcome to my blog!";
 const socialBanner = '/card.png';
 
 const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
@@ -17,7 +17,7 @@ const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
   return (
     <Head>
       <title>{pageTitle}</title>
-      <link rel="icon" href="/favicon.jpg" />
+      <link rel="icon" href="/favicon.ico" />
 
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta content="#6B46C1" name="theme-color" />
@@ -31,7 +31,7 @@ const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
       <meta name="publisher" content={author} />
       <meta
         name="keywords"
-        content="Aman Mittal, amanhimself, blog, Node.js, React, React Native, Expo"
+        content="Sanjay Curtis, sanjaycnagi, blog, Node.js, React, React Native, Expo"
       />
 
       <meta name="robots" content="index,follow" />
@@ -49,11 +49,11 @@ const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
       <meta name="og:image:alt" content={socialBanner} />
       <meta property="og:url" content={postPath ? postUrl : siteURL} />
       <meta property="og:type" content={postPath ? 'article' : 'website'} />
-      <meta property="og:site_name" content="Aman Mittal's Blog" />
+      <meta property="og:site_name" content="Sanjay Curtis's Blog" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content={shortname} />
-      <meta name="twitter:title" content="Aman Mittal's Blog" />
+      <meta name="twitter:title" content="Sanjay Curtis's Blog" />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={socialBanner} />
     </Head>

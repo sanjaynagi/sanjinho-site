@@ -13,14 +13,14 @@ import { DocumentHead, ExternalLink } from '../src/components';
 const AboutPage = () => {
   return (
     <>
-      <DocumentHead pageTitle="Aman Mittal - About" postPath="/about" />
+      <DocumentHead pageTitle="Sanjay Curtis - About" postPath="/about" />
       <VStack spacing={3} alignItems="flex-start" w="full" as="section" pt={28}>
         <Heading size="lg" as="h1">
           About Me
         </Heading>
         <small>Last Update: December 21, 2022</small>
         <Text lineHeight="175%" as="h2" fontSize="lg" pt={2}>
-          Hi! My name is Aman Mittal. I am an independent software developer,
+          Hi! My name is Sanjay Curtis. I am an independent software developer,
           and a technical writer. I love working with open source technologies
           and writing about what I learn.
         </Text>
@@ -31,7 +31,7 @@ const AboutPage = () => {
         </Text>
         <Text lineHeight="175%" as="h2" fontSize="lg">
           I write a{' '}
-          <ExternalLink href="https://amanhimself.substack.com/">
+          <ExternalLink href="https://sanjaycnagi.substack.com/">
             newsletter
           </ExternalLink>{' '}
           in which I share my latest tutorials and articles.
@@ -39,11 +39,11 @@ const AboutPage = () => {
         <Text lineHeight="175%" as="h2" fontSize="lg">
           When I am not writing code or working on a blog post, I&#39;m probably
           spending my time either{' '}
-          <ExternalLink href="https://www.goodreads.com/author/show/17657541.Aman_Mittal">
+          <ExternalLink href="https://www.goodreads.com/author/show/17657541.Sanjay_Mittal">
             reading a book
           </ExternalLink>{' '}
           or{' '}
-          <ExternalLink href="https://www.instagram.com/amanhimselfcodes/">
+          <ExternalLink href="https://www.instagram.com/sanjaycnagicodes/">
             traveling.
           </ExternalLink>
         </Text>
@@ -84,7 +84,7 @@ const AboutPage = () => {
           <ListItem fontSize="lg">
             <ListIcon as={MdCheckCircle} color="green.500" />
             Started Writing on{' '}
-            <ExternalLink href="https://medium.com/@amanhimself">
+            <ExternalLink href="https://medium.com/@sanjaycnagi">
               Medium
             </ExternalLink>{' '}
             in 2017.
@@ -99,7 +99,7 @@ const AboutPage = () => {
           </ListItem>
           <ListItem fontSize="lg">
             <ListIcon as={MdCheckCircle} color="green.500" />
-            <ExternalLink href="https://twitter.com/amanhimself/status/1285554115464982528">
+            <ExternalLink href="https://twitter.com/sanjaycnagi/status/1285554115464982528">
               On July 21, 2020
             </ExternalLink>{' '}
             reached a milestone of <strong>2 million + views</strong> on Medium.
@@ -108,7 +108,7 @@ const AboutPage = () => {
             <ListIcon as={MdCheckCircle} color="green.500" />
             In December 2020, recognized as a Distinguished author and a
             moderator by{' '}
-            <ExternalLink href="https://dev.to/amanhimself">
+            <ExternalLink href="https://dev.to/sanjaycnagi">
               Dev.to
             </ExternalLink>
             .
@@ -116,7 +116,7 @@ const AboutPage = () => {
           <ListItem fontSize="lg">
             <ListIcon as={MdCheckCircle} color="green.500" />
             In 2021, one of my post on{' '}
-            <ExternalLink href="https://amanhimself.dev/blog/firebase-authentication-with-expo/">
+            <ExternalLink href="https://sanjaycnagi.dev/blog/firebase-authentication-with-expo/">
               integrating Firebase auth in an Expo app
             </ExternalLink>{' '}
             was recommended as an official resource by{' '}
@@ -128,7 +128,7 @@ const AboutPage = () => {
           <ListItem fontSize="lg">
             <ListIcon as={MdCheckCircle} color="green.500" />
             In November, 2021, became got certified from{' '}
-            <ExternalLink href="https://dzone.com/users/4503532/amanhimself.html">
+            <ExternalLink href="https://dzone.com/users/4503532/sanjaycnagi.html">
               DZone
             </ExternalLink>{' '}
             as a DZone Core member.
@@ -142,15 +142,15 @@ const AboutPage = () => {
         </List>
         <Text lineHeight="175%" as="h2" fontSize="lg" pt={2}>
           Some of the publications I&#39;ve worked with:{' '}
-          <ExternalLink href="https://blog.logrocket.com/author/amanmittal/">
+          <ExternalLink href="https://blog.logrocket.com/author/sanjaymittal/">
             LogRocket
           </ExternalLink>
           ,{' '}
-          <ExternalLink href="https://blog.jscrambler.com/author/aman-mittal">
+          <ExternalLink href="https://blog.jscrambler.com/author/sanjay-mittal">
             Jscrambler
           </ExternalLink>
           ,{' '}
-          <ExternalLink href="https://www.freecodecamp.org/news/author/amanhimself/">
+          <ExternalLink href="https://www.freecodecamp.org/news/author/sanjaycnagi/">
             freeCodeCamp
           </ExternalLink>
           ,{' '}
@@ -158,11 +158,11 @@ const AboutPage = () => {
             Expo.io
           </ExternalLink>
           ,{' '}
-          <ExternalLink href="https://blog.sentry.io/authors/aman-mittal">
+          <ExternalLink href="https://blog.sentry.io/authors/sanjay-mittal">
             Sentry
           </ExternalLink>
           ,{' '}
-          <ExternalLink href="https://blog.appsignal.com/authors/aman-mittal">
+          <ExternalLink href="https://blog.appsignal.com/authors/sanjay-mittal">
             AppSignal
           </ExternalLink>
           ,{' '}
@@ -170,7 +170,7 @@ const AboutPage = () => {
             FlyCode
           </ExternalLink>
           ,{' '}
-          <ExternalLink href="https://blog.crowdbotics.com/author/amanhimself/">
+          <ExternalLink href="https://blog.crowdbotics.com/author/sanjaycnagi/">
             Crowdbotics
           </ExternalLink>
           ,{' '}
@@ -178,27 +178,27 @@ const AboutPage = () => {
             Educative Edpresso
           </ExternalLink>
           ,{' '}
-          <ExternalLink href="https://heartbeat.fritz.ai/@amanhimself">
+          <ExternalLink href="https://heartbeat.fritz.ai/@sanjaycnagi">
             Heartbeat.fritz.ai
           </ExternalLink>
           ,{' '}
-          <ExternalLink href="https://community.draftbit.com/u/amanhimself/activity/topics">
+          <ExternalLink href="https://community.draftbit.com/u/sanjaycnagi/activity/topics">
             Draftbit
           </ExternalLink>
           ,{' '}
-          <ExternalLink href="https://dzone.com/users/4503532/amanhimself.html">
+          <ExternalLink href="https://dzone.com/users/4503532/sanjaycnagi.html">
             Dzone
           </ExternalLink>
           ,{' '}
-          <ExternalLink href="https://blog.openreplay.com/authors/aman-mittal">
+          <ExternalLink href="https://blog.openreplay.com/authors/sanjay-mittal">
             Open Replay
           </ExternalLink>
           ,{' '}
-          <ExternalLink href="https://harperdb.io/product/featured-projects/rest-api-with-node-js/?utm_source=amanmittal">
+          <ExternalLink href="https://harperdb.io/product/featured-projects/rest-api-with-node-js/?utm_source=sanjaymittal">
             HarperDB
           </ExternalLink>
           ,{' '}
-          <ExternalLink href="https://hackernoon.com/u/amanhimself">
+          <ExternalLink href="https://hackernoon.com/u/sanjaycnagi">
             Hackernoon
           </ExternalLink>
           ,{' '}
@@ -206,7 +206,7 @@ const AboutPage = () => {
             Alligator.io/Digital Ocean
           </ExternalLink>
           ,{' '}
-          <ExternalLink href="https://www.newline.co/@amandeepmittal/how-to-build-react-native-apps-with-graphql-and-apollo--d74eb12e">
+          <ExternalLink href="https://www.newline.co/@sanjaynagi/how-to-build-react-native-apps-with-graphql-and-apollo--d74eb12e">
             Newline.co
           </ExternalLink>
           ,{' '}
@@ -303,7 +303,7 @@ const AboutPage = () => {
           </ListItem>
           <ListItem fontSize="lg">
             <ExternalLink href="https://www.youtube.com/watch?v=bIXQYrBd1DE">
-              Getting Started with Drafitbit- Aman Mittal at Hack The Mountains
+              Getting Started with Drafitbit- Sanjay Curtis at Hack The Mountains
               2.O
             </ExternalLink>
           </ListItem>
@@ -314,7 +314,7 @@ const AboutPage = () => {
           </ListItem>
           <ListItem fontSize="lg">
             <ExternalLink href="https://www.youtube.com/watch?v=_HKzhe8f47Y">
-              React Native Panel Discussion with Sanket Sahu, Aman Mittal, Evan
+              React Native Panel Discussion with Sanket Sahu, Sanjay Curtis, Evan
               Bacon, Satyajit Sahoo
             </ExternalLink>
           </ListItem>
@@ -335,7 +335,7 @@ const AboutPage = () => {
         </Heading>
         <List spacing={4}>
           <ListItem fontSize="lg">
-            <ExternalLink href="https://dev.to/reactroundup/rru-006-setting-up-and-getting-used-to-gatsby-with-aman-mittal">
+            <ExternalLink href="https://dev.to/reactroundup/rru-006-setting-up-and-getting-used-to-gatsby-with-sanjay-mittal">
               Podcast: Setting Up and Getting Used to Gatsby with Charles Max
               Wood, Cory House, Tara Manicsic and Kent C. Dodds
             </ExternalLink>
@@ -400,7 +400,7 @@ const AboutPage = () => {
         </List>
         <Text>
           Find out more about what VSCode extensions I regularly use{' '}
-          <ExternalLink href="https://amanhimself.dev/blog/setup-macbook-m1/">
+          <ExternalLink href="https://sanjaycnagi.dev/blog/setup-macbook-m1/">
             here
           </ExternalLink>
           .
@@ -416,7 +416,7 @@ const AboutPage = () => {
             </ExternalLink>
           </ListItem>
           <ListItem fontSize="lg">
-            <ExternalLink href="https://amanhimself.dev/about">
+            <ExternalLink href="https://sanjaycnagi.dev/about">
               Desk & Chair
             </ExternalLink>
             - Pretty much, any flat surface

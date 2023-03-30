@@ -5,9 +5,9 @@ const HeroImage = () => {
   return (
     <Flex position="relative" pb={4} justifyContent="center">
       <AspectRatio flexShrink={0} ratio={1} w={200} h={200} as="figure">
-        <Box rounded="full" overflow="hidden" borderRadius={100}>
+        <Box rounded="full" overflow="hidden" borderRadius={10}>
           <Image
-            src="/avatar.jpg"
+            src="/avatar.png"
             width={200}
             height={200}
             alt="Avatar Image"

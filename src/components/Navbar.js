@@ -52,19 +52,21 @@ const Navbar = props => {
         justify="space-between"
       >
         <Flex align="center" mr={4}>
-          <Text
-            fontSize={{ base: '0px', md: '22px' }}
-            fontWeight={{ base: '0', md: '600' }}
-            sx={{
-              background:
-                'linear-gradient(45deg, rgb(124, 58, 237), #da62c4 30%, #ffffff 60%)',
-              '-webkit-background-clip': 'text',
-              '-webkit-text-fill-color': 'transparent',
-              'background-size': '800%'
-            }}
-          >
-            amanhimself.dev
-          </Text>
+          <LinkItem href="/">
+            <Text
+              fontSize={{ base: '0px', md: '22px' }}
+              fontWeight={{ base: '0', md: '600' }}
+              sx={{
+                background:
+                  'linear-gradient(45deg, rgb(124, 58, 237), #594f4f 30%, #ffffff 60%)',
+                '-webkit-background-clip': 'text',
+                '-webkit-text-fill-color': 'transparent',
+                'background-size': '800%'
+              }}
+            >
+              SCN
+            </Text>
+          </LinkItem>
         </Flex>
 
         {isMobile ? (
@@ -76,19 +78,9 @@ const Navbar = props => {
             flexGrow={1}
             mt={{ base: 4, md: 0 }}
           >
-            <LinkItem href="/">Home</LinkItem>
-            <LinkItem href="/blog">Blog</LinkItem>
             <LinkItem href="/about">About</LinkItem>
-            <LinkItem
-              _target="_blank"
-              href="https://amanhimself.substack.com/"
-              display="inline-flex"
-              alignItems="center"
-              style={{ gap: 4 }}
-              pl={2}
-            >
-              Newsletter
-            </LinkItem>
+            <LinkItem href="/blog">Blog</LinkItem>
+            <LinkItem href="/cv">CV</LinkItem>
           </Stack>
         ) : (
           <Stack
@@ -98,30 +90,10 @@ const Navbar = props => {
             alignItems="center"
             flexGrow={1}
             mt={{ base: 4, md: 0 }}
-          >
-            <LinkItem href="/">Home</LinkItem>
-            <LinkItem href="/blog">Blog</LinkItem>
+          >            
             <LinkItem href="/about">About</LinkItem>
-            <LinkItem
-              _target="_blank"
-              href="https://amanhimself.dev/rss.xml"
-              display="inline-flex"
-              alignItems="center"
-              style={{ gap: 4 }}
-              pl={2}
-            >
-              RSS
-            </LinkItem>
-            <LinkItem
-              _target="_blank"
-              href="https://amanhimself.substack.com/"
-              display="inline-flex"
-              alignItems="center"
-              style={{ gap: 4 }}
-              pl={2}
-            >
-              Newsletter
-            </LinkItem>
+            <LinkItem href="/blog">Blog</LinkItem>
+            <LinkItem href="/cv">CV</LinkItem>
           </Stack>
         )}
         <Box flex={1} align="right">

@@ -20,7 +20,7 @@ const AuthorCard = () => {
         <VStack alignItems="stretch" as="section" pt={2}>
           <HStack justifyContent="space-between">
             <Text fontSize="md" fontWeight="600" color={textMode}>
-              <Link href="/about">Aman Mittal</Link>{' '}
+              <Link href="/about">Sanjay Curtis</Link>{' '}
               <Text fontSize="sm" color="purple.500" as="i">
                 author
               </Text>
@@ -32,14 +32,14 @@ const AuthorCard = () => {
                 alignItems="center"
                 border="1px solid #805AD5"
               > */}
-              <Link isExternal href="https://ko-fi.com/amanhimself">
+              <Link isExternal href="https://ko-fi.com/sanjaycnagi">
                 <Text fontSize="13px" color="purple.500" fontWeight="bold">
                   Buy me coffee
                 </Text>
               </Link>
               {/* </Box> */}
               <Box>&nbsp;</Box>
-              <Link isExternal href="https://amanhimself.substack.com/">
+              <Link isExternal href="https://sanjaycnagi.substack.com/">
                 <Text fontSize="13px" color="purple.500" fontWeight="bold">
                   Newsletter
                 </Text>
@@ -52,7 +52,7 @@ const AuthorCard = () => {
                 alignItems="center"
                 border="1px solid #805AD5"
               > */}
-              <Link isExternal href="https://twitter.com/amanhimself">
+              <Link isExternal href="https://twitter.com/sanjaycnagi">
                 <Text fontSize="13px" color="purple.500" fontWeight="bold">
                   Twitter
                 </Text>

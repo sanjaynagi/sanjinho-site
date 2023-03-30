@@ -1,8 +1,8 @@
 {
-  "name": "amanhimself-blog-migration",
+  "name": "sanjaycnagi-blog-migration",
   "description": "Personal website running on Next.js and Chakra UI.",
   "version": "9.9.26",
-  "author": "Aman Mittal <amandeepmittal@live.com>",
+  "author": "Sanjay Curtis <sanjaynagi@live.com>",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -15,9 +15,13 @@
     "@chakra-ui/react": "^1.7.3",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "dayjs": "^1.10.7",
     "fathom-client": "^3.4.1",
     "feed": "^4.2.2",
+    "fortawesome": "^0.0.1-security",
     "framer-motion": "^5.5.5",
     "gray-matter": "^4.0.3",
     "image-size": "^1.0.0",
@@ -40,9 +44,9 @@
   "license": "CC-BY-NC-4.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/amandeepmittal/amanhimself.dev"
+    "url": "https://github.com/sanjaynagi/sanjaycnagi.dev"
   },
   "bugs": {
-    "url": "https://github.com/amandeepmittal/amanhimself.dev/issues"
+    "url": "https://github.com/sanjaynagi/sanjaycnagi.dev/issues"
   }
 }

@@ -10,14 +10,14 @@ export const ProjectsList = [
     id: '2',
     title: 'React Native Examples',
     description: `📱 A repo that contains React Native examples most related to tutorials I publish. Has over 700+ GitHub stars 🤩`,
-    href: 'https://github.com/amandeepmittal/react-native-examples/',
+    href: 'https://github.com/sanjaynagi/react-native-examples/',
     expoIcon: true
   },
   {
     id: '3',
     title: 'Quarantine Pro app',
     description: `Built using React Native and Expo, it's a small game that displays a fun message on how long you have been quarantining.`,
-    href: 'https://expo.io/@amanhimself/quarantinepro',
+    href: 'https://expo.io/@sanjaycnagi/quarantinepro',
     expoIcon: true
   },
   {

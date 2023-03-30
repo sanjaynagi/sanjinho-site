@@ -26,9 +26,9 @@ const SponsorCard = () => {
           </Text>
         </HStack>
         <Text fontSize="md" color={textMode}>
-          This blog post is sponsored by amanhimself.
+          This blog post is sponsored by sanjaycnagi.
         </Text>
-        <Link isExternal href="https://amanhimself.substack.com/">
+        <Link isExternal href="https://sanjaycnagi.substack.com/">
           <Text fontSize="lg" fontWeight="700" color="purple.500">
             🔗 Have look and try it for free!
           </Text>

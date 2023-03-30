@@ -4,7 +4,6 @@ import fs from 'fs';
 import {
   Hero,
   ProjectsSectionList,
-  CountriesVisitedSection,
   LatestPostsSection,
   DocumentHead
 } from '../src/components';
@@ -23,22 +22,22 @@ export const getRecentBlogPosts = async () => {
 
 const generateRssFeed = async () => {
   const posts = await getAllBlogPosts();
-  const siteURL = 'https://amanhimself.dev/';
+  const siteURL = 'https://sanjaycnagi.github.io/';
   const date = new Date();
   const author = {
-    name: 'Aman Mittal',
-    email: 'amanmittal.work@gmail.com',
-    link: 'https://twitter.com/amanhimself'
+    name: 'Sanjay Curtis',
+    email: 'sanjay.c.nagi@gmail.com',
+    link: 'https://twitter.com/sanjaycnagi'
   };
 
   const feed = new Feed({
-    title: "Aman Mittal' blog",
+    title: "Sanjay Curtis' blog",
     description: '',
     id: siteURL,
     link: siteURL,
-    logo: `${siteURL}/favicon.jpg`,
-    favicon: `${siteURL}/favicon.jpg`,
-    copyright: `2019 - ${date.getFullYear()}, Aman Mittal · All Rights Reserved.`,
+    logo: `${siteURL}/favicon.ico`,
+    favicon: `${siteURL}/favicon.ico`,
+    copyright: `2023 - ${date.getFullYear()}, Sanjay Curtis · All Rights Reserved.`,
     // updated: date,
     generator: 'Feed for Node.js',
     feedLinks: {
@@ -84,14 +83,12 @@ export const getStaticProps = async () => {
 const HomePage = ({ posts }) => {
   return (
     <>
-      <DocumentHead pageTitle="Aman Mittal – Software Developer, Tech Writer." />
+      <DocumentHead pageTitle="Sanjay Curtis – Post-doc studying genomic surviellance of the major malaria mosquito." />
       <Hero />
       {/* Latest Blog Posts */}
       <LatestPostsSection posts={posts} />
       {/* Open Source Projects I've Worked on */}
       <ProjectsSectionList projects={ProjectsList} />
-      {/* Countries I've Visited */}
-      <CountriesVisitedSection />
     </>
   );
 };

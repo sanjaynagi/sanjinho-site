@@ -1,6 +1,6 @@
-## amanhimself.dev
+## sanjaycnagi.dev
 
-A [personal website](https://amanhimself.dev/) where I keep:
+A [personal website](https://sanjaycnagi.dev/) where I keep:
 
 - information about myself
 - blog posts
@@ -9,6 +9,6 @@ I have written for over 30+ tech publications and over 150+ posts. This website 
 
 ## License
 
-Copyright (c) 2019 - Present Aman Mittal
+Copyright (c) 2019 - Present Sanjay Curtis
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A611K61)
