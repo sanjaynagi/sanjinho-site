@@ -5,6 +5,7 @@ import {
   Link,
   Stack,
   Flex,
+  Divider,
   useColorModeValue,
   Text,
   useMediaQuery
@@ -38,7 +39,7 @@ const Navbar = props => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
+      bg={useColorModeValue('#ffffff40', '#5c5e5b')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
       {...props}
@@ -51,23 +52,25 @@ const Navbar = props => {
         align="center"
         justify="space-between"
       >
-        <Flex align="center" mr={4}>
-          <LinkItem href="/">
+        <Flex align="center" mr={4} >
+            <LinkItem href="/" height="%50">
             <Text
-              fontSize={{ base: '0px', md: '22px' }}
+              fontSize={{ base: '0px', md: '18px' }}
               fontWeight={{ base: '0', md: '600' }}
               sx={{
                 background:
-                  'linear-gradient(45deg, rgb(124, 58, 237), #594f4f 30%, #ffffff 60%)',
+                  'linear-gradient(45deg, #00E1B0, #5c5e5b 30%, #ffffff 60%)',
                 '-webkit-background-clip': 'text',
                 '-webkit-text-fill-color': 'transparent',
                 'background-size': '800%'
               }}
             >
-              SCN
+              Sanjay Curtis Nagi
             </Text>
           </LinkItem>
         </Flex>
+
+
 
         {isMobile ? (
           <Stack
@@ -78,9 +81,11 @@ const Navbar = props => {
             flexGrow={1}
             mt={{ base: 4, md: 0 }}
           >
-            <LinkItem href="/about">About</LinkItem>
-            <LinkItem href="/blog">Blog</LinkItem>
-            <LinkItem href="/cv">CV</LinkItem>
+            <LinkItem href="/about"> <Text fontSize={{ base: '0px', md: '14px' }}>About</Text></LinkItem>
+            <LinkItem href="/blog"> <Text fontSize={{ base: '0px', md: '14px' }}>Blog</Text></LinkItem>
+            <LinkItem href="/cv"> <Text fontSize={{ base: '0px', md: '14px' }}>CV</Text></LinkItem>
+            <LinkItem href="/publications"> <Text fontSize={{ base: '0px', md: '14px' }}>Publications</Text></LinkItem>
+            <LinkItem href="/software"> <Text fontSize={{ base: '0px', md: '14px' }}>Software</Text></LinkItem>
           </Stack>
         ) : (
           <Stack
@@ -90,13 +95,20 @@ const Navbar = props => {
             alignItems="center"
             flexGrow={1}
             mt={{ base: 4, md: 0 }}
-          >            
-            <LinkItem href="/about">About</LinkItem>
-            <LinkItem href="/blog">Blog</LinkItem>
-            <LinkItem href="/cv">CV</LinkItem>
+          >     
+            <Divider orientation='vertical' />       
+            <LinkItem href="/about"> <Text fontSize={{ base: '0px', md: '14px' }}>About</Text></LinkItem>
+            <Divider orientation='vertical' />
+            <LinkItem href="/blog"> <Text fontSize={{ base: '0px', md: '14px' }}>Blog</Text></LinkItem>
+            <Divider orientation='vertical' />
+            <LinkItem href="/cv"> <Text fontSize={{ base: '0px', md: '14px' }}>CV</Text></LinkItem>
+            <Divider orientation='vertical' />
+            <LinkItem href="/publications"> <Text fontSize={{ base: '0px', md: '14px' }}>Publications</Text></LinkItem>
+            <Divider orientation='vertical' />
+            <LinkItem href="/software"> <Text fontSize={{ base: '0px', md: '14px' }}>Software</Text></LinkItem>
           </Stack>
         )}
-        <Box flex={1} align="right">
+        <Box flex={1} align="right" >
           <ThemeToggleButton />
         </Box>
       </Container>

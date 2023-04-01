@@ -23,7 +23,7 @@ const LatestPostsSection = ({ posts }) => {
         <Heading size="lg">Latest Posts</Heading>
         <HStack justifyContent="flex-end">
           <Link href="/blog">
-            <Text fontSize="lg" color="purple.500" textAlign="center">
+            <Text fontSize="lg" color="#00E1B0" textAlign="center">
               See all
             </Text>
           </Link>

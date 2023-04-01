@@ -3,11 +3,11 @@ import fs from 'fs';
 
 import {
   Hero,
-  ProjectsSectionList,
+  SoftwareSectionList,
   LatestPostsSection,
   DocumentHead
 } from '../src/components';
-import { ProjectsList } from '../src/data';
+import { SoftwareList } from '../src/data';
 import { getAllBlogPosts } from './blog';
 
 export const getRecentBlogPosts = async () => {
@@ -40,11 +40,6 @@ const generateRssFeed = async () => {
     copyright: `2023 - ${date.getFullYear()}, Sanjay Curtis · All Rights Reserved.`,
     // updated: date,
     generator: 'Feed for Node.js',
-    feedLinks: {
-      rss2: `${siteURL}/rss.xml`,
-      json: `${siteURL}/rss/feed.json`,
-      atom: `${siteURL}/rss/atom.xml`
-    },
     author
   });
 
@@ -83,12 +78,12 @@ export const getStaticProps = async () => {
 const HomePage = ({ posts }) => {
   return (
     <>
-      <DocumentHead pageTitle="Sanjay Curtis – Post-doc studying genomic surviellance of the major malaria mosquito." />
+      <DocumentHead pageTitle="Sanjay Curtis Nagi" />
       <Hero />
       {/* Latest Blog Posts */}
       <LatestPostsSection posts={posts} />
       {/* Open Source Projects I've Worked on */}
-      <ProjectsSectionList projects={ProjectsList} />
+      <SoftwareSectionList projects={SoftwareList} />
     </>
   );
 };

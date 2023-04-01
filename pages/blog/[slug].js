@@ -132,7 +132,7 @@ const BlogPostPage = ({
           nextArticle={nextArticle}
         />
         {/* Author Card */}
-        <AuthorCard />
+        {/* <AuthorCard /> */}
       </VStack>
     </>
   );

@@ -2,40 +2,28 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "Sanjay Curtis' blog",
     "home_page_url": "https://sanjaycnagi.github.io/",
-    "feed_url": "https://sanjaycnagi.github.io//rss/feed.json",
     "author": {
         "name": "Sanjay Curtis",
         "url": "https://twitter.com/sanjaycnagi"
     },
     "items": [
         {
-            "id": "https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel",
-            "url": "https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel",
+            "id": "https://sanjaycnagi.github.io//blog/2023-03-30-parantha-reviews",
+            "url": "https://sanjaycnagi.github.io//blog/2023-03-30-parantha-reviews",
+            "title": "Parantha reviews",
+            "summary": "Parantha reviews",
+            "date_modified": "2023-03-29T23:00:00.000Z",
+            "author": {
+                "name": "Sanjay Curtis",
+                "url": "https://twitter.com/sanjaycnagi"
+            }
+        },
+        {
+            "id": "https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel copy",
+            "url": "https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel copy",
             "title": "Parallelising freebayes with snakemake",
             "summary": "Parallelising freebayes with snakemake",
             "date_modified": "2021-11-01T00:00:00.000Z",
-            "author": {
-                "name": "Sanjay Curtis",
-                "url": "https://twitter.com/sanjaycnagi"
-            }
-        },
-        {
-            "id": "https://sanjaycnagi.github.io//blog/year-rewind-2020",
-            "url": "https://sanjaycnagi.github.io//blog/year-rewind-2020",
-            "title": "Year Rewind: 2020",
-            "summary": "Year Rewind: 2020",
-            "date_modified": "2020-12-23T00:00:00.000Z",
-            "author": {
-                "name": "Sanjay Curtis",
-                "url": "https://twitter.com/sanjaycnagi"
-            }
-        },
-        {
-            "id": "https://sanjaycnagi.github.io//blog/user-authentication-with-amplify-in-a-react-native-and-expo-app",
-            "url": "https://sanjaycnagi.github.io//blog/user-authentication-with-amplify-in-a-react-native-and-expo-app",
-            "title": "User Authentication with Amplify in a React Native and Expo app",
-            "summary": "User Authentication with Amplify in a React Native and Expo app",
-            "date_modified": "2019-05-22T00:00:00.000Z",
             "author": {
                 "name": "Sanjay Curtis",
                 "url": "https://twitter.com/sanjaycnagi"

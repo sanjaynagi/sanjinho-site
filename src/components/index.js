@@ -2,7 +2,7 @@ import ExternalLink from './ExternalLink';
 import MainLayout from './MainLayout';
 import Fonts from './Fonts';
 import Hero from './Hero';
-import ProjectsSectionList from './ProjectsSectionList';
+import SoftwareSectionList from './SoftwareSectionList';
 import ThemeToggleButton from './ThemeToggleButton';
 import BlogPostCard from './BlogPostCard';
 import MDXComponents from './MDXComponents';
@@ -15,7 +15,7 @@ export {
   MainLayout,
   Fonts,
   Hero,
-  ProjectsSectionList,
+  SoftwareSectionList,
   ThemeToggleButton,
   BlogPostCard,
   MDXComponents,

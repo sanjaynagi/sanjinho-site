@@ -4,32 +4,24 @@
         <title>Sanjay Curtis' blog</title>
         <link>https://sanjaycnagi.github.io/</link>
         <description></description>
-        <lastBuildDate>Thu, 30 Mar 2023 14:41:02 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 01 Apr 2023 08:53:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <copyright>2023 - 2023, Sanjay Curtis · All Rights Reserved.</copyright>
         <item>
+            <title><![CDATA[Parantha reviews]]></title>
+            <link>https://sanjaycnagi.github.io//blog/2023-03-30-parantha-reviews</link>
+            <guid>https://sanjaycnagi.github.io//blog/2023-03-30-parantha-reviews</guid>
+            <pubDate>Wed, 29 Mar 2023 23:00:00 GMT</pubDate>
+            <description><![CDATA[Parantha reviews]]></description>
+            <author>sanjay.c.nagi@gmail.com (Sanjay Curtis)</author>
+        </item>
+        <item>
             <title><![CDATA[Parallelising freebayes with snakemake]]></title>
-            <link>https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel</link>
-            <guid>https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel</guid>
+            <link>https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel copy</link>
+            <guid>https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel copy</guid>
             <pubDate>Mon, 01 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Parallelising freebayes with snakemake]]></description>
-            <author>sanjay.c.nagi@gmail.com (Sanjay Curtis)</author>
-        </item>
-        <item>
-            <title><![CDATA[Year Rewind: 2020]]></title>
-            <link>https://sanjaycnagi.github.io//blog/year-rewind-2020</link>
-            <guid>https://sanjaycnagi.github.io//blog/year-rewind-2020</guid>
-            <pubDate>Wed, 23 Dec 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Year Rewind: 2020]]></description>
-            <author>sanjay.c.nagi@gmail.com (Sanjay Curtis)</author>
-        </item>
-        <item>
-            <title><![CDATA[User Authentication with Amplify in a React Native and Expo app]]></title>
-            <link>https://sanjaycnagi.github.io//blog/user-authentication-with-amplify-in-a-react-native-and-expo-app</link>
-            <guid>https://sanjaycnagi.github.io//blog/user-authentication-with-amplify-in-a-react-native-and-expo-app</guid>
-            <pubDate>Wed, 22 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[User Authentication with Amplify in a React Native and Expo app]]></description>
             <author>sanjay.c.nagi@gmail.com (Sanjay Curtis)</author>
         </item>
     </channel>

@@ -2,10 +2,10 @@ import { VStack, Heading, List, ListItem } from '@chakra-ui/react';
 
 import ProjectInfoCard from './ProjectInfoCard';
 
-const ProjectsSectionList = ({ projects }) => {
+const SoftwareSectionList = ({ projects }) => {
   return (
     <VStack w="full" alignItems="flex-start" spacing={4} as="section" mt={16}>
-      <Heading size="lg">Open Source Projects I&#39;ve Worked on</Heading>
+      <Heading size="lg">Open Source Software I&#39;ve Worked on</Heading>
       <List spacing={6}>
         {projects.map(project => (
           <ListItem key={project.href}>
@@ -17,4 +17,4 @@ const ProjectsSectionList = ({ projects }) => {
   );
 };
 
-export default ProjectsSectionList;
+export default SoftwareSectionList;

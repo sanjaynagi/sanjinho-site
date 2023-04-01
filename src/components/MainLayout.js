@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 import Navbar from './Navbar';
 import Footer from './Footer';
-import SideBar from './SideBar';
+import Sidebar from './Sidebar'
 
 const MainLayout = ({ children }) => {
   return (
     <Box as="main" pb={8}>
       <Navbar />
-      {/* <SideBar /> */}
+      {/* <Sidebar /> */}
       <Container
         maxW="container.md"
         minH={{ base: 'auto', md: '100vh' }}

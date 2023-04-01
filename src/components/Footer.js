@@ -11,11 +11,7 @@ import {
 
 import {
   TWITTER,
-  DEVTO,
-  MEDIUM,
   GITHUB,
-  NEWSLETTER,
-  RSS
 } from '../data/socialLinks';
 
 const Footer = () => {
@@ -55,19 +51,9 @@ const Footer = () => {
               </Text>
             }
           >
-            <Link isExternal href={NEWSLETTER}>
-              <Text fontSize="sm" color={textMode}>
-                Newsletter
-              </Text>
-            </Link>
             <Link isExternal href={TWITTER}>
               <Text fontSize="sm" color={textMode}>
                 Twitter
-              </Text>
-            </Link>
-            <Link isExternal href={RSS}>
-              <Text fontSize="sm" color={textMode}>
-                RSS
               </Text>
             </Link>
           </HStack>
@@ -80,39 +66,14 @@ const Footer = () => {
               </Text>
             }
           >
-            <Link isExternal href={NEWSLETTER}>
-              <Text fontSize="sm" color={textMode}>
-                Newsletter
-              </Text>
-            </Link>
             <Link isExternal href={TWITTER}>
               <Text fontSize="sm" color={textMode}>
                 Twitter
               </Text>
             </Link>
-            <Link isExternal href={MEDIUM}>
-              <Text fontSize="sm" color={textMode}>
-                Medium
-              </Text>
-            </Link>
-            <Link isExternal href={DEVTO}>
-              <Text fontSize="sm" color={textMode}>
-                Dev.to
-              </Text>
-            </Link>
             <Link isExternal href={GITHUB}>
               <Text fontSize="sm" color={textMode}>
                 GitHub
-              </Text>
-            </Link>
-            <Link isExternal href={RSS}>
-              <Text fontSize="sm" color={textMode}>
-                RSS
-              </Text>
-            </Link>
-            <Link href="/sponsorship">
-              <Text fontSize="sm" color={textMode}>
-                Sponsorship
               </Text>
             </Link>
           </HStack>

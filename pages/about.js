@@ -20,14 +20,13 @@ const AboutPage = () => {
         </Heading>
         <small>Last Update: December 21, 2022</small>
         <Text lineHeight="175%" as="h2" fontSize="lg" pt={2}>
-          Hi! My name is Sanjay Curtis. I am an independent software developer,
-          and a technical writer. I love working with open source technologies
-          and writing about what I learn.
+          Hi! My name is Sanjay Curtis Nagi. I am a researcher at
+          the Liverpool School of Tropical Medicine.
         </Text>
         <Text lineHeight="175%" as="h2" fontSize="lg" pt={2}>
-          Currently, I&apos;m working on documentation at Expo. Previously,
-          I&apos;ve as a consultant and a technical writer with companies like
-          Draftbit and Vercel.
+          Currently, I&apos;m a Post-Doc with Professor Martin Donnelly, under
+          whos supervision I have just completed my PhD on genomic
+          surveillance of the major malaria mosquito, <em>Anopheles gambiae.</em>
         </Text>
         <Text lineHeight="175%" as="h2" fontSize="lg">
           I write a{' '}
@@ -43,7 +42,7 @@ const AboutPage = () => {
             reading a book
           </ExternalLink>{' '}
           or{' '}
-          <ExternalLink href="https://www.instagram.com/sanjaycnagicodes/">
+          <ExternalLink href="https://www.instagram.com/sanjaycurtisnagi/">
             traveling.
           </ExternalLink>
         </Text>
@@ -282,155 +281,6 @@ const AboutPage = () => {
           </ListItem>
           <ListItem>
             Node.js Developer (2016 - 2017) at Unique Touch Solution
-          </ListItem>
-        </List>
-        <Heading size="lg" as="h2" pt={8}>
-          Speaking
-        </Heading>
-        <Heading size="md" as="h2" pt={8}>
-          2021
-        </Heading>
-        <List spacing={4}>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://www.youtube.com/watch?v=WrhQKt5-QY8">
-              Build Low-Code Apps using Hasura & Draftbit
-            </ExternalLink>
-          </ListItem>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://www.youtube.com/watch?v=h9kWdOyQrSw">
-              Building Attractive UIs with Draftbit at Explore Hacks
-            </ExternalLink>
-          </ListItem>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://www.youtube.com/watch?v=bIXQYrBd1DE">
-              Getting Started with Drafitbit- Sanjay Curtis at Hack The Mountains
-              2.O
-            </ExternalLink>
-          </ListItem>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://www.youtube.com/watch?v=sSbAuEcjjJA">
-              The Rise of No-Code and a Guide to Using Draftbit
-            </ExternalLink>
-          </ListItem>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://www.youtube.com/watch?v=_HKzhe8f47Y">
-              React Native Panel Discussion with Sanket Sahu, Sanjay Curtis, Evan
-              Bacon, Satyajit Sahoo
-            </ExternalLink>
-          </ListItem>
-        </List>
-        <Heading size="md" as="h2" pt={8}>
-          2020
-        </Heading>
-        <List spacing={4}>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://www.youtube.com/watch?v=YIRxTUCY0NQ">
-              How to write consistently at Hashnode&#39;s Technical Writing
-              Bootcamp
-            </ExternalLink>
-          </ListItem>
-        </List>
-        <Heading size="md" as="h2" pt={8}>
-          2018
-        </Heading>
-        <List spacing={4}>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://dev.to/reactroundup/rru-006-setting-up-and-getting-used-to-gatsby-with-sanjay-mittal">
-              Podcast: Setting Up and Getting Used to Gatsby with Charles Max
-              Wood, Cory House, Tara Manicsic and Kent C. Dodds
-            </ExternalLink>
-          </ListItem>
-        </List>
-        <Heading size="lg" as="h1" pt={8}>
-          ⚙️ What I use
-        </Heading>
-        <Text lineHeight="175%" as="h2" fontSize="lg">
-          {`I almost never get asked about what's my setup is or what I use.
-          Nonetheless, here is what I use on daily basis.`}
-        </Text>
-        <Heading size="md" as="h2" pt={8}>
-          Coding Software
-        </Heading>
-
-        <List spacing={4}>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://code.visualstudio.com/">
-              Visual Studio Code
-            </ExternalLink>
-            - My friend{' '}
-            <ExternalLink href="https://twitter.com/spences10">
-              Scott Spences
-            </ExternalLink>{' '}
-            introduced me to VS Code. At that time, we were both using Atom. I
-            have never looked back
-          </ListItem>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://brave.com/">Brave</ExternalLink>- as my
-            personal browser. I also use Chrome and sometimes Safari and Firefox
-          </ListItem>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://marketplace.visualstudio.com/items?itemName=nopjmp.fairyfloss">
-              fairyFloss
-            </ExternalLink>
-            - As much as I love to try new themes in VSCode, I always come back
-            to fairyFloss
-          </ListItem>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://iterm2.com/">item2</ExternalLink>- My
-            terminal of choice, with ZSH shell
-          </ListItem>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://cheatsheets.xyz/homebrew/">
-              Homebrew
-            </ExternalLink>
-            - For installing other libs and softwares
-          </ListItem>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://www.cockos.com/licecap/">
-              LICEcap
-            </ExternalLink>
-            - For creating GIFs
-          </ListItem>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://www.cockos.com/licecap/">
-              CleanShot X
-            </ExternalLink>
-            - For capturing screenshots on macOS devices
-          </ListItem>
-        </List>
-        <Text>
-          Find out more about what VSCode extensions I regularly use{' '}
-          <ExternalLink href="https://sanjaycnagi.dev/blog/setup-macbook-m1/">
-            here
-          </ExternalLink>
-          .
-        </Text>
-        <Heading size="md" as="h2" pt={8}>
-          Gear
-        </Heading>
-
-        <List spacing={4}>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://www.apple.com/in/shop/buy-mac/macbook-pro">
-              M1 Macbook Pro 14&rdquo; 2021
-            </ExternalLink>
-          </ListItem>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://sanjaycnagi.dev/about">
-              Desk & Chair
-            </ExternalLink>
-            - Pretty much, any flat surface
-          </ListItem>
-        </List>
-        <Heading size="lg" as="h1" pt={8}>
-          Awards and recognition
-        </Heading>
-        <List spacing={4}>
-          <ListItem fontSize="lg">
-            <ExternalLink href="https://www.noonies.tech/2022/programming/2022-most-authentic-developer-advocate-of-the-year">
-              Won Most Authentic Developer Advocate of the Year 2022 at
-              #Noonies2022 by Hackernoon
-            </ExternalLink>
           </ListItem>
         </List>
       </VStack>
