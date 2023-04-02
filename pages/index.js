@@ -83,7 +83,7 @@ const HomePage = ({ posts }) => {
       {/* Latest Blog Posts */}
       <LatestPostsSection posts={posts} />
       {/* Open Source Projects I've Worked on */}
-      <SoftwareSectionList projects={SoftwareList} />
+      {/* <SoftwareSectionList projects={SoftwareList} /> */}
     </>
   );
 };

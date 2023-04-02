@@ -19,8 +19,8 @@
             }
         },
         {
-            "id": "https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel copy",
-            "url": "https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel copy",
+            "id": "https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel",
+            "url": "https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel",
             "title": "Parallelising freebayes with snakemake",
             "summary": "Parallelising freebayes with snakemake",
             "date_modified": "2021-11-01T00:00:00.000Z",

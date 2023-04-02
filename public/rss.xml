@@ -4,7 +4,7 @@
         <title>Sanjay Curtis' blog</title>
         <link>https://sanjaycnagi.github.io/</link>
         <description></description>
-        <lastBuildDate>Sat, 01 Apr 2023 08:53:56 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 02 Apr 2023 11:52:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <copyright>2023 - 2023, Sanjay Curtis · All Rights Reserved.</copyright>
@@ -18,8 +18,8 @@
         </item>
         <item>
             <title><![CDATA[Parallelising freebayes with snakemake]]></title>
-            <link>https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel copy</link>
-            <guid>https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel copy</guid>
+            <link>https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel</link>
+            <guid>https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel</guid>
             <pubDate>Mon, 01 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Parallelising freebayes with snakemake]]></description>
             <author>sanjay.c.nagi@gmail.com (Sanjay Curtis)</author>

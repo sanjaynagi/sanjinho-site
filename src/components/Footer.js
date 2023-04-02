@@ -9,6 +9,8 @@ import {
   useMediaQuery
 } from '@chakra-ui/react';
 
+import ContactIcons from './ContactIcons';
+
 import {
   TWITTER,
   GITHUB,
@@ -29,56 +31,8 @@ const Footer = () => {
         alignItems="center"
         justifyContent={{ base: 'center', md: 'space-between' }}
       >
-        <Text color={linkColor}>
-          Copyright &copy;&nbsp; 2019-
-          {`${new Date().getFullYear()} Sanjay Curtis · All Rights Reserved.`}
-        </Text>
+      <ContactIcons />
       </Stack>
-      <HStack
-        justifyContent="space-between"
-        divider={
-          <Text color="gray.500" mx={2}>
-            •
-          </Text>
-        }
-      >
-        {isMobile ? (
-          <HStack
-            justifyContent="space-between"
-            divider={
-              <Text color="gray.500" mx={2}>
-                •
-              </Text>
-            }
-          >
-            <Link isExternal href={TWITTER}>
-              <Text fontSize="sm" color={textMode}>
-                Twitter
-              </Text>
-            </Link>
-          </HStack>
-        ) : (
-          <HStack
-            justifyContent="space-between"
-            divider={
-              <Text color="gray.500" mx={2}>
-                •
-              </Text>
-            }
-          >
-            <Link isExternal href={TWITTER}>
-              <Text fontSize="sm" color={textMode}>
-                Twitter
-              </Text>
-            </Link>
-            <Link isExternal href={GITHUB}>
-              <Text fontSize="sm" color={textMode}>
-                GitHub
-              </Text>
-            </Link>
-          </HStack>
-        )}
-      </HStack>
     </VStack>
   );
 };

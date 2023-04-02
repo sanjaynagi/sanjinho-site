@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sanjaycnagi.github.io/</id>
     <title>Sanjay Curtis' blog</title>
-    <updated>2023-04-01T08:53:56.327Z</updated>
+    <updated>2023-04-02T11:52:44.152Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Sanjay Curtis</name>
@@ -26,8 +26,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Parallelising freebayes with snakemake]]></title>
-        <id>https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel copy</id>
-        <link href="https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel copy"/>
+        <id>https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel</id>
+        <link href="https://sanjaycnagi.github.io//blog/2021-01-11-freebayes-parallel"/>
         <updated>2021-11-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Parallelising freebayes with snakemake]]></summary>
         <author>

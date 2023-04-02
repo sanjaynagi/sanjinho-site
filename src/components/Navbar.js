@@ -10,6 +10,7 @@ import {
   Text,
   useMediaQuery
 } from '@chakra-ui/react';
+import ContactIcons from './ContactIcons';
 
 import ThemeToggleButton from './ThemeToggleButton';
 
@@ -49,10 +50,11 @@ const Navbar = props => {
         p={2}
         maxW="container.lg"
         wrap="wrap"
+        as='nav'
         align="center"
         justify="space-between"
       >
-        <Flex align="center" mr={4} >
+        <Flex align="center" mr={4}>
             <LinkItem href="/" height="%50">
             <Text
               fontSize={{ base: '0px', md: '18px' }}
@@ -80,12 +82,13 @@ const Navbar = props => {
             alignItems="center"
             flexGrow={1}
             mt={{ base: 4, md: 0 }}
+            pr="5"
           >
-            <LinkItem href="/about"> <Text fontSize={{ base: '0px', md: '14px' }}>About</Text></LinkItem>
-            <LinkItem href="/blog"> <Text fontSize={{ base: '0px', md: '14px' }}>Blog</Text></LinkItem>
-            <LinkItem href="/cv"> <Text fontSize={{ base: '0px', md: '14px' }}>CV</Text></LinkItem>
-            <LinkItem href="/publications"> <Text fontSize={{ base: '0px', md: '14px' }}>Publications</Text></LinkItem>
-            <LinkItem href="/software"> <Text fontSize={{ base: '0px', md: '14px' }}>Software</Text></LinkItem>
+            <LinkItem href="/about">About</LinkItem>
+            <LinkItem href="/blog">Blog</LinkItem>
+            <LinkItem href="/cv">CV</LinkItem>
+            <LinkItem href="/publications">Publications</LinkItem>
+            <LinkItem href="/software">Software</LinkItem>
           </Stack>
         ) : (
           <Stack
@@ -97,15 +100,13 @@ const Navbar = props => {
             mt={{ base: 4, md: 0 }}
           >     
             <Divider orientation='vertical' />       
-            <LinkItem href="/about"> <Text fontSize={{ base: '0px', md: '14px' }}>About</Text></LinkItem>
-            <Divider orientation='vertical' />
-            <LinkItem href="/blog"> <Text fontSize={{ base: '0px', md: '14px' }}>Blog</Text></LinkItem>
-            <Divider orientation='vertical' />
-            <LinkItem href="/cv"> <Text fontSize={{ base: '0px', md: '14px' }}>CV</Text></LinkItem>
-            <Divider orientation='vertical' />
-            <LinkItem href="/publications"> <Text fontSize={{ base: '0px', md: '14px' }}>Publications</Text></LinkItem>
-            <Divider orientation='vertical' />
-            <LinkItem href="/software"> <Text fontSize={{ base: '0px', md: '14px' }}>Software</Text></LinkItem>
+            <LinkItem href="/about">About</LinkItem>
+            <LinkItem href="/blog">Blog</LinkItem>
+            <LinkItem href="/cv">CV</LinkItem>
+            <LinkItem href="/publications">Publications</LinkItem>
+            <LinkItem href="/software" pr="5">Software</LinkItem>
+            <Divider orientation='vertical' pr="5"/>
+            <ContactIcons />
           </Stack>
         )}
         <Box flex={1} align="right" >

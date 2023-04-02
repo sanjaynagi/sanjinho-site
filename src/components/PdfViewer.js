@@ -1,5 +1,5 @@
 import React from "react";
-import { Document, Page, pdfjs } from "react-pdf";
+import { Document, Page, pdfjs} from 'react-pdf';
 
 const PdfViewer = () => {
   const url = "https://sanjaynagi.github.io/files/SanjayCNagi-CV-2022.pdf";

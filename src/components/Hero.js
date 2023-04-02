@@ -1,5 +1,6 @@
-import { Box, Stack, VStack, Heading, Text } from '@chakra-ui/react';
+import { Box, Stack, VStack, Heading, Text, Divider } from '@chakra-ui/react';
 import HeroImage from "./HeroImage"
+import ContactIcons from './ContactIcons';
 
 const Hero = () => {
   return (
