@@ -8,7 +8,7 @@ import {
 } from '@chakra-ui/react';
 import { MdCheckCircle } from 'react-icons/md';
 
-import { DocumentHead, ExternalLink } from '../src/components';
+import { DocumentHead } from '../src/components';
 
 const AboutPage = () => {
   return (

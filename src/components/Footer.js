@@ -11,11 +11,6 @@ import {
 
 import ContactIcons from './ContactIcons';
 
-import {
-  TWITTER,
-  GITHUB,
-} from '../data/socialLinks';
-
 const Footer = () => {
   const [isMobile] = useMediaQuery('(max-width: 768px)');
   const linkColor = useColorModeValue('gray.600', 'white');
