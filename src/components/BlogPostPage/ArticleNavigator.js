@@ -12,7 +12,7 @@ const ArticleNavigator = ({ previousArticle, nextArticle }) => {
         </Text>
         <NextLink href="/blog">
           <Link>
-            <Text fontWeight="600" color="purple.500">
+            <Text fontWeight="600" color="teal.500">
               Browse all posts
             </Text>
           </Link>

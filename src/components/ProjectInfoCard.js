@@ -9,6 +9,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react';
 import { SiExpo, SiGithub } from 'react-icons/si';
+import ExternalLink from './ExternalLink'
 
 
 const ProjectInfoCard = ({

@@ -11,7 +11,7 @@ const CvPage = () => {
   return (
     <>
       <DocumentHead pageTitle="Sanjay Curtis - CV" postPath="/cv" />
-      <VStack spacing={3} alignItems="flex-start" w="full" as="section" pt={28}>
+      <VStack spacing={0} alignItems="flex-start" w="full" as="section" pt={28}>
         <Heading size="lg" as="h1">
          Curriculum Vitae
         </Heading>

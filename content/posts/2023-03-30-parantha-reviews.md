@@ -2,7 +2,7 @@
 title: "Parantha reviews"
 slug: "Paranthas-Are-The-Best"
 date: "03/30/2023"
-thumbnail: '/thumbnails/expo.png'
+thumbnail: '/thumbnails/parantha.png'
 tag: food
 canonicalUrl: 'https://sanjaycnagi.dev/blog/year-rewind-2020/'
 ---

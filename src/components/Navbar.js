@@ -62,9 +62,9 @@ const Navbar = props => {
               sx={{
                 background:
                   'linear-gradient(45deg, #00E1B0, #5c5e5b 30%, #ffffff 60%)',
-                '-webkit-background-clip': 'text',
-                '-webkit-text-fill-color': 'transparent',
-                'background-size': '800%'
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundSize: '800%'
               }}
             >
               Sanjay Curtis Nagi
