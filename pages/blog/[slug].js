@@ -20,14 +20,11 @@ import { getAllBlogPosts } from './index';
 import { DocumentHead, MDXComponents } from '../../src/components';
 import imageMetadata from '../../src/utils/imageMetaData';
 import {
-  AuthorCard,
-  SubscribeCard,
   ShareArticle,
   ArticleNavigator,
   TimeToRead,
   PublishedDate,
   Tag,
-  SponsorCard
 } from '../../src/components/BlogPostPage';
 
 export const readBlogPost = async slug => {

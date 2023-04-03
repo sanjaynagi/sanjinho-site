@@ -6,6 +6,4 @@ A [personal website](https://sanjaycnagi.github.io/) where I keep:
 - blog posts
 
 
-## License
-
-Copyright (c) 2019 - Present Sanjay Curtis Nagi
+modified from amanhimself.dev

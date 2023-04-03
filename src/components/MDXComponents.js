@@ -186,8 +186,8 @@ const CodeHighlight = ({ children: codeString, className: language }) => {
 const InlineCode = props => (
   <chakra.code
     apply="mdx.code"
-    color={useColorModeValue('purple.500', 'purple.200')}
-    bg={useColorModeValue('purple.50', 'purple.900')}
+    color={useColorModeValue('teal.500', 'white.200')}
+    bg={useColorModeValue('teal.50', 'teal.700')}
     px={1}
     py={0.5}
     rounded={{ base: 'none', md: 'md' }}
@@ -210,7 +210,7 @@ const LinkedHeading = props => {
       </Box>
       <chakra.span
         aria-label="anchor"
-        color="purple.500"
+        color="teal.500"
         userSelect="none"
         fontWeight="normal"
         fontSize="1.5rem"
@@ -246,7 +246,7 @@ const Anchor = props => {
   const { colorMode } = useColorMode();
   return (
     <chakra.a
-      color={mode('purple.500', 'purple.300')({ colorMode })}
+      color={mode('teal.500', 'white.300')({ colorMode })}
       _hover={{ textDecoration: 'underline' }}
       {...props}
     />

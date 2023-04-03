@@ -1,4 +1,3 @@
-import ExternalLink from './ExternalLink';
 import MainLayout from './MainLayout';
 import Fonts from './Fonts';
 import Hero from './Hero';
@@ -11,7 +10,6 @@ import DocumentHead from './SEO';
 import TagsSummary from './TagSummary';
 
 export {
-  ExternalLink,
   MainLayout,
   Fonts,
   Hero,

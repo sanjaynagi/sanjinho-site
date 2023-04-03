@@ -2,7 +2,7 @@
 title: "Parallelising freebayes with snakemake"
 slug: "Parallelising-freebayes-with-snakemake"
 date: "11/01/2021"
-thumbnail: '/thumbnails/expo.png'
+thumbnail: '/thumbnails/dna.png'
 tag: variant-calling
 canonicalUrl: 'https://sanjaycnagi.dev/blog/year-rewind-2020/'
 ---
@@ -50,5 +50,5 @@ rule GenerateFreebayesParams:
 
 I'll leave you with a song I've been enjoying recently. Happy variant calling.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1fBEEANitDY" frameborder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1fBEEANitDY" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
 

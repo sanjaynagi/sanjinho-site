@@ -20,8 +20,8 @@ const AuthorCard = () => {
         <VStack alignItems="stretch" as="section" pt={2}>
           <HStack justifyContent="space-between">
             <Text fontSize="md" fontWeight="600" color={textMode}>
-              <Link href="/about">Sanjay Curtis</Link>{' '}
-              <Text fontSize="sm" color="purple.500" as="i">
+              <Link href="/about">Sanjay Curtis Nagi</Link>{' '}
+              <Text fontSize="sm" color="teal.500" as="i">
                 author
               </Text>
             </Text>
@@ -33,14 +33,14 @@ const AuthorCard = () => {
                 border="1px solid #805AD5"
               > */}
               <Link isExternal href="https://ko-fi.com/sanjaycnagi">
-                <Text fontSize="13px" color="purple.500" fontWeight="bold">
+                <Text fontSize="13px" color="teal.500" fontWeight="bold">
                   Buy me coffee
                 </Text>
               </Link>
               {/* </Box> */}
               <Box>&nbsp;</Box>
               <Link isExternal href="https://sanjaycnagi.substack.com/">
-                <Text fontSize="13px" color="purple.500" fontWeight="bold">
+                <Text fontSize="13px" color="teal.500" fontWeight="bold">
                   Newsletter
                 </Text>
               </Link>
@@ -53,7 +53,7 @@ const AuthorCard = () => {
                 border="1px solid #805AD5"
               > */}
               <Link isExternal href="https://twitter.com/sanjaycnagi">
-                <Text fontSize="13px" color="purple.500" fontWeight="bold">
+                <Text fontSize="13px" color="teal.500" fontWeight="bold">
                   Twitter
                 </Text>
               </Link>
@@ -61,13 +61,7 @@ const AuthorCard = () => {
             </HStack>
           </HStack>
           <Text fontSize="md" color={textMode}>
-            I&apos;m a software developer and a technical writer. In this blog,
-            I write about Technical writing, Node.js, React Native and Expo.
-            <br />
-            <br />
-            Currently, working at Expo. Previously, I&apos;ve worked as a
-            Developer Advocate, and Senior Content Developer with companies like
-            Draftbit and Vercel.
+            I&apos;m a Post-Doc.
           </Text>
         </VStack>
       </HStack>
