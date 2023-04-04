@@ -1,6 +1,8 @@
 import MainLayout from './MainLayout';
 import Fonts from './Fonts';
 import Hero from './Hero';
+import EmailLink from './EmailLink';
+import ContactMe from './ContactMe';
 import SoftwareSectionList from './SoftwareSectionList';
 import ThemeToggleButton from './ThemeToggleButton';
 import BlogPostCard from './BlogPostCard';
@@ -14,6 +16,8 @@ export {
   Fonts,
   Hero,
   SoftwareSectionList,
+  EmailLink,
+  ContactMe,
   ThemeToggleButton,
   BlogPostCard,
   MDXComponents,

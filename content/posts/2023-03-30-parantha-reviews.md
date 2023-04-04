@@ -7,21 +7,54 @@ tag: food
 canonicalUrl: 'https://sanjaycnagi.dev/blog/year-rewind-2020/'
 ---
 
-Hello, fellow parantha enthusiasts! I'm here to share my thoughts and reviews on some of the best paranthas I've had the pleasure of devouring. As a self-proclaimed parantha addict, I have traveled far and wide in search of the perfect parantha. And let me tell you, it's been a delicious journey.
 
-Let's start with the classic Aloo Parantha. Ah, what can I say about this beauty? The crispy, buttery exterior stuffed with spicy potato filling is a match made in heaven. I've had this staple at countless roadside dhabas, and I can confidently say that I have never had a bad one. Whether it's paired with a dollop of butter or a side of tangy pickle, the Aloo Parantha always hits the spot.
+| ![parantha](/parantha_mj.png) | 
+|:--:| 
+| *An AI (midjourney) generated Image using the following prompt - Large tandoori paranthas on a steel plate on an opulent golden table. In the background, there is a luxurious ancient indian temple and jungle in the distance. Eagles fly in the sky. hyper-real, beautiful.* |
 
-Now, let's move on to the more adventurous choices. Have you ever tried a Paneer Parantha? If not, you're missing out. The soft, crumbly texture of the paneer mixed with the flaky, crispy parantha is a texture explosion in your mouth. I've even had a Paneer Tikka Parantha, which takes it to a whole new level. The smoky, charred flavors of the tikka mixed with the creamy paneer is a taste sensation.
+*preamble by ChatGPT, which matched by feelings on the matter perfectly*
 
-But wait, there's more! Have you ever heard of a Chocolate Parantha? Yes, you read that right. I stumbled upon this gem at a hip cafe in the city, and let me tell you, it was a game-changer. The warm, gooey chocolate filling oozed out of the crispy parantha with each bite. It was like having dessert for breakfast, and I loved every second of it.
+Hello, fellow paratha/parantha/parotta enthusiasts! I'm here to share my thoughts 
+and reviews on some of the best paranthas I've had the pleasure of 
+devouring. As a self-proclaimed parantha addict, I have traveled far 
+and wide in search of the perfect parantha. And let me tell you, it's 
+been a delicious journey.
 
-And finally, we have the ultimate indulgence - the Butter Chicken Parantha. This savory treat is a must-try for all Butter Chicken lovers out there. The tender, juicy pieces of chicken cooked in a rich, creamy tomato sauce are stuffed inside a buttery, flaky parantha. It's like having a mini Butter Chicken meal in one bite.
+Let's start with the classic Aloo Parantha. Ah, what can I say about 
+this beauty? The crispy, buttery exterior stuffed with spicy potato 
+filling is a match made in heaven. I've had this staple at countless 
+roadside dhabas, and I can confidently say that I have never had a bad 
+one. Whether it's paired with a dollop of butter or a side of tangy 
+pickle, the Aloo Parantha always hits the spot.
 
-In conclusion, paranthas are a gift to humanity. Whether it's a classic Aloo Parantha or a more experimental Chocolate Parantha, each one is a unique experience. So, my fellow parantha lovers, go forth and explore the world of paranthas. Your taste buds will thank you.
+<br></br>
 
+**Reviews**
+
+**Anands sweets, LS6 Leeds**  
+Anands is my favourite place to visit any time I return to Leeds. It used to be an indian sweet shop, but a few years back they turned it into a cafe, serving a whole range of vegetarian dishes. Its an amazing place which brings me joy just to sit in there, and the channa masala is the best I've ever tasted. The paranthas however, could be better (I'm sorry, Anands!).  
+Rating: 6.5/10
+
+**Chaiwala, Bold Street L1 Liverpool**  
+These Indian street food places seem to have popped up everywhere. Im not complaining. Chai was delicious, and so was the Samosa pav I had. The parantha could have done with more flavour (I suppose this has to cater to the British palate), but the yoghurt and raita was strangely good. Enjoyable.  
+Rating: 6.5/10
+
+**Chaiwala, LS6 Leeds**  
+I actually found this place whilst trying to visit Anands, on the way back to Liverpool one morning. Anands was closed, so I stopped in my car and desperately googled 'Paranthas Leeds' and this place came up. I was excited. I remember it clearly, a really sunny winters day. And it was good. A massive aloo Parantha, very flaky and very delicious. A bit too oily, though I suspect that may have aided the overall taste. Chai was delicious.  
+Rating: 7.5/10
+
+**Zaffran, L8 Liverpool**  
+This is one of those ghost restuarants - its just a kitchen featured on JustEat and Deliveroo, you cant sit inside. This poses a problem for me, as I like to eat the Parantha fresh out of the tandoor. The only option - drive right up to the entrance, and sit in my car to eat it. Greasy fingers everywhere, not ideal. The kulchas were nice, but the aloo parantha was fried (not cooked in a tandoor) and I'm fairly sure it came from a frozen packet.   
+Rating: 6.1/10
+
+---
+
+As you can see, I've yet to find a good spot for paranthas in the north of the UK in the last couple of years. It's a perpetual source of sadness for me. However, the fun bit of this blog post will arrive in October, when I travel to my family home in Punjab, India, with my brother, sister and father. I'm super excited, not only for Paranthas, but because it will be the first time we have all visited together since I was 3 years old (26 years ago!). I'll be sure to update this post with my tales of deliciousness!
 
 
 #### Hindi 
 
-Main hindi seekh raha hu, ki main. 
+(*I'm learning Hindi, so I thought I'd try translating this post for my homework*)
+
+Main hindi seekh raha hu, ki main translate . 
 

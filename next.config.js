@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
-module.exports = {
+
+const withMDX = require('@next/mdx')()
+
+nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   images: {
@@ -13,6 +16,16 @@ module.exports = {
   },
   typescript: {
     ignoreBuildErrors: true,
-  }
-
+  },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.module.rules.push({
+        test: /\.md$/,
+        use: ['raw-loader'],
+      });
+    }
+    return config;
+  },
 };
+
+module.exports = withMDX(nextConfig)
