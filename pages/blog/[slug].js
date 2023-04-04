@@ -119,7 +119,7 @@ const BlogPostPage = ({
         </Center>
         <MDXRemote {...source} components={MDXComponents} />
         {/* Share article on Twitter */}
-        <HStack justifyContent="center">
+        <HStack justifyContent="center" pt="10">
           <ShareArticle title={title} slug={slug} />
         </HStack>
         <Divider />

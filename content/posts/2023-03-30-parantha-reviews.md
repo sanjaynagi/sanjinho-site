@@ -6,13 +6,11 @@ thumbnail: '/thumbnails/parantha.png'
 tag: food
 canonicalUrl: 'https://sanjaycnagi.dev/blog/year-rewind-2020/'
 ---
-
-
 | ![parantha](/parantha_mj.png) | 
 |:--:| 
-| *An AI (midjourney) generated Image using the following prompt - Large tandoori paranthas on a steel plate on an opulent golden table. In the background, there is a luxurious ancient indian temple and jungle in the distance. Eagles fly in the sky. hyper-real, beautiful.* |
+| *Wow.* |
 
-*preamble by ChatGPT, which matched by feelings on the matter perfectly*
+*preamble by ChatGPT, which matched my feelings on the matter perfectly*
 
 Hello, fellow paratha/parantha/parotta enthusiasts! I'm here to share my thoughts 
 and reviews on some of the best paranthas I've had the pleasure of 

@@ -2,7 +2,7 @@ import { HStack, Box, Text, Link, useColorModeValue } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
 const ArticleNavigator = ({ previousArticle, nextArticle }) => {
-  const bgColor = useColorModeValue('gray.200', 'purple.700');
+  const bgColor = useColorModeValue('gray.200', 'teal.700');
   const textMode = useColorModeValue('black', 'white');
   return (
     <>

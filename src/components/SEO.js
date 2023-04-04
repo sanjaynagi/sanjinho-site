@@ -20,8 +20,8 @@ const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
       <link rel="icon" href="/favicon.ico" />
 
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta content="#6B46C1" name="theme-color" />
-      <meta content="#6B46C1" name="msapplication-TileColor" />
+      <meta content="#5fb0a1" name="theme-color" />
+      <meta content="#5fb0a1" name="msapplication-TileColor" />
       <link rel="canonical" href={canonicalUrl} />
 
       <link rel="apple-touch-icon" href="/favivon.jpg" />
