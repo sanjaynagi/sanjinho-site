@@ -3,9 +3,8 @@ import {
   VStack,
   Divider,
   Link,
-  Text,
+  Center,
   useColorModeValue,
-  HStack,
   useMediaQuery
 } from '@chakra-ui/react';
 
@@ -17,7 +16,7 @@ const Footer = () => {
   const textMode = useColorModeValue('gray.500', 'gray.500');
 
   return (
-    <VStack pb={8} as="footer" alignItems="flex-start">
+    <VStack pb={8} as="footer" alignItems="center">
       <Divider />
 
       <Stack
@@ -28,6 +27,7 @@ const Footer = () => {
       >
       <ContactIcons />
       </Stack>
+      <Center><Link href="/" color='grey' fontSize="14px">Home</Link></Center>
     </VStack>
   );
 };

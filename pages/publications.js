@@ -16,7 +16,7 @@ const PublicationsPage = () => {
   return (
     <>
       <DocumentHead pageTitle="Sanjay Curtis Nagi - Publications" postPath="/cv" />
-      <VStack spacing={4} alignItems="center" w="full" as="section" pt={28} >
+      <VStack spacing={4} as="section" pt={28} >
         <Heading size="lg">
          Publications
         </Heading>
