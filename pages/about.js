@@ -17,7 +17,7 @@ const AboutPage = () => {
           About Me
         </Heading>
         <Text>
-        Hello! I'm a Sanjay Curtis Nagi, currently a post-doc at the <Link href="https://www.lstmed.ac.uk/" color='teal'>
+        Hello! I&apos;m Sanjay Curtis Nagi, currently a post-doc at the <Link href="https://www.lstmed.ac.uk/" color='teal'>
           Liverpool School of Tropical Medicine</Link> in the Vector Informatics and Genomics group. 
         </Text>
         <Text>
@@ -26,8 +26,8 @@ const AboutPage = () => {
         malaria control programmes. I enjoy developing open-source computational tools that can aid the community and empower researchers 
         to analyse their own data.
         </Text>
-        <Text>Throughout my Doctorate I developed a number of Feel free to explore some of the <Link href="/software" color="teal" >software tools </Link> I've developed, 
-        or <Link href="/publications" color="teal">publications</Link> I've contributed to.
+        <Text>Feel free to explore some of the <Link href="/software" color="teal" >software tools </Link> I&apos;ve developed, 
+        or <Link href="/publications" color="teal">publications</Link> I&apos;ve contributed to.
         </Text>
         <Image src="/runningmalawismall.png" alt="Running through an irrigation system in the Shire Valley, Chikwawa, Malawi." />
         <ContactMe />
