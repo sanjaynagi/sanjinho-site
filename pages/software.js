@@ -10,8 +10,8 @@ import { SoftwareList } from '../src/data';
 const SoftwarePage = () => {
   return (
     <>
-      <DocumentHead pageTitle="Sanjay Curtis - Software" postPath="/software" />
-      <VStack spacing={3} alignItems="flex-start" w="full" as="section" pt={28}>
+      <DocumentHead pageTitle="Software" postPath="/software" />
+      <VStack spacing={3} alignItems="flex-start" w="full" as="section" pt={12}>
         <SoftwareSectionList projects={SoftwareList} />
       </VStack>
     </>

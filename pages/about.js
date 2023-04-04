@@ -2,28 +2,35 @@ import {
   VStack,
   Heading,
   Text,
+  Link,
+  Image
 } from '@chakra-ui/react';
+import { DocumentHead, ContactMe, MDXComponents } from '../src/components';
 
-import { DocumentHead, ExternalLink } from '../src/components';
 
 const AboutPage = () => {
   return (
     <>
       <DocumentHead pageTitle="Sanjay Curtis - About" postPath="/about" />
-      <VStack spacing={3} alignItems="flex-start" w="full" as="section" pt={28}>
+      <VStack spacing={5} alignItems="flex-start" w="full" as="section" pt={28}>
         <Heading size="lg" as="h1">
           About Me
         </Heading>
-        <small>Last Update: December 21, 2022</small>
-        <Text lineHeight="175%" as="h2" fontSize="lg" pt={2}>
-          Hi! My name is Sanjay Curtis Nagi. I am a researcher at
-          the Liverpool School of Tropical Medicine.
+        <Text>
+        Hello! I'm a Sanjay Curtis Nagi, currently a post-doc at the <Link href="https://www.lstmed.ac.uk/" color='teal'>
+          Liverpool School of Tropical Medicine</Link> in the Vector Informatics and Genomics group. 
         </Text>
-        <Text lineHeight="175%" as="h2" fontSize="lg" pt={2}>
-          Currently, I&apos;m a Post-Doc with Professor Martin Donnelly, under
-          whos supervision I have just completed my PhD on genomic
-          surveillance of the major malaria mosquito, <em>Anopheles gambiae.</em>
+        <Text>
+        To date, my work has primarily focused on mosquito vectors of disease. In particular, the rapid evolution and spread of resistance 
+        in the major malaria vector, <em>Anopheles gambiae</em>, is a major focus, and how we can use population genomics to ultimately inform 
+        malaria control programmes. I enjoy developing open-source computational tools that can aid the community and empower researchers 
+        to analyse their own data.
         </Text>
+        <Text>Throughout my Doctorate I developed a number of Feel free to explore some of the <Link href="/software" color="teal" >software tools </Link> I've developed, 
+        or <Link href="/publications" color="teal">publications</Link> I've contributed to.
+        </Text>
+        <Image src="/runningmalawismall.png" alt="Running through an irrigation system in the Shire Valley, Chikwawa, Malawi." />
+        <ContactMe />
       </VStack>
     </>
   );
