@@ -1,8 +1,8 @@
 {
-  "name": "sanjaycnagi-blog-migration",
+  "name": "sanjaycnagi-personal-site",
   "description": "Personal website running on Next.js and Chakra UI.",
   "version": "9.9.26",
-  "author": "Sanjay Curtis <sanjaynagi@live.com>",
+  "author": "Sanjay Curtis Nagi <sanjay.c.nagi@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -31,20 +31,17 @@
     "next-mdx-remote": "^3.0.8",
     "plaiceholder": "^2.2.0",
     "prism-react-renderer": "^1.2.1",
+    "prop-types": "^15.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
-    "react-markdown": "^8.0.6",
     "react-pdf": "^6.2.2",
-    "react-router-dom": "^6.10.0",
     "reading-time": "^1.5.0",
     "slugify": "^1.6.4",
     "unist-util-visit": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
-    "@babel/preset-env": "^7.21.4",
-    "babel-loader": "^9.1.2",
     "eslint": "8.6.0",
     "eslint-config-next": "12.0.7",
     "prettier": "^2.5.1",
@@ -54,9 +51,9 @@
   "license": "CC-BY-NC-4.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanjaynagi/sanjaycnagi.dev"
+    "url": "https://github.com/sanjaynagi/sanjinho-site"
   },
   "bugs": {
-    "url": "https://github.com/sanjaynagi/sanjaycnagi.dev/issues"
+    "url": "https://github.com/sanjaynagi/sanjinho-site/issues"
   }
 }
