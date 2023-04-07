@@ -67,7 +67,7 @@ const Blog = ({ posts }) => {
 
   return (
     <>
-      <DocumentHead pageTitle="Sanjay Curtis - Blog" postPath="/blog" />
+      <DocumentHead pageTitle="Blog" postPath="/blog" />
       <VStack spacing={3} alignItems="flex-start" w="full" as="section" pt={28}>
         <Heading size="xl" as="h1">
           Blog
