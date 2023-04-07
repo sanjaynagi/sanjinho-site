@@ -15,7 +15,7 @@ import PUBLICATIONS from '../src/data/publications.mdx';
 const PublicationsPage = () => {
   return (
     <>
-      <DocumentHead pageTitle="Sanjay Curtis Nagi - Publications" postPath="/cv" />
+      <DocumentHead pageTitle="Publications" postPath="/cv" />
       <VStack spacing={4} as="section" pt={28} >
         <Heading size="lg">
          Publications

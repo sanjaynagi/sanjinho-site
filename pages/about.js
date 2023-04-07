@@ -11,7 +11,7 @@ import { DocumentHead, ContactMe, MDXComponents } from '../src/components';
 const AboutPage = () => {
   return (
     <>
-      <DocumentHead pageTitle="Sanjay Curtis - About" postPath="/about" />
+      <DocumentHead pageTitle="About" postPath="/about" />
       <VStack spacing={5} alignItems="flex-start" w="full" as="section" pt={28}>
         <Heading size="lg" as="h1">
           About Me

@@ -12,7 +12,7 @@ import { DocumentHead } from '../src/components';
 const CvPage = () => {
   return (
     <>
-      <DocumentHead pageTitle="Sanjay Curtis Nagi - CV" postPath="/cv" />
+      <DocumentHead pageTitle="Curriculum Vitae" postPath="/cv" />
       <VStack spacing={4} alignItems="center" w="full" as="section" pt={28} >
         <Heading size="lg">
          Curriculum Vitae

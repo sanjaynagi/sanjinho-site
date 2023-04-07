@@ -13,7 +13,7 @@ import { DocumentHead } from '../src/components';
 const NotFound = () => {
   return (
     <>
-      <DocumentHead pageTitle="404 - Page Not Found - Sanjay Curtis" />
+      <DocumentHead pageTitle="404 - Page Not Found" />
       <Box pt={20}>
         <Container>
           <Heading as="h1">Not found</Heading>
