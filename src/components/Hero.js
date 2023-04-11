@@ -1,11 +1,12 @@
-import { Box, Stack, VStack, Heading, Text, Divider } from '@chakra-ui/react';
+import { Box, Stack, VStack, Heading, Text, Divider, HStack } from '@chakra-ui/react';
 import HeroImage from "./HeroImage"
 import ContactIcons from './ContactIcons';
 
 const Hero = () => {
   return (
     <Box pt={28}>
-      <Stack
+      <Stack 
+        pb={8}
         alignItems="center"
         spacing={12}
         w="full"
@@ -20,10 +21,14 @@ const Hero = () => {
             justifyContent={{ base: 'space-between', md: 'flex-start' }}
             alignItems="center"
           >
-            <Heading size="lg" as="h1" mr="80" >
-              Hey, I&apos;m Sanjay
-            </Heading>
-            <HeroImage />
+            <HStack>
+              <Heading size="lg" as="h1" mr="80" >
+                Hey, I&apos;m Sanjay
+              </Heading>     
+            </HStack>
+            <HStack>
+              <HeroImage />
+            </HStack>
           </Stack>
           <Text lineHeight="175%" as="h2" fontSize="lg">
             I&apos;m a Post-Doc studying genomics of the major malaria mosquito, <em>Anopheles gambiae </em> 
@@ -38,6 +43,7 @@ const Hero = () => {
           </Text>
         </VStack>
       </Stack>
+      <ContactIcons />   
 
     </Box>
   );

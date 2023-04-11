@@ -10,7 +10,6 @@ import {
   Text,
   useMediaQuery
 } from '@chakra-ui/react';
-import ContactIcons from './ContactIcons';
 
 import ThemeToggleButton from './ThemeToggleButton';
 
@@ -105,8 +104,6 @@ const Navbar = props => {
             <LinkItem href="/cv">CV</LinkItem>
             <LinkItem href="/publications">Publications</LinkItem>
             <LinkItem href="/software" pr="5">Software</LinkItem>
-            <Divider orientation='vertical' pr="5"/>
-            <ContactIcons />
           </Stack>
         )}
         <Box flex={1} align="right" >

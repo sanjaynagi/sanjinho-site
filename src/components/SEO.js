@@ -1,11 +1,11 @@
 import Head from 'next/head';
 
-const siteURL = 'https://sanjaycnagi.github.io';
-const author = 'Sanjay Curtis';
+const siteURL = 'https://sanjaycnagi.com';
+const author = 'Sanjay Curtis Nagi';
 const shortname = 'sanjaycnagi';
 const description =
-  "I'm Sanjay Curtis (@sanjaycnagi). researcher and helooooo. Welcome to my blog!";
-const socialBanner = '/card.png';
+  "I'm Sanjay Curtis Nagi. Researcher. Welcome to my personal website and blog!";
+const socialBanner = '/avatar.png';
 
 const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
   let postUrl = `${siteURL}`;
@@ -24,14 +24,14 @@ const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
       <meta content="#5fb0a1" name="msapplication-TileColor" />
       <link rel="canonical" href={canonicalUrl} />
 
-      <link rel="apple-touch-icon" href="/favivon.jpg" />
+      <link rel="apple-touch-icon" href="/favicon.ico" />
       <meta content={description} name="description" />
       <meta name="author" content={author} />
       <meta name="author" content={shortname} />
       <meta name="publisher" content={author} />
       <meta
         name="keywords"
-        content="Sanjay Curtis, sanjaycnagi, blog, Node.js, React, React Native, Expo"
+        content="Sanjay Curtis Nagi, sanjaycnagi, genomics, malaria, blog, Next.js, React"
       />
 
       <meta name="robots" content="index,follow" />
@@ -49,11 +49,11 @@ const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
       <meta name="og:image:alt" content={socialBanner} />
       <meta property="og:url" content={postPath ? postUrl : siteURL} />
       <meta property="og:type" content={postPath ? 'article' : 'website'} />
-      <meta property="og:site_name" content="Sanjay Curtis's Blog" />
+      <meta property="og:site_name" content="Sanjay C Nagi's Blog" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content={shortname} />
-      <meta name="twitter:title" content="Sanjay Curtis's Blog" />
+      <meta name="twitter:title" content="Sanjay C Nagi's Blog" />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={socialBanner} />
     </Head>
