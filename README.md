@@ -1,4 +1,4 @@
-## sanjaycnagi.github.io
+## sanjaycnagi.com
 
 A [personal website](https://sanjaycnagi.github.io/) where I keep:
 
