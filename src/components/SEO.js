@@ -5,7 +5,7 @@ const author = 'Sanjay Curtis Nagi';
 const shortname = 'sanjaycnagi';
 const description =
   "I'm Sanjay Curtis Nagi. Researcher. Welcome to my personal website and blog!";
-const socialBanner = '/avatar.png';
+const socialBanner = '/card.png';
 
 const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
   let postUrl = `${siteURL}`;
@@ -49,11 +49,11 @@ const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
       <meta name="og:image:alt" content={socialBanner} />
       <meta property="og:url" content={postPath ? postUrl : siteURL} />
       <meta property="og:type" content={postPath ? 'article' : 'website'} />
-      <meta property="og:site_name" content="Sanjay C Nagi's Blog" />
+      <meta property="og:site_name" content="Sanjay C Nagi's personal site" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content={shortname} />
-      <meta name="twitter:title" content="Sanjay C Nagi's Blog" />
+      <meta name="twitter:title" content="Sanjay C Nagi's personal website" />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={socialBanner} />
     </Head>
