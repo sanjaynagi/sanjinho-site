@@ -8,6 +8,7 @@ import {
   useMediaQuery
 } from '@chakra-ui/react';
 
+import InternalLink from './InternalLink';
 import ContactIcons from './ContactIcons';
 
 const Footer = () => {
@@ -27,7 +28,7 @@ const Footer = () => {
       >
       <ContactIcons />
       </Stack>
-      <Center><Link href="/" color='grey' fontSize="14px">Home</Link></Center>
+      <Center><InternalLink href="/" color='grey' fontSize="14px">Home</InternalLink></Center>
     </VStack>
   );
 };

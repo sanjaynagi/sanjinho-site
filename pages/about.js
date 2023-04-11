@@ -5,7 +5,7 @@ import {
   Link,
   Image
 } from '@chakra-ui/react';
-import { DocumentHead, ContactMe, MDXComponents } from '../src/components';
+import { InternalLink, DocumentHead, ContactMe } from '../src/components';
 
 
 const AboutPage = () => {
@@ -26,8 +26,8 @@ const AboutPage = () => {
         malaria control programmes. I enjoy developing open-source computational tools that can aid the community and empower researchers 
         to analyse their own data.
         </Text>
-        <Text>Feel free to explore some of the <Link href="/software" color="teal" >software tools </Link> I&apos;ve developed, 
-        or <Link href="/publications" color="teal">publications</Link> I&apos;ve contributed to.
+        <Text>Feel free to explore some of the <InternalLink href="/software" color="teal" p="0">software tools</InternalLink> I&apos;ve developed, 
+        or <InternalLink href="/publications" color="teal" p="0">publications</InternalLink> I&apos;ve contributed to.
         </Text>
         <Image src="/runningmalawismall.png" alt="Running through an irrigation system in the Shire Valley, Chikwawa, Malawi." />
         <ContactMe />

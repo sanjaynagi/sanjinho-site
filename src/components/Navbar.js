@@ -1,8 +1,6 @@
-import NextLink from 'next/link';
 import {
   Container,
   Box,
-  Link,
   Stack,
   Flex,
   Divider,
@@ -11,26 +9,8 @@ import {
   useMediaQuery
 } from '@chakra-ui/react';
 
+import InternalLink from './InternalLink';
 import ThemeToggleButton from './ThemeToggleButton';
-
-const LinkItem = ({ href, _target, children, ...props }) => {
-  return (
-    <NextLink href={href} passHref>
-      <Link
-        p={2}
-        _hover={{
-          textDecoration: 'none',
-          backgroundColor: 'undefined',
-          borderRadius: 8
-        }}
-        _target={_target}
-        {...props}
-      >
-        {children}
-      </Link>
-    </NextLink>
-  );
-};
 
 const Navbar = props => {
   const [isMobile] = useMediaQuery('(max-width: 768px)');
@@ -54,7 +34,7 @@ const Navbar = props => {
         justify="space-between"
       >
         <Flex align="center" mr={4}>
-            <LinkItem href="/" height="%50">
+            <InternalLink href="/" height="%50">
             <Text
               fontSize={{ base: '0px', md: '18px' }}
               fontWeight={{ base: '0', md: '600' }}
@@ -68,7 +48,7 @@ const Navbar = props => {
             >
               Sanjay Curtis Nagi
             </Text>
-          </LinkItem>
+          </InternalLink>
         </Flex>
 
 
@@ -83,11 +63,11 @@ const Navbar = props => {
             mt={{ base: 4, md: 0 }}
             mr="5"
           >
-            <LinkItem href="/about" height="10%">About</LinkItem>
-            <LinkItem href="/blog">Blog</LinkItem>
-            <LinkItem href="/cv">CV</LinkItem>
-            <LinkItem href="/publications">Publications</LinkItem>
-            <LinkItem href="/software">Software</LinkItem>
+            <InternalLink href="/about" height="10%">About</InternalLink>
+            <InternalLink href="/blog">Blog</InternalLink>
+            <InternalLink href="/cv">CV</InternalLink>
+            <InternalLink href="/publications">Publications</InternalLink>
+            <InternalLink href="/software">Software</InternalLink>
           </Stack>
         ) : (
           <Stack
@@ -99,11 +79,11 @@ const Navbar = props => {
             mt={{ base: 4, md: 0 }}
           >     
             <Divider orientation='vertical' />       
-            <LinkItem href="/about">About</LinkItem>
-            <LinkItem href="/blog">Blog</LinkItem>
-            <LinkItem href="/cv">CV</LinkItem>
-            <LinkItem href="/publications">Publications</LinkItem>
-            <LinkItem href="/software" pr="5">Software</LinkItem>
+            <InternalLink href="/about">About</InternalLink>
+            <InternalLink href="/blog">Blog</InternalLink>
+            <InternalLink href="/cv">CV</InternalLink>
+            <InternalLink href="/publications">Publications</InternalLink>
+            <InternalLink href="/software" pr="5">Software</InternalLink>
           </Stack>
         )}
         <Box flex={1} align="right" >
