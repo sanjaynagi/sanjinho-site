@@ -63,7 +63,7 @@ const Navbar = props => {
             mt={{ base: 4, md: 0 }}
             mr="5"
           >
-            <InternalLink href="/about" height="10%">About</InternalLink>
+            <InternalLink href="/about">About</InternalLink>
             <InternalLink href="/blog">Blog</InternalLink>
             <InternalLink href="/cv">CV</InternalLink>
             <InternalLink href="/publications">Publications</InternalLink>
@@ -83,7 +83,7 @@ const Navbar = props => {
             <InternalLink href="/blog">Blog</InternalLink>
             <InternalLink href="/cv">CV</InternalLink>
             <InternalLink href="/publications">Publications</InternalLink>
-            <InternalLink href="/software" pr="5">Software</InternalLink>
+            <InternalLink href="/software">Software</InternalLink>
           </Stack>
         )}
         <Box flex={1} align="right" >
