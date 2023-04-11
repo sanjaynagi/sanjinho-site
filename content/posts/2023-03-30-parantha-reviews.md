@@ -8,7 +8,7 @@ canonicalUrl: 'https://sanjaycnagi.dev/blog/year-rewind-2020/'
 ---
 | ![parantha](/parantha_mj.png) | 
 |:--:| 
-| *Wow.* |
+| *Parantha heaven.* |
 
 *preamble by ChatGPT, which matched my feelings on the matter perfectly*
 
@@ -37,7 +37,7 @@ Rating: 6.5/10
 These Indian street food places seem to have popped up everywhere. Im not complaining. Chai was delicious, and so was the Samosa pav I had. The parantha could have done with more flavour (I suppose this has to cater to the British palate), but the yoghurt and raita was strangely good. Enjoyable.  
 Rating: 6.5/10
 
-**Chaiwala, LS6 Leeds**  
+**Chai walay, LS6 Leeds**  
 I actually found this place whilst trying to visit Anands, on the way back to Liverpool one morning. Anands was closed, so I stopped in my car and desperately googled 'Paranthas Leeds' and this place came up. I was excited. I remember it clearly, a really sunny winters day. And it was good. A massive aloo Parantha, very flaky and very delicious. A bit too oily, though I suspect that may have aided the overall taste. Chai was delicious.  
 Rating: 7.5/10
 
