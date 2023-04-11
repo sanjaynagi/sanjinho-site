@@ -33,7 +33,7 @@ const Navbar = props => {
         align="center"
         justify="space-between"
       >
-        <Flex align="center" mr={4}>
+        <Flex align="center">
             <InternalLink href="/" height="%50">
             <Text
               fontSize={{ base: '0px', md: '18px' }}
@@ -52,7 +52,6 @@ const Navbar = props => {
         </Flex>
 
 
-
         {isMobile ? (
           <Stack
             direction={{ base: 'row', md: 'row' }}
@@ -61,13 +60,13 @@ const Navbar = props => {
             alignItems="center"
             flexGrow={1}
             mt={{ base: 4, md: 0 }}
-            mr="5"
+
           >
-            <InternalLink href="/about">About</InternalLink>
-            <InternalLink href="/blog">Blog</InternalLink>
-            <InternalLink href="/cv">CV</InternalLink>
-            <InternalLink href="/publications">Publications</InternalLink>
-            <InternalLink href="/software">Software</InternalLink>
+            <InternalLink href="/about" fontSize="sm">About</InternalLink>
+            <InternalLink href="/blog" fontSize="sm">Blog</InternalLink>
+            <InternalLink href="/cv" fontSize="sm">CV</InternalLink>
+            <InternalLink href="/publications" fontSize="sm">Publications</InternalLink>
+            <InternalLink href="/software" fontSize="sm">Software</InternalLink>
           </Stack>
         ) : (
           <Stack
@@ -78,7 +77,7 @@ const Navbar = props => {
             flexGrow={1}
             mt={{ base: 4, md: 0 }}
           >     
-            <Divider orientation='vertical' />       
+            <Divider orientation='vertical' ml="3"/>       
             <InternalLink href="/about">About</InternalLink>
             <InternalLink href="/blog">Blog</InternalLink>
             <InternalLink href="/cv">CV</InternalLink>

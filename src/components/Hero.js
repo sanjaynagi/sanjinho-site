@@ -1,4 +1,4 @@
-import { Box, Stack, VStack, Heading, Text, Divider, HStack } from '@chakra-ui/react';
+import { Box, Stack, VStack, Heading, Text, HStack } from '@chakra-ui/react';
 import HeroImage from "./HeroImage"
 import ContactIcons from './ContactIcons';
 
@@ -21,12 +21,10 @@ const Hero = () => {
             justifyContent={{ base: 'space-between', md: 'flex-start' }}
             alignItems="center"
           >
-            <HStack>
-              <Heading size="lg" as="h1" mr="80" >
+            <HStack width="100%" justifyContent={'space-between'}>
+              <Heading size="lg" as="h1">
                 Hey, I&apos;m Sanjay
               </Heading>     
-            </HStack>
-            <HStack>
               <HeroImage />
             </HStack>
           </Stack>
