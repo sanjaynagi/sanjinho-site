@@ -1,10 +1,10 @@
 ---
 title: "Parallelising freebayes with snakemake"
-slug: "Parallelising-freebayes-with-snakemake"
+slug: "parallelising-freebayes-with-snakemake"
 date: "11/01/2021"
 thumbnail: '/thumbnails/dna.png'
 tag: variant-calling
-canonicalUrl: 'https://sanjaycnagi.dev/blog/year-rewind-2020/'
+canonicalUrl: 'https://sanjaycnagi.com/blog/parallelising-freebayes-with-snakemake/'
 ---
 
 [`freebayes`](https://github.com/freebayes/freebayes) is a bayesian haplotype-based variant caller, used widely in genomics. As with many variant callers, it is not readily parallelised, but can be done so by splitting the genome into smaller chunks, calling them separately, and subsequently combining the chunks together.
