@@ -7,7 +7,7 @@ import "react-pdf/dist/esm/Page/TextLayer.css";
 // import "react-pdf/dist/esm/Page/AnnotationLayer.css"
 
 const PdfViewer = () => {
-  const url = "/SanjayCNagi-CV-2022.pdf";
+  const url = "/SanjayCNagi-CV-2023.pdf";
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {

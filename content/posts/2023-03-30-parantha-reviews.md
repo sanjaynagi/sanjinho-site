@@ -6,24 +6,15 @@ thumbnail: '/thumbnails/parantha.png'
 tag: food
 canonicalUrl: 'https://sanjaycnagi.dev/blog/year-rewind-2020/'
 ---
-| ![parantha](/parantha_mj.png) | 
-|:--:| 
-| *Parantha heaven.* |
 
-*preamble by ChatGPT, which matched my feelings on the matter perfectly*
+![parantha](/parantha_mj.png)
+*Parantha heaven.*
 
 Hello, fellow paratha/parantha/parotta enthusiasts! I'm here to share my thoughts 
 and reviews on some of the best paranthas I've had the pleasure of 
 devouring. As a self-proclaimed parantha addict, I have traveled far 
 and wide in search of the perfect parantha. And let me tell you, it's 
 been a delicious journey.
-
-Let's start with the classic Aloo Parantha. Ah, what can I say about 
-this beauty? The crispy, buttery exterior stuffed with spicy potato 
-filling is a match made in heaven. I've had this staple at countless 
-roadside dhabas, and I can confidently say that I have never had a bad 
-one. Whether it's paired with a dollop of butter or a side of tangy 
-pickle, the Aloo Parantha always hits the spot.
 
 <br></br>
 
