@@ -21,10 +21,10 @@ const AboutPage = () => {
           Liverpool School of Tropical Medicine</Link> in the Vector Informatics and Genomics group. 
         </Text>
         <Text>
-        To date, my work has primarily focused on mosquito vectors of disease. In particular, the rapid evolution and spread of resistance 
+        I enjoy developing open-source computational tools that can aid the community and empower researchers 
+        to analyse their own data. To date, my work has primarily focused on mosquito vectors of disease. In particular, the rapid evolution and spread of resistance 
         in the major malaria vector, <em>Anopheles gambiae</em>, is a major focus, and how we can use population genomics to ultimately inform 
-        malaria control programmes. I enjoy developing open-source computational tools that can aid the community and empower researchers 
-        to analyse their own data.
+        malaria control programmes. 
         </Text>
         <Text>Feel free to explore some of the <InternalLink href="/software" color="teal" p="0">software tools</InternalLink> I&apos;ve developed, 
         or <InternalLink href="/publications" color="teal" p="0">publications</InternalLink> I&apos;ve contributed to.
