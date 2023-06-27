@@ -3,7 +3,7 @@ title: "Ultra user-friendly bioinformatics pipelines pt.1"
 slug: "Ultra-user-friendly-bioinformatics-pipelines-pt1"
 date: 06/25/2023"
 thumbnail: '/thumbnails/snakemake.png'
-tag: snakemake, papermill, jupyter-book
+tag: workflows
 canonicalUrl: 'https://sanjaycnagi.com/blog/ultra-user-friendly-bioinformatics-pipelines-pt1/'
 ---
 
