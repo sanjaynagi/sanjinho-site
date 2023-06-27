@@ -36,7 +36,7 @@ I and collaborators at UVRI (Trevor Mugoya and Edward Lukyamezi) have recently b
 <br></br>
 
 <figure>
-  <img src="/public/results-book.gif" alt="a gif of the AmpSeeker results book"/><br></br>
+  <img src="/results-book.gif" alt="a gif of the AmpSeeker results book"/><br></br>
     <figcaption><center><em>An example of the (draft) AmpSeeker results book. If you like Hindi music or Anime, I'd recommend checking out the user guide placeholder, or the film that its from :) </em></center></figcaption>
 </figure>
 <br></br>
