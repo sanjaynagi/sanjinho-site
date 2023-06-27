@@ -10,20 +10,21 @@ const validateText = (text) => {
 };
 
 const messages = [
-  'hi',
   'hello',
   'hola',
   'namaste-ji',
   'kee-hal-hai?',
-  'you-can-email-me-at-literally-anything! Really',
-  'well, not anything. But most things',
+  'you-can-email-me-with-literally-anything! Really',
+  'well, not anything actually. But most things',
   'like-eddie-howes-marching-mags',
   'or-messi-is-the-goat',
-  'you.can.also.email.me.with.specific.topics.like',
-  'just-saying-hi',
-  'please-work-for-us',
-  'or-I-really-like-your-website',
-  'thanks',
+  'or stuff like',
+  'please-work-for-us', 
+  'i-really-like-your-website',
+  'and-i-like-paranthas-too',
+  'come-to-my-house-for-paranthas',
+  'and',
+  'have-a-wonderful-day!',
 ];
 
 const useInterval = (callback, delay) => {
