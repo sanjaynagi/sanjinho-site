@@ -30,7 +30,7 @@ const Navbar = props => {
       <Container
         display="flex"
         p={1}
-        maxW="container.lg"
+        maxW="container.md"
         wrap="wrap"
         as='nav'
         align="center"
@@ -65,11 +65,11 @@ const Navbar = props => {
             mt={{ base: 4, md: 0 }}
 
           >
-            <InternalLink href="/about" fontSize="xs">About</InternalLink>
-            <InternalLink href="/blog" fontSize="xs">Blog</InternalLink>
-            <InternalLink href="/cv" fontSize="xs">CV</InternalLink>
-            <InternalLink href="/publications" fontSize="xs">Publications</InternalLink>
-            <InternalLink href="/software" fontSize="xs">Software</InternalLink>
+            <InternalLink p={0.5} href="/about" fontSize="xs">About</InternalLink>
+            <InternalLink p={0.5} href="/blog" fontSize="xs">Blog</InternalLink>
+            <InternalLink p={0.5} href="/cv" fontSize="xs">CV</InternalLink>
+            <InternalLink p={0.5} href="/publications" fontSize="xs">Publications</InternalLink>
+            <InternalLink p={0.5} href="/software" fontSize="xs">Software</InternalLink>
           </Stack>
         ) : (
           <Stack
