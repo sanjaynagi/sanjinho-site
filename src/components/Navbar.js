@@ -29,7 +29,7 @@ const Navbar = props => {
     >
       <Container
         display="flex"
-        p={2}
+        p={1}
         maxW="container.lg"
         wrap="wrap"
         as='nav'
