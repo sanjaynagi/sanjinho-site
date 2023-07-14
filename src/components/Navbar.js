@@ -65,11 +65,11 @@ const Navbar = props => {
             mt={{ base: 4, md: 0 }}
 
           >
-            <InternalLink href="/about" fontSize="sm">About</InternalLink>
-            <InternalLink href="/blog" fontSize="sm">Blog</InternalLink>
-            <InternalLink href="/cv" fontSize="sm">CV</InternalLink>
-            <InternalLink href="/publications" fontSize="sm">Publications</InternalLink>
-            <InternalLink href="/software" fontSize="sm">Software</InternalLink>
+            <InternalLink href="/about" fontSize="xs">About</InternalLink>
+            <InternalLink href="/blog" fontSize="xs">Blog</InternalLink>
+            <InternalLink href="/cv" fontSize="xs">CV</InternalLink>
+            <InternalLink href="/publications" fontSize="xs">Publications</InternalLink>
+            <InternalLink href="/software" fontSize="xs">Software</InternalLink>
           </Stack>
         ) : (
           <Stack
