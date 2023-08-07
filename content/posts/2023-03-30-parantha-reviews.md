@@ -38,7 +38,7 @@ Rating: 6.1/10
 
 **Paratha Hut, Levenshulme, Manchester**    
 I've been meaning to go here for ages. One day I took a cheeky 45 min detour on the way back to leeds. this is a little hut in the corner of a car wash. 
-quite delicious, lots of options  
+There are many options, and (aloo) paranthas were quite delicious!
 
 Rating 7.8/10
 
