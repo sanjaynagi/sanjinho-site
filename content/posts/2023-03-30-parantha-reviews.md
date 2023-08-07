@@ -36,7 +36,7 @@ Rating: 7.5/10
 This is one of those ghost restuarants - its just a kitchen featured on JustEat and Deliveroo, you cant sit inside. This poses a problem for me, as I like to eat the Parantha fresh out of the tandoor. The only option - drive right up to the entrance, and sit in my car to eat it. Greasy fingers everywhere, not ideal. The kulchas were nice, but the aloo parantha was fried (not cooked in a tandoor) and I'm fairly sure it came from a frozen packet.   
 Rating: 6.1/10
 
-**Paratha Hut, Levenshulme, Manchester**
+**Paratha Hut, Levenshulme, Manchester**    
 I've been meaning to go here for ages. One day I took a cheeky 45 min detour on the way back to leeds. this is a little hut in the corner of a car wash. 
 quite delicious, lots of options  
 
