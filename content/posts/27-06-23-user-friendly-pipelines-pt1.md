@@ -18,12 +18,6 @@ The approach involves the combination of a few semi-recent developments - in par
 <details>
     <summary><em><b>What is a Jupyter Notebook?</b></em></summary>
   
-    It's like a playground for nerds! :P
-</details>
-
-<details>
-    <summary><em><b>really?</b></em></summary>
-  
     OK, a Jupyter Notebook is an interactive computing environment that allows you to create and share documents containing live code, visualizations, and explanatory text. For those familiar with R, it is similar to R Markdown. It provides a web-based interface where you can write and execute code, typically Python. Jupyter Notebooks enable data analysis, experimentation, and collaboration in a convenient and flexible manner.
 </details>
 
