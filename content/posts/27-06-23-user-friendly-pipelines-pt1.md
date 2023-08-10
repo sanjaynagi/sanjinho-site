@@ -18,7 +18,7 @@ The approach involves the combination of a few semi-recent developments - in par
 <details>
     <summary><em><b>What is a Jupyter Notebook?</b></em></summary>
   
-    OK, a Jupyter Notebook is an interactive computing environment that allows you to create and share documents containing live code, visualizations, and explanatory text. For those familiar with R, it is similar to R Markdown. It provides a web-based interface where you can write and execute code, typically Python. Jupyter Notebooks enable data analysis, experimentation, and collaboration in a convenient and flexible manner.
+    A Jupyter Notebook is an interactive computing environment that allows you to create and share documents containing live code, visualizations, and explanatory text. For those familiar with R, it is similar to R Markdown. It provides a web-based interface where you can write and execute code, typically Python. Jupyter Notebooks enable data analysis, experimentation, and collaboration in a convenient and flexible manner.
 </details>
 
 Papermill is a tool which allows Jupyter Notebooks to be parameterised and run from the command line - when we run the notebook, we can pass through some parameters. Surprisingly, standard Jupyter Notebooks do not support this - they are intended to be run interactively, cell by cell. Papermill means we can use Jupyter Notebooks in workflows directly like python scripts, and store the executed notebooks as outputs.
