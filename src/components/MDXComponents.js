@@ -196,7 +196,7 @@ const InlineCode = props => (
 );
 
 const LinkedHeading = props => {
-  const slug = slugify(props.children, { lower: true });
+  const slug = slugify(toString(props.children, { lower: true }));
   return (
     <Link href={`#${slug}`} name={slug} role="group">
       <Box
