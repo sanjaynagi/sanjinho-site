@@ -67,7 +67,6 @@ const Navbar = props => {
           >
             <InternalLink href="/about" fontSize="sm">About</InternalLink>
             <InternalLink href="/blog" fontSize="sm">Blog</InternalLink>
-            <InternalLink href="/cv" fontSize="sm">CV</InternalLink>
             <InternalLink href="/publications" fontSize="sm">Publications</InternalLink>
             <InternalLink href="/software" fontSize="sm">Software</InternalLink>
           </Stack>

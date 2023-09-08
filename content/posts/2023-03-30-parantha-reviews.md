@@ -21,7 +21,7 @@ been a delicious journey.
 **Reviews**
 
 **Anands sweets, LS6 Leeds**  
-Anands is my favourite place to visit any time I return to Leeds. It used to be an indian sweet shop, but a few years back they turned it into a cafe, serving a whole range of vegetarian dishes. Its an amazing place which brings me joy just to sit in there, and the channa masala is the best I've ever tasted. The paranthas however, could be better (I'm sorry, Anands!).  
+Anands is my favourite place to visit any time I return to Leeds. It used to be an indian sweet shop, but a few years back they turned it into a cafe, serving a whole range of vegetarian dishes. Its an amazing place which brings me joy just to sit in there, and the channa masala is the best I've ever tasted. The last time I went, the paranthas however, could be better (I'm sorry, Anands!).  
 Rating: 6.5/10
 
 **Chaiwala, Bold Street L1 Liverpool**  
@@ -36,9 +36,15 @@ Rating: 7.5/10
 This is one of those ghost restuarants - its just a kitchen featured on JustEat and Deliveroo, you cant sit inside. This poses a problem for me, as I like to eat the Parantha fresh out of the tandoor. The only option - drive right up to the entrance, and sit in my car to eat it. Greasy fingers everywhere, not ideal. The kulchas were nice, but the aloo parantha was fried (not cooked in a tandoor) and I'm fairly sure it came from a frozen packet.   
 Rating: 6.1/10
 
+**Paratha Hut, Levenshulme, Manchester**    
+I've been meaning to go here for ages. One day I took a cheeky 45 min detour on the way back to leeds. this is a little hut in the corner of a car wash. 
+There are many options, and (aloo) paranthas were quite delicious!
+
+Rating 7.8/10
+
 ---
 
-As you can see, I've yet to find a good spot for paranthas in the north of the UK in the last couple of years. It's a perpetual source of sadness for me. However, the fun bit of this blog post will arrive in October, when I travel to my family home in Punjab, India, with my brother, sister and father. I'm super excited, not only for Paranthas, but because it will be the first time we have all visited together since I was 3 years old (26 years ago!). I'll be sure to update this post with my tales of deliciousness!
+the fun bit of this blog post will arrive in October, when I travel to my family home in Punjab, India, with my brother, sister and father. I'm super excited, not only for Paranthas, but because it will be the first time we have all visited together since I was 3 years old (26 years ago!). I'll be sure to update this post with my tales of deliciousness!
 
 
 #### Hindi 
