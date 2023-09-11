@@ -38,7 +38,7 @@ Interestingly, the resistance-breaking potential of transfluthrin doesn't end th
 
 It has also been hypothesised that vapour-phase pyrethroids may bypass cuticular resistance, via direct entry to the nervous system through insect spiracles [[7]](https://link.springer.com/article/10.1007/s13355-016-0443-2). Together, these factors result in low resistance ratios for transfluthrin when compared with standard pyrethroids [[8]](https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-021-04997-8#Sec7), something we have also found with a range of pyrethroid-resistant mosquito strains at the School of Tropical Medicine (unpublished). 
 
-#### Should we be talking about spatial repellent mixtures?
+#### Spatial repellent mixtures?
 
 If spatial repellents are shown to be an effective tool for vector control, it will be important to raise discussions on how to maintain and increase the longevity of these products.
 
