@@ -39,10 +39,6 @@ const Hero = () => {
             computational tools that can aid the community and empower researchers to analyse 
             their own data.
           </Text>
-          <Text lineHeight="175%" as="h2" fontSize="lg">
-            I developed this website to learn front-end development in a React and Next.js
-            framework. 
-          </Text>
         </VStack>
       </Stack>
       <ContactIcons />   
