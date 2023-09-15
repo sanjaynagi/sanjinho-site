@@ -8,11 +8,11 @@ canonicalUrl: 'https://sanjaycnagi.com/blog/transfluthrin-resistance/'
 ---
 
 ![mosquito_shield](/mosquito-shield.jpg)        
-*Mosquito Shield™* - a novel transfluthrin-based spatial repellent product for the malaria vector control market.
+*Mosquito Shield™* - a novel transfluthrin-based spatial repellent product for the malaria vector control market (source: [SC Johnson](https://www.scjohnson.com/en/a-healthier-world/sc-johnson-combats-malaria))
 
 ---
 
-A few words on the greatest polyfluorinated pyrethroid I’ve ever written a thesis about – Transfluthrin. Back in my first foray into vector control, I was working in Mumbai at [Godrej](https://godrej.com), looking at resistance to the main active ingredient in their flagship insect repellent brand, [GoodKnight™](https://www.goodknight.in/), for my MSc dissertation. With randomised-controlled trials (RCTs) of the SC Johnson Johnson product *Mosquito Shield™* ongoing in sub-Saharan Africa, now seems an opportune time to discuss some of those findings.
+A few words on the greatest polyfluorinated pyrethroid I’ve ever written a thesis about – Transfluthrin. Back in my first foray into vector control, I was working in Mumbai at [Godrej](https://godrej.com), looking at resistance to the main active ingredient in their flagship insect repellent brand, [GoodKnight™](https://www.goodknight.in/), for my MSc dissertation. With randomised-controlled trials (RCTs) of the SC Johnson product *Mosquito Shield™* ongoing in sub-Saharan Africa, now seems an opportune time to discuss some of those findings.
 
 Transfluthrin is a vapour-phase pyrethroid often used in domestic household products, such as sprays and liquid vapourisers. It repels mosquitoes, as well as incapacitating them to prevent host-seeking and blood-feeding. It's been particularly popular in the South Asian market for several years, with South America seemingly playing catch up. And, in recent years, it's also been explored as a novel vector control tool for malaria.
 
