@@ -39,5 +39,3 @@ I and our collaborators at UVRI, Trevor Mugoya and Edward Lukyamezi, have recent
 </figure>
 
 I hope that others might find this a useful approach to building workflows. Exciting as it is, it now means I have the task of converting [rna-seq-pop](https://github.com/sanjaynagi/rna-seq-pop) to this way of workflow infrastructure! Wish me luck!
-
-Stay tuned for part 2, where we delve into the mystical world of GUIs for Snakemake workflows.
