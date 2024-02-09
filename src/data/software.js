@@ -1,5 +1,13 @@
 export const SoftwareList = [
   {
+    id: '5',
+    title: ' 🦚 AmpSeeker 🦚',
+    description: `A scalable, reproducible snakemake pipeline to analyse Illumina amplicon sequencing data. 
+                  Builds a webpage to conveniently explore the results`,
+    href: 'https://github.com/sanjaynagi/AmpSeeker',
+    githubIcon: true
+  },
+  {
     id: '1',
     title: '🦕 RNA-Seq-Pop 🦕',
     description: `A reproducible snakemake pipeline to analyse RNA-Seq data from any organism. Calls variants 
@@ -25,15 +33,8 @@ export const SoftwareList = [
   {
     id: '4',
     title: '🧬 AgamPrimer 🧬',
-    description: `A python package to design primers in Anopheles gambiae whilst considering genetic variation. Uses primer3 and malariagen_data`,
+    description: `A python package to design primers in Anopheles gambiae and funestus whilst considering genetic variation.`,
     href: 'https://github.com/sanjaynagi/AgamPrimer',
     githubIcon: true
   },
-  {
-    id: '5',
-    title: ' 🦚 AmpSeeker 🦚',
-    description: `A scalable, reproducible snakemake pipeline to analyse Illumina amplicon sequencing data. Builds a webpage to conveniently explore the results`,
-    href: 'https://github.com/sanjaynagi/AmpSeeker',
-    githubIcon: true
-  }
 ];
