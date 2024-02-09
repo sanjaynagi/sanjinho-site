@@ -5,7 +5,7 @@ import ProjectInfoCard from './ProjectInfoCard';
 const SoftwareSectionList = ({ projects }) => {
   return (
     <VStack w="full" alignItems="center" spacing={4} as="section" mt={16}>
-      <Heading size="lg">Open Source Software I&#39;ve Worked on</Heading>
+      <Heading size="lg">Open Source Software I&#39;ve developed or contributed to</Heading>
       <List spacing={6}>
         {projects.map(project => (
           <ListItem key={project.href}>
