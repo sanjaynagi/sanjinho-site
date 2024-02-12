@@ -1,4 +1,6 @@
 import { Box, Container, VStack } from '@chakra-ui/react';
+import { Analytics } from '@vercel/analytics/react';
+
 import PropTypes from 'prop-types';
 
 import Navbar from './Navbar';
@@ -17,6 +19,7 @@ const MainLayout = ({ children }) => {
         <VStack spacing={16} flex={1} w="full" as="main" mb={16}>
           {children}
         </VStack>
+        <Analytics />
         <Footer />
       </Container>
     </Box>
