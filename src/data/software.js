@@ -32,9 +32,9 @@ export const SoftwareList = [
   },
   {
     id: '4',
-    title: '🧬 AgamPrimer 🧬',
+    title: '🧬 AnoPrimer 🧬',
     description: `A python package to design primers in Anopheles gambiae and funestus whilst considering genetic variation.`,
-    href: 'https://github.com/sanjaynagi/AgamPrimer',
+    href: 'https://github.com/sanjaynagi/AnoPrimer',
     githubIcon: true
   },
 ];
