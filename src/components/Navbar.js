@@ -7,10 +7,7 @@ import {
   useColorModeValue,
   Text,
   useMediaQuery,
-  IconButton
 } from '@chakra-ui/react';
-
-import { HiPhoto, HiOutlinePhoto } from 'react-icons/hi';
 
 import InternalLink from './InternalLink';
 import ThemeToggleButton from './ThemeToggleButton';
