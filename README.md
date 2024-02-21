@@ -1,6 +1,6 @@
 ## sanjaycnagi.com
 
-A [personal website](https://sanjaycnagi.github.io/) where I keep:
+A [personal website](https://sanjaycnagi.com/) where I keep:
 
 - information about myself
 - blog posts
