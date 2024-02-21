@@ -1,5 +1,3 @@
-import { Feed } from 'feed';
-
 import {
   Hero,
   ContactMe,
