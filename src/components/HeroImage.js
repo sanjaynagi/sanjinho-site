@@ -4,7 +4,7 @@ import Image from 'next/image';
 const HeroImage = () => {
   return (
     <Flex position="relative" pb={4} justifyContent="center">
-      <AspectRatio flexShrink={0} ratio={1} w={285} h={200} as="figure">
+      <AspectRatio flexShrink={0} ratio={1} w={266} h={200} as="figure">
         <Box rounded="full" overflow="hidden" borderRadius={20}>
           <Image
             src="/avatar.jpg"
