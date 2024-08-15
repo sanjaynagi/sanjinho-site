@@ -52,7 +52,7 @@ const BlogDocumentHead = ({ pageTitle, postPath, canonicalUrl, thumbnail }) => {
       <meta property="og:type" content={postPath ? 'article' : 'website'} />
       <meta property="og:site_name" content="Sanjay's blog" />
 
-      <meta name="twitter:card" content={`${siteURL}${socialBanner}`} />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content={shortname} />
       <meta name="twitter:title" content={pageTitle} />
       <meta name="twitter:description" content={description} />
