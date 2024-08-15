@@ -114,7 +114,7 @@ const CodeHighlight = ({ children: codeString, className: language }) => {
       case 'prisma':
         return <SiPrisma size={18} color="#57cc99" />;
       case 'python':
-        return <SiPython size={18} color="#e10098" />;
+        return <SiPython size={18} color="#408ef5" />;
       default:
         break;
     }
