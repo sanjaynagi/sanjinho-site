@@ -7,7 +7,7 @@ const description =
   "I'm Sanjay Curtis Nagi. Researcher. Welcome to my blog!";
 const socialBanner = '/card.png';
 
-const BlogDocumentHead = ({ pageTitle, postPath, canonicalUrl, thumbnail }) => {
+const BlogDocumentHead = ({ pageTitle, postPath, canonicalUrl, thumbnail, shorttitle }) => {
   let postUrl = `${siteURL}`;
 
   if (postPath) {
@@ -46,7 +46,7 @@ const BlogDocumentHead = ({ pageTitle, postPath, canonicalUrl, thumbnail }) => {
         content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
       />
 
-      <meta property="og:title" content={pageTitle} />
+      <meta property="og:title" content={shorttitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={`${siteURL}${thumbnail}`} />
       <meta property="og:image:alt" content="Blog post thumbnail" />
@@ -56,7 +56,7 @@ const BlogDocumentHead = ({ pageTitle, postPath, canonicalUrl, thumbnail }) => {
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content={shortname} />
-      <meta name="twitter:title" content={pageTitle} />
+      <meta name="twitter:title" content={shorttitle} />
       <meta name="twitter:description" content={description} />
       <meta property="twitter:image" content={`${siteURL}${thumbnail}`} />
     </Head>
