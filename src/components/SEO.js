@@ -46,8 +46,8 @@ const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
 
       <meta property="og:title" content={pageTitle} />
       <meta name="og:description" content={description} />
-      <meta name="og:image" content="/favicon.ico" />
-      <meta name="og:image:alt" content={socialBanner} />
+      <meta name="og:image" content={`${siteURL}${socialBanner}`} />
+      <meta name="og:image:alt" content="Site social banner" />
       <meta property="og:url" content={postPath ? postUrl : siteURL} />
       <meta property="og:type" content={postPath ? 'article' : 'website'} />
       <meta property="og:site_name" content="Sanjay C Nagi's personal site" />
@@ -56,7 +56,7 @@ const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
       <meta name="twitter:site" content={shortname} />
       <meta name="twitter:title" content="Sanjay C Nagi's personal website" />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={socialBanner} />
+      <meta name="twitter:image" content={`${siteURL}${socialBanner}`} />
     </Head>
   );
 };
