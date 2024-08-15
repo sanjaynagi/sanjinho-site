@@ -15,18 +15,11 @@ import NextImage from 'next/image';
 import slugify from 'slugify';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import dracula from 'prism-react-renderer/themes/dracula';
-import { DiJsBadge } from 'react-icons/di';
 import { IoClipboardOutline, IoTerminal } from 'react-icons/io5';
-import { FaGitAlt } from 'react-icons/fa';
 import {
-  SiReact,
-  SiHtml5,
-  SiCsswizardry,
-  SiPrisma,
   SiTypescript,
   SiPython
 } from 'react-icons/si';
-import { VscJson } from 'react-icons/vsc';
 
 const ChakraHighlight = chakra(Highlight, {
   shouldForwardProp: prop =>
@@ -87,32 +80,6 @@ const CodeHighlight = ({ children: codeString, className: language }) => {
     switch (language) {
       case 'typescript':
         return <SiTypescript size={18} color="#408ef5" />;
-      case 'tsx':
-        return <SiTypescript size={18} color="#408ef5" />;
-      case 'ts':
-        return <SiTypescript size={18} color="#408ef5" />;
-      case 'javascript':
-        return <DiJsBadge size={18} color="#f7df1e" />;
-      case 'js':
-        return <DiJsBadge size={18} color="#f7df1e" />;
-      case 'bash':
-        return <IoTerminal size={18} color="#57cc99" />;
-      case 'git':
-        return <FaGitAlt size={18} color="#57cc99" />;
-      case 'shell':
-        return <IoTerminal size={18} color="#57cc99" />;
-      case 'diff':
-        return <FaGitAlt size={18} color="#57cc99" />;
-      case 'jsx':
-        return <SiReact size={18} color="#61dafb" />;
-      case 'html':
-        return <SiHtml5 size={18} color="#ff9800" />;
-      case 'css':
-        return <SiCsswizardry size={18} color="#610094" />;
-      case 'json':
-        return <VscJson size={18} color="#e6ffed" />;
-      case 'prisma':
-        return <SiPrisma size={18} color="#57cc99" />;
       case 'python':
         return <SiPython size={18} color="#e10098" />;
       default:

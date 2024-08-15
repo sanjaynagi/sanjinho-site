@@ -17,7 +17,7 @@ import path from 'path';
 import readingTime from 'reading-time';
 
 import { getAllBlogPosts } from './index';
-import { DocumentHead, MDXComponents } from '../../src/components';
+import { BlogDocumentHead, MDXComponents } from '../../src/components';
 import imageMetadata from '../../src/utils/imageMetaData';
 import {
   ShareArticle,
@@ -51,7 +51,7 @@ export const getStaticProps = async ctx => {
 
   const {
     content,
-    data: { title, date, tag, canonicalUrl }
+    data: { title, date, tag, canonicalUrl, thumbnail }
   } = matter(postContent);
 
   return {
@@ -67,6 +67,7 @@ export const getStaticProps = async ctx => {
       timeToRead,
       allPosts,
       tag,
+      thumbnail,
       canonicalUrl
     }
   };
@@ -78,6 +79,7 @@ const BlogPostPage = ({
   source,
   timeToRead,
   tag,
+  thumbnail,
   allPosts,
   canonicalUrl
 }) => {
@@ -90,10 +92,11 @@ const BlogPostPage = ({
 
   return (
     <>
-      <DocumentHead
-        pageTitle={`${title} by Sanjay Curtis Nagi`}
+      <BlogDocumentHead
+        pageTitle={`${title}`}
         postPath={`/${slug}/`}
         canonicalUrl={canonicalUrl}
+        thumbnail={thumbnail}
       />
       <VStack spacing={8} alignItems="stetch" w="full" as="section" pt={28}>
         <VStack spacing={3} alignItems="flex-start">
