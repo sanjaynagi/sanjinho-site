@@ -1,5 +1,6 @@
 ---
 title: "Parantha reviews"
+shorttitle: "Parantha reviews"
 slug: "Paranthas-Are-The-Best"
 date: "03/30/2023"
 thumbnail: '/thumbnails/parantha.png'
@@ -7,7 +8,7 @@ tag: food
 canonicalUrl: 'https://sanjaycnagi.dev/blog/year-rewind-2020/'
 ---
 
-![parantha](/parantha_mj.png)
+![parantha](/blog/parantha_mj.png)
 *Parantha heaven.*
 
 Hello, fellow paratha/parantha/parotta enthusiasts! I'm here to share my thoughts 
