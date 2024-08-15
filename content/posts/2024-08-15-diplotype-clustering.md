@@ -17,7 +17,7 @@ In this blog post, we wanted to share a new function that we have recently added
 But what exactly are diplotypes, and why are they useful? A diplotype, sometimes referred to as a multi-locus genotype, is essentially the combination of two haplotypes from a single mosquito - one from each chromosome - at a particular genomic region. By analysing diplotypes rather than haplotypes, we can better capture the full genetic variation present in an individual, including complex structural variants like CNVs that can be difficult to phase onto haplotypes. Often, CNVs and multiallelic SNPs are ignored when analysing haplotype data. The more mosquitoes we sequence, the worse this problem gets - *An. gambiae s.l* is so genetically diverse, eventually, a significant proportion of all SNPs become multiallelic. 
 
 ![diplotype](/blog/diplotype.png)
-*Figure 1. Illustration of the relationship between diplotypes and haplotypes. Five points to whoever can guess the species of mosquito*
+*Figure 1. Illustration of the relationship between diplotypes and haplotypes*
 
 The new diplotype clustering functionality in `malariagen_data` performs hierarchical clustering on diplotypes from a specified genomic region. It then visualises the results, displaying:  
 
