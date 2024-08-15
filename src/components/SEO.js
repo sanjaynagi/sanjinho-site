@@ -46,6 +46,7 @@ const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
 
       <meta property="og:title" content={pageTitle} />
       <meta name="og:description" content={description} />
+      <meta name="og:image" content={socialBanner} />
       <meta name="og:image:alt" content={socialBanner} />
       <meta property="og:url" content={postPath ? postUrl : siteURL} />
       <meta property="og:type" content={postPath ? 'article' : 'website'} />
