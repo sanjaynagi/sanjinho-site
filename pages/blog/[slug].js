@@ -51,7 +51,7 @@ export const getStaticProps = async ctx => {
 
   const {
     content,
-    data: { title, date, tag, canonicalUrl, thumbnail }
+    data: { title, date, tag, canonicalUrl, thumbnail, shorttitle }
   } = matter(postContent);
 
   return {
@@ -68,6 +68,7 @@ export const getStaticProps = async ctx => {
       allPosts,
       tag,
       thumbnail,
+      shorttitle,
       canonicalUrl
     }
   };
@@ -80,6 +81,7 @@ const BlogPostPage = ({
   timeToRead,
   tag,
   thumbnail,
+  shorttitle,
   allPosts,
   canonicalUrl
 }) => {
@@ -97,6 +99,7 @@ const BlogPostPage = ({
         postPath={`/${slug}/`}
         canonicalUrl={canonicalUrl}
         thumbnail={thumbnail}
+        shorttitle={shorttitle}
       />
       <VStack spacing={8} alignItems="stetch" w="full" as="section" pt={28}>
         <VStack spacing={3} alignItems="flex-start">
