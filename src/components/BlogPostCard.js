@@ -15,7 +15,7 @@ import dayjs from 'dayjs';
 import TimeToRead from './BlogPostPage/TimeToRead';
 import PublishedDate from './BlogPostPage/PublishedDate';
 
-const BlogPostCard = ({ title, date, slug, thumbnail, timeToRead }) => {
+const BlogPostCard = ({ title, shorttitle, date, slug, thumbnail, timeToRead }) => {
   const [isMobile] = useMediaQuery('(max-width: 768px)');
   const bgColorHover = useColorModeValue('gray.200', 'gray.600');
   const textMode = useColorModeValue('black', 'white');
@@ -45,7 +45,7 @@ const BlogPostCard = ({ title, date, slug, thumbnail, timeToRead }) => {
               <Link href={`/blog/${slug}`} passHref>
                 <LinkOverlay>
                   <Text as="h2" fontSize="md" fontWeight="600" color={textMode}>
-                    {title}
+                    {shorttitle}
                   </Text>
                 </LinkOverlay>
               </Link>
@@ -66,7 +66,7 @@ const BlogPostCard = ({ title, date, slug, thumbnail, timeToRead }) => {
               <Link href={`/blog/${slug}`} passHref>
                 <LinkOverlay>
                   <Text as="h2" fontSize="lg" fontWeight="600" color={textMode}>
-                    {title}
+                    {shorttitle}
                   </Text>
                   <HStack
                     justifyContent="flex-start"

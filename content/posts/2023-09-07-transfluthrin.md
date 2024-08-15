@@ -1,5 +1,6 @@
 ---
 title: "My favourite polyfluorinated pyrethroid"
+shorttitle: "My favourite polyfluorinated pyrethroid"
 slug: "transfluthrin-resistance"
 date: "09/07/2023"
 thumbnail: '/thumbnails/tft.png'
@@ -7,7 +8,7 @@ tag: repellent
 canonicalUrl: 'https://sanjaycnagi.com/blog/transfluthrin-resistance/'
 ---
 
-![mosquito_shield](/mosquito-shield.jpg)        
+![mosquito_shield](/blog/mosquito-shield.jpg)        
 *Mosquito Shield™* - a novel transfluthrin-based spatial repellent product for the malaria vector control market (source: [SC Johnson](https://www.scjohnson.com/en/a-healthier-world/sc-johnson-combats-malaria))
 
 ---
@@ -21,7 +22,7 @@ Transfluthrin is a vapour-phase pyrethroid often used in domestic household prod
 As well as resulting in its high vapour pressure compared to common pyrethroids, the fluorination of transfluthrin may make it somewhat resistant to metabolic attack from Cytochrome P450s. Typically, pyrethroids are metabolised at the 4' position of the phenoxybenzyl ring. In Transfluthrin, however, the electro-negative fluorines pull electrons away from its benzyl ring, in theory preventing attack by electron-hungry cytochrome P450s. 
 
 ---
-![tft_metabolism](/tft_metabolism.png)  
+![tft_metabolism](/blog/tft_metabolism.png)  
 A figure from my thesis '*Mechanisms of resistance to transfluthrin in mosquitoes', 2017*, supervised by Dr. David Weetman and Dr. Mark Paine. 
 
 ---
@@ -37,7 +38,7 @@ Given that PBO should still synergise transfluthrin in most resistant mosquito s
 
 The "resistance-breaking" potential of transfluthrin doesn't end there. Although there is evidence that *Kdr* may reduce the sensitivity of mosquitoes to transfluthrin's repellent effects [[3]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4400042/) [[4]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8266078/), there are suggestions that *Kdr* mutations may not confer resistance to Transfluthrin and other poly-fluorinated pyrethroids, to the same degree as typical pyrethroids. A study showed that *Kdr* mutations in *Aedes aegypti* lead to lower levels of resistance to transfluthrin than with other pyrethroids [[5]](https://www.sciencedirect.com/science/article/pii/S0048357513001478), whilst other research has shown that House-fly *Super-Kdr* does not confer resistance to transfluthrin at all, potentially due to its shorter length [[6]](https://pubmed.ncbi.nlm.nih.gov/26691197/). 
 
-It has even been hypothesised that vapour-phase pyrethroids may bypass cuticular resistance, via direct entry to the nervous system through insect spiracles [[7]](https://link.springer.com/article/10.1007/s13355-016-0443-2). Together, the above factors result in low resistance ratios for transfluthrin when compared with standard pyrethroids [[8]](https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-021-04997-8#Sec7), something we have also found with a range of pyrethroid-resistant mosquito strains at the School of Tropical Medicine (unpublished). 
+It has even been hypothesised that vapour-phase pyrethroids may bypass cuticular resistance, via direct entry to the nervous system through insect spiracles [[7]](https://link.springer.com/article/10.1007/s13355-016-0443-2). Together, the above factors result in relatively low resistance ratios for transfluthrin when compared with standard pyrethroids [[8]](https://parasitesandvectors.biomedcentral.com/articles/10.1186/s13071-021-04997-8#Sec7), something we have also found with a range of pyrethroid-resistant mosquito strains at the School of Tropical Medicine (unpublished). It is important to note that resistance to transfluthrin is still likely to develop. 
 
 #### Spatial repellent mixtures?
 
