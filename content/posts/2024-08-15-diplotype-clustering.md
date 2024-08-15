@@ -31,9 +31,10 @@ The new diplotype clustering functionality in `malariagen_data` performs hierarc
 
 To illustrate the power of this approach, let's look at a case study of the *Gste2* gene from some recent whole-genome data of *An. gambiae s.l* from Obuasi, central Ghana (Figure 2). *Anopheles* mosquitoes from this area are highly resistant to multiple classes of insecticides [[1](https://bmcinfectdis.biomedcentral.com/articles/10.1186/s12879-022-07795-4)]. The *Gste2* gene is known to be involved in resistance to DDT (and potentially other insecticides), through either copy number variation [[2](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6673711/)], amino acid mutations [[3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3968025/)], or both. *Gste2*-I114T and *Gste2*-L119V are the major amino acid mutations at this locus known to confer resistance.
 
-Here is an example of how to use the [plot_diplotype_clustering_advanced()](https://malariagen.github.io/malariagen-data-python/latest/generated/malariagen_data.ag3.Ag3.plot_diplotype_clustering_advanced.html#malariagen_data.ag3.Ag3.plot_diplotype_clustering_advanced) function:
+Here is an example of how to use the [plot_diplotype_clustering_advanced()](https://malariagen.github.io/malariagen-data-python/latest/generated/malariagen_data.ag3.Ag3.plot_diplotype_clustering_advanced.html#malariagen_data.ag3.Ag3.plot_diplotype_clustering_advanced) function:  
 
-``` language-python
+
+``` python
 ag3.plot_diplotype_clustering_advanced(
     region="3R:28,597,000-28,600,000",         # The genomic region for clustering
     cnv_region="3R:28,594,000-28,605,000",     # The genomic region for CNV data
@@ -44,7 +45,12 @@ ag3.plot_diplotype_clustering_advanced(
     linkage_method="complete",                 # The linkage method to use
     color="taxon",                             # The metadata column to determine color
     )
-```
+```  
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
 
 There are many more optional parameters for the user to configure - see the [API docs](https://malariagen.github.io/malariagen-data-python/latest/generated/malariagen_data.ag3.Ag3.plot_diplotype_clustering_advanced.html#malariagen_data.ag3.Ag3.plot_diplotype_clustering_advanced) for more information. Here is the figure it produces:
 
