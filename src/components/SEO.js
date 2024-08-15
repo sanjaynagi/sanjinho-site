@@ -52,10 +52,10 @@ const DocumentHead = ({ pageTitle, postPath, canonicalUrl }) => {
       <meta property="og:type" content={postPath ? 'article' : 'website'} />
       <meta property="og:site_name" content="Sanjay C Nagi's personal site" />
 
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:site" content={shortname} />
-      <meta property="twitter:title" content="Sanjay C Nagi's personal website" />
-      <meta property="twitter:description" content={description} />
+      <meta name="twitter:card" content={`${siteURL}${socialBanner}`} />
+      <meta name="twitter:site" content={shortname} />
+      <meta name="twitter:title" content="Sanjay C Nagi's personal website" />
+      <meta name="twitter:description" content={description} />
       <meta property="twitter:image" content={`${siteURL}${socialBanner}`} />
     </Head>
   );
