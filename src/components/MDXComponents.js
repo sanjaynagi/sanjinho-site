@@ -24,7 +24,7 @@ import {
   SiCsswizardry,
   SiPrisma,
   SiTypescript,
-  SiGraphql
+  SiPython
 } from 'react-icons/si';
 import { VscJson } from 'react-icons/vsc';
 
@@ -113,8 +113,8 @@ const CodeHighlight = ({ children: codeString, className: language }) => {
         return <VscJson size={18} color="#e6ffed" />;
       case 'prisma':
         return <SiPrisma size={18} color="#57cc99" />;
-      case 'graphql':
-        return <SiGraphql size={18} color="#e10098" />;
+      case 'python':
+        return <SiPython size={18} color="#e10098" />;
       default:
         break;
     }
