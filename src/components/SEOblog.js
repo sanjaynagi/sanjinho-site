@@ -14,6 +14,8 @@ const BlogDocumentHead = ({ pageTitle, postPath, canonicalUrl, thumbnail }) => {
     postUrl = `${siteURL}${postPath}/`;
   }
 
+  pageTitle = pageTitle.substring(0, 65);
+
   return (
     <Head>
       <title>{pageTitle}</title>
