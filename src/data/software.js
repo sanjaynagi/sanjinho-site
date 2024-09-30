@@ -44,4 +44,11 @@ export const SoftwareList = [
     href: 'https://github.com/sanjaynagi/AnoPrimer',
     githubIcon: true
   },
+  {
+    id: '8',
+    title: '🦴 ancIBD 🦴',
+    description: `A python package to identify segments of identity by descent in ancient DNA`,
+    href: 'https://github.com/hringbauer/ancIBD',
+    githubIcon: true
+  },
 ];
