@@ -1,8 +1,9 @@
-import { Box, Stack, VStack, Heading, Text, HStack } from '@chakra-ui/react';
+import { Box, Stack, VStack, Heading, Text, HStack, useMediaQuery } from '@chakra-ui/react';
 import HeroImage from "./HeroImage"
 import ContactIcons from './ContactIcons';
 
 const Hero = () => {
+  const [isMobile] = useMediaQuery('(max-width: 768px)');
   return (
     <Box pt={28}>
       <Stack 
@@ -21,12 +22,22 @@ const Hero = () => {
             justifyContent={{ base: 'space-between', md: 'flex-start' }}
             alignItems="center"
           >
-            <HStack width="100%" justifyContent={'space-between'}>
+          {isMobile ? (
+            <VStack width="100%" justifyContent={'space-between'}>
               <Heading size="lg" as="h1">
                 Hey, I&apos;m Sanjay
               </Heading>     
               <HeroImage />
-            </HStack>
+            </VStack>  
+          ) : (
+            <HStack width="100%" justifyContent={'space-between'}>
+              <Heading size="lg" as="h1">
+                 Hey, I&apos;m Sanjay
+              </Heading>     
+              <HeroImage />
+             </HStack>  
+            )
+          }
           </Stack>
           <Text lineHeight="175%" as="h2" fontSize="lg">
             I&apos;m a Post-Doc studying genomics of the major malaria mosquito, <em>Anopheles gambiae </em> 
