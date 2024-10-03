@@ -12,6 +12,7 @@ import LatestPostsSection from './LatestPostsSection';
 import DocumentHead from './SEO';
 import BlogDocumentHead from './SEOblog';
 import TagsSummary from './TagSummary';
+import useBetterMediaQuery from './BetterMediaQuery';
 
 export {
   MainLayout,
@@ -27,5 +28,6 @@ export {
   LatestPostsSection,
   DocumentHead,
   BlogDocumentHead,
-  TagsSummary
+  TagsSummary,
+  useBetterMediaQuery
 };
