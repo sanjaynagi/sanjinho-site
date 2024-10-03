@@ -1,9 +1,10 @@
-import { Box, Stack, VStack, Heading, Text, HStack, useMediaQuery } from '@chakra-ui/react';
+import { Box, Stack, VStack, Heading, Text, HStack } from '@chakra-ui/react';
+import useBetterMediaQuery from './BetterMediaQuery';
 import HeroImage from "./HeroImage"
 import ContactIcons from './ContactIcons';
 
 const Hero = () => {
-  const [isMobile] = useMediaQuery('(max-width: 768px)');
+  const isMobile = useBetterMediaQuery('(max-width: 768px)');
   return (
     <Box pt={28}>
       <Stack 
