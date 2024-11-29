@@ -1,0 +1,38 @@
+---
+title: Karyotyping chromosomal inversions in malariagen_data
+shorttitle: Karyotyping chromosomal inversions in malariagen_data
+slug: karyotyping
+date: 11/28/2024
+thumbnail: '/thumbnails/chrom.png'
+tag: malariagen_data
+canonicalUrl: 'https://sanjaycnagi.com/blog/karyotyping/'
+---
+
+Chromosomal inversions, where a region of a chromosome is flipped, play an important role in the evolution of malaria vectors, influencing their ability to exploit ecological niches and potentially affecting their ability to transmit parasites and tolerate insecticide exposure.
+
+The Vector Observatory's malariagen_data package itself continues to evolve, providing researchers with powerful tools for accessing and analyzing genomic datasets from major malaria vectors. A recent addition to this toolkit is a karyotyping method that allows users to determine the karyotype of specimens in the Vector Observatory by genotyping inversion tagging SNPs. Here I plot karyotype frequencies of the samples in the ag3 resource. 
+
+<HTMLPlot
+  title="2La frequencies in Ag3"
+  pathname="/blog/2La.html"
+/>
+
+#### Usage of karyotyping in malariagen_data
+
+The functionality uses tagging SNPs from [compkaryo](https://doi.org/10.1534/g3.119.400445). Previously, the tool only reported the positions of the tagging SNPs, which meant that you could be counting the wrong allele at multi-allelic sites. I've now found the exact alternate alleles, making the estimates more robust.
+
+Here's an example of how to use the new karyotyping function in malariagen_data:
+
+```python
+df_karyo = ag3.karyotype(
+    inversion="2La",  # Inversions to analyze
+    sample_sets="1244-VO-GH-YAWSON-VMF00149",  # The sample set
+    sample_query=None
+)
+
+df_karyo.head()
+```
+
+I hope this is a useful addition for users of malariagen_data! Any questions or feedback, please get in [touch](mailto:sanjay.c.nagi@gmail.com).
+
+*Thank you to Anastasia Hernandez-Koutoucheva and Alistair Miles for the code to plot pie charts with Bokeh!* 
