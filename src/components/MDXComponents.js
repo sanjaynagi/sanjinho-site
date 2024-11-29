@@ -14,7 +14,6 @@ import { mode } from '@chakra-ui/theme-tools';
 import NextImage from 'next/image';
 import slugify from 'slugify';
 import Highlight, { defaultProps } from 'prism-react-renderer';
-import dracula from 'prism-react-renderer/themes/dracula';
 import { IoClipboardOutline } from 'react-icons/io5';
 import HTMLPlot from './HTMLPlot';
 import {
@@ -66,30 +65,93 @@ const CopyButton = ({ value }) => {
       role="button"
       onClick={onCopy}
       fontSize="md"
-      mr={2}
+      mr={1}
       p={1}
       bgColor="#202020"
     >
-      <IoClipboardOutline size={14} color="white" />
+      <IoClipboardOutline size={20} color="ffffff" />
     </Button>
   );
 };
-
 const CodeHighlight = ({ children: codeString, className }) => {
   const language = className ? className.replace('language-', '') : 'text';
   const showLanguage = () => {
     switch (language) {
       case 'typescript':
-        return <SiTypescript size={18} color="#408ef5" />;
+        return <SiTypescript size={18} color="#ffffff" />;
       case 'python':
-        return <SiPython size={18} color="#e10098" />;
+        return <SiPython size={18} color="#ffffff" />;
       default:
         break;
     }
   };
-  const theme = dracula;
+
+  // Custom theme with dark teal background and white text
+  const customTheme = {
+    plain: {
+      backgroundColor: '#014d4e',  // Dark teal background
+      color: '#ffffff'             // White text
+    },
+    styles: [
+      {
+        types: ['comment', 'prolog', 'doctype', 'cdata'],
+        style: {
+          color: '#88A0A8'
+        }
+      },
+      {
+        types: ['namespace'],
+        style: {
+          opacity: 0.7
+        }
+      },
+      {
+        types: ['string', 'attr-value'],
+        style: {
+          color: '#9EEAF9'
+        }
+      },
+      {
+        types: ['punctuation', 'operator'],
+        style: {
+          color: '#E6E6E6'
+        }
+      },
+      {
+        types: ['entity', 'url', 'symbol', 'number', 'boolean', 'variable', 'constant', 'property', 'regex', 'inserted'],
+        style: {
+          color: '#85E89D'
+        }
+      },
+      {
+        types: ['atrule', 'keyword', 'attr-name', 'selector'],
+        style: {
+          color: '#FF8FA3'
+        }
+      },
+      {
+        types: ['function', 'deleted', 'tag'],
+        style: {
+          color: '#79C0FF'
+        }
+      },
+      {
+        types: ['function-variable'],
+        style: {
+          color: '#79C0FF'
+        }
+      },
+      {
+        types: ['tag', 'selector', 'keyword'],
+        style: {
+          color: '#FF8FA3'
+        }
+      }
+    ]
+  };
+
   const lineNumberColor = 'whiteAlpha.500';
-  const preBackground = 'gray.900';
+  const preBackground = 'transparent'; // Changed to transparent to let theme background show
   const showLineNumbers = !['shell', 'text'].includes(language);
 
   return (
@@ -97,7 +159,7 @@ const CodeHighlight = ({ children: codeString, className }) => {
       {...defaultProps}
       code={codeString}
       language={language}
-      theme={theme}
+      theme={customTheme}
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => {
         tokens.pop();
@@ -105,7 +167,7 @@ const CodeHighlight = ({ children: codeString, className }) => {
           <div data-language={className}>
             <chakra.pre
               className={className}
-              sx={{ ...style, backgroundColor: preBackground }}
+              sx={{ ...style }}
               overflowX="auto"
               borderRadius="md"
               p={2}
