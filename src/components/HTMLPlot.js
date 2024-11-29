@@ -21,34 +21,30 @@ const HTMLPlot = ({
   const handleResize = () => {
     if (typeof window !== 'undefined') {
       origin = window.location.origin
-      console.log(origin.concat(pathname))
     }
 
+    // Calculate available width considering margins
+    let availableWidth
     if (window.innerWidth >= 1280) {
-      setLayout({
-        ...layout,
-        width: `${762 + 48 * 2}px`,
-        height: `${(762 + 48 * 2) * (height_numeric / width_numeric)}px`,
-        scale_change_str: `scale(${(762 + 48 * 2) / width_numeric})`,
-        shift: `${-48}px`,
-      })
+      availableWidth = 762 + 48 * 2
     } else if (window.innerWidth >= 768) {
-      setLayout({
-        ...layout,
-        width: `${672 + 48 * 2}px`,
-        height: `${(672 + 48 * 2) * (height_numeric / width_numeric)}px`,
-        scale_change_str: `scale(${(672 + 48 * 2) / width_numeric})`,
-        shift: `${-48}px`,
-      })
+      availableWidth = 672 + 48 * 2
     } else {
-      setLayout({
-        ...layout,
-        width: `${window.innerWidth}px`,
-        height: `${window.innerWidth * (height_numeric / width_numeric)}px`,
-        scale_change_str: `scale(${window.innerWidth / width_numeric})`,
-        shift: `${window.innerWidth >= 640 ? -48 : -32}px`,
-      })
+      availableWidth = window.innerWidth - (window.innerWidth >= 640 ? 96 : 64)
     }
+
+    // Calculate scale factor
+    const scale = availableWidth / width_numeric
+    
+    // Calculate new height maintaining aspect ratio
+    const scaledHeight = height_numeric * scale
+
+    setLayout({
+      width: `${availableWidth}px`,
+      height: `${scaledHeight}px`,
+      scale_change_str: `scale(${scale})`,
+      shift: `${window.innerWidth >= 640 ? -48 : -32}px`,
+    })
   }
 
   useEffect(() => {
@@ -67,6 +63,7 @@ const HTMLPlot = ({
         width: layout.width,
         height: layout.height,
         marginLeft: layout.shift,
+        marginRight: layout.shift,
       }}
     >
       <iframe
@@ -78,10 +75,13 @@ const HTMLPlot = ({
           transform: layout.scale_change_str,
           transformOrigin: '0px 0px',
           border: '0',
+          position: 'relative',
+          top: '0',
+          left: '0',
         }}
       ></iframe>
     </div>
   )
 }
 
-export default HTMLPlot;
+export default HTMLPlot
