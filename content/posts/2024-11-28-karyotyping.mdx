@@ -25,7 +25,7 @@ You can see that the 2La karyotype (in green) is at higher frequencies as you mo
 
 #### Usage of karyotyping in malariagen_data
 
-The functionality uses tagging SNPs from [compkaryo](https://doi.org/10.1534/g3.119.400445). Previously, the tool only reported the positions of the tagging SNPs, which meant that you could be counting the wrong allele at multi-allelic sites. I've now found the exact alternate alleles, making the estimates more robust.
+The functionality uses tagging SNPs from [compkaryo](https://doi.org/10.1534/g3.119.400445). Previously, the tool only reported the positions of the tagging SNPs, which would cause issues at sites which are multi-allelic - we would not know which alternate allele is the inversion tagging SNP. I've now found the exact alternate alleles, making the estimates more robust.
 
 Here's an example of how to use the new karyotyping function in malariagen_data:
 
