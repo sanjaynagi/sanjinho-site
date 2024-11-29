@@ -27,10 +27,15 @@ import {
   Tag,
 } from '../../src/components/BlogPostPage';
 
-export const readBlogPost = async slug => {
-  const postPath = path.join(process.cwd(), './content/posts', `${slug}.md`);
+export const readBlogPost = async (slug) => {
+  const mdPath = path.join(process.cwd(), './content/posts', `${slug}.md`);
+  const mdxPath = path.join(process.cwd(), './content/posts', `${slug}.mdx`);
 
-  return await fs.readFile(postPath, 'utf8');
+  try {
+    return await fs.readFile(mdPath, 'utf8');
+  } catch {
+    return await fs.readFile(mdxPath, 'utf8');
+  }
 };
 
 export const getStaticPaths = async () => {

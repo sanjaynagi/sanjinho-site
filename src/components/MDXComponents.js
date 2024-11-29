@@ -15,7 +15,8 @@ import NextImage from 'next/image';
 import slugify from 'slugify';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import dracula from 'prism-react-renderer/themes/dracula';
-import { IoClipboardOutline, IoTerminal } from 'react-icons/io5';
+import { IoClipboardOutline } from 'react-icons/io5';
+import HTMLPlot from './HTMLPlot';
 import {
   SiTypescript,
   SiPython
@@ -74,8 +75,8 @@ const CopyButton = ({ value }) => {
   );
 };
 
-const CodeHighlight = ({ children: codeString, className: language }) => {
-  language = language.replace('language-', '');
+const CodeHighlight = ({ children: codeString, className }) => {
+  const language = className ? className.replace('language-', '') : 'text';
   const showLanguage = () => {
     switch (language) {
       case 'typescript':
@@ -260,7 +261,8 @@ const MDXComponents = {
         w="unset"
       />
     </Box>
-  )
+  ),
+  HTMLPlot,
 };
 
 export default MDXComponents;

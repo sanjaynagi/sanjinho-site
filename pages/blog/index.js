@@ -16,7 +16,7 @@ export const getAllBlogPosts = async () => {
   await Promise.all(
     blogPosts.map(async post => {
       const postPath = path.join(dir, post);
-      const slug = post.replace('.md', '');
+      const slug = post.replace(/\.(md|mdx)$/, '');
       const fileContent = await fs.readFile(postPath, 'utf8');
 
       const { text: timeToRead } = readingTime(fileContent);
