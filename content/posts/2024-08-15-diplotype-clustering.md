@@ -66,6 +66,6 @@ We also observe a small cluster of individuals (cluster A) which harbour a copy 
 
 This case study demonstrates how diplotype clustering can provide insights into the mutations causing insecticide resistance; in a single snapshot, we can explore amino acid and CNV data and really understand the nature of selection at a genomic region. 
 
-We hope that others will find it useful for their own research. Please feel free to [get in touch](mailto:sanjay.c.nagi@gmail.com?subject=diplotype-clustering) if you have any questions or feedback :)
+We hope that others will find it useful for their own research. If you use diplotype clustering in your own research, please cite [this paper where the method was first published](https://doi.org/10.1093/molbev/msae140). Please feel free to [get in touch](mailto:sanjay.c.nagi@gmail.com?subject=diplotype-clustering) if you have any questions or feedback :)
 
 [Sanjay C Nagi](https://www.sanjaycnagi.com/) & [Alistair Miles](https://alimanfoo.github.io/)
