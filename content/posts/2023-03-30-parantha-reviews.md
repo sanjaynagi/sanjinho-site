@@ -43,14 +43,7 @@ There are many options, and (aloo) paranthas were quite delicious!
 
 Rating 7.8/10
 
----
+**Amritsari Naan stall, Banga, Punjab**
+Delicious and cheap, made in the tandoor. 3 minute walk from the house. love it. 
 
-the fun bit of this blog post will arrive in October, when I travel to my family home in Punjab, India, with my brother, sister and father. I'm super excited, not only for Paranthas, but because it will be the first time we have all visited together since I was 3 years old (26 years ago!). I'll be sure to update this post with my tales of deliciousness!
-
-
-#### Hindi 
-
-(*I'm learning Hindi, so I thought I'd try translating this post for my homework*)
-
-Main hindi seekh raha hu, ki main translate . 
-
+Rating 9/10
