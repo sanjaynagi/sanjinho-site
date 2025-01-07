@@ -8,6 +8,8 @@ tag: llm
 canonicalUrl: 'https://sanjaycnagi.com/blog/claude-ai-hindi/'
 ---
 
+![punjab](/blog/punjab.jpeg)
+
 As I am writing this, I'm sat in the back of my cousins car, driving through the chaotic, cacophonous streets of Ludhiana, a large, sprawling city in the heart of the Indian state of Punjab. I am midway through a trip to visit family here, a trip that I tend to make every year or two. My father moved to England from Punjab in the early 1980s. It was only ever intended to be a temporary visit, but there he has remained ever since, building a life, career and family, far away from home. Whilst we visited India when we were young, me and my siblings never had the chance to learn our father's two native tongues, Punjabi and Hindi. This was something I have always felt compelled to address. 
 
 Since submitting my [PhD thesis](https://archive.lstmed.ac.uk/23310/) two years ago, I've been learning Hindi, primarily through online tutoring on [Preply](https://preply.com/). Progress has been steady, despite the fact I'm terrible at doing homework set by my tutor (if you are reading, I’m sorry, Shivaani!). I've recently found a tool, however, which has revolutionised my learning - using an large language model, Claude, as a personal language tutor and learning companion. 

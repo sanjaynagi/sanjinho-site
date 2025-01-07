@@ -12,12 +12,12 @@ import { InternalLink, DocumentHead, ContactMe } from '../src/components';
 const InterestsList = () => {
   return (
     <UnorderedList pl={6} spacing={2}>
-      <ListItem>music</ListItem>
-      <ListItem>the great outdoors (trail-running, camping, hiking, the all-trails app)</ListItem>
-      <ListItem>sports (cricket, football, tennis, darts)</ListItem>
-      <ListItem>meditation</ListItem>
-      <ListItem>food</ListItem>
-      <ListItem>the universal human spirit</ListItem>
+      <ListItem>Music</ListItem>
+      <ListItem>The Great Outdoors (trail-running, camping, hiking, <strong>the all-trails app</strong>)</ListItem>
+      <ListItem>Sports (cricket, football, tennis, darts)</ListItem>
+      <ListItem>Meditation</ListItem>
+      <ListItem>Food</ListItem>
+      <ListItem>The Communal Human Spirit</ListItem>
     </UnorderedList>
   );
 };
