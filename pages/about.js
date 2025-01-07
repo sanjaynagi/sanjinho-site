@@ -3,10 +3,24 @@ import {
   Heading,
   Text,
   Link,
+  UnorderedList,
+  ListItem,
   Image
 } from '@chakra-ui/react';
 import { InternalLink, DocumentHead, ContactMe } from '../src/components';
 
+const InterestsList = () => {
+  return (
+    <UnorderedList pl={6} spacing={2}>
+      <ListItem>Music</ListItem>
+      <ListItem>The Great Outdoors (trail-running, camping, hiking, <strong>the all-trails app</strong>)</ListItem>
+      <ListItem>Sports (cricket, football, tennis, darts)</ListItem>
+      <ListItem>Meditation</ListItem>
+      <ListItem>Food</ListItem>
+      <ListItem>The Communal Human Spirit</ListItem>
+    </UnorderedList>
+  );
+};
 
 const AboutPage = () => {
   return (
@@ -26,6 +40,10 @@ const AboutPage = () => {
         malaria control programmes. I enjoy developing open-source computational tools that can aid the community and empower researchers 
         to analyse their own data.
         </Text>
+        <Text>In no particular order, I enjoy these a lot:</Text>
+
+        <InterestsList></InterestsList>
+        
         <Text>Feel free to explore some of the <InternalLink href="/software" color="teal" p="0">software tools</InternalLink> I&apos;ve developed, 
         or <InternalLink href="/publications" color="teal" p="0">publications</InternalLink> I&apos;ve contributed to.
         </Text>

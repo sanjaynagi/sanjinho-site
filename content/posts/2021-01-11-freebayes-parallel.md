@@ -1,8 +1,8 @@
 ---
-title: "Parallelising freebayes with snakemake"
-shorttitle: "Parallelising freebayes with snakemake"
-slug: "parallelising-freebayes-with-snakemake"
-date: "11/01/2021"
+title: Parallelising freebayes with snakemake
+shorttitle: Parallelising freebayes with snakemake
+slug: parallelising-freebayes-with-snakemake
+date: 11/01/2021
 thumbnail: '/thumbnails/snakemake.png'
 tag: genetics
 canonicalUrl: 'https://sanjaycnagi.com/blog/parallelising-freebayes-with-snakemake/'
