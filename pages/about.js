@@ -14,7 +14,7 @@ const InterestsList = () => {
     <UnorderedList pl={6} spacing={2}>
       <ListItem>Music</ListItem>
       <ListItem>The Great Outdoors (trail-running, camping, hiking, <strong>the all-trails app</strong>)</ListItem>
-      <ListItem>Sports (cricket, football, tennis, darts)</ListItem>
+      <ListItem>Sports (football, tennis, darts, cricket, <strong>the cricinfo app</strong>)</ListItem>
       <ListItem>Meditation</ListItem>
       <ListItem>Food</ListItem>
       <ListItem>The Communal Human Spirit</ListItem>
