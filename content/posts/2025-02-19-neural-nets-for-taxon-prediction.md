@@ -34,8 +34,6 @@ Using the TensorFlow and Keras libraries and free GPUs provided in Google Colab,
 
 So, pretty amazing that a neural network can classify 5 species with 100% accuracy. Or is it? well, it turns out that neural nets are kind of overkill for this problem. In fact, what I found in the Ag-vampIR/AmpSeeker paper, was that a simple decision tree using only four ancestry informative markers (AIMs) could predict the same taxa to a very high level. 
 
-![A decision tree for Anopheles gambiae species identification](/blog/decision-tree.png)
-
 The decision tree showed remarkable accuracy for most species: *An. gambiae* (F1 = 0.995), *An. coluzzii* (F1 = 0.995), *An. arabiensis* (F1 = 1.000), and *An. melas* (F1 = 1.000). It performed slightly less well for the Bissau form (F1 = 0.849), likely because this cryptic taxon harbors less consistent AIM genotypes compared to the other species. The discovery that just four SNPs can reliably distinguish malaria vector species demonstrates the power of leveraging large genomic datasets to find highly informative genetic markers. In theory, this approach could make molecular identification of mosquito species more accessible in resource-limited settings, improving our ability to target control efforts against the most problematic vectors.
 
 --- 
