@@ -1,0 +1,43 @@
+---
+title: Neural networks for taxon prediction
+shorttitle: Neural networks for taxon prediction
+slug: neural-nets-taxon
+date: 02/19/2025
+thumbnail: '/thumbnails/phylo.png'
+tag: deep-learning
+canonicalUrl: 'https://sanjaycnagi.com/blog/neural-networks-for-taxon-prediction/'
+---
+
+![A phylogenetic tree of the gambiae complex (left) and my tattoo of the five rivers of punjab (right), which share the same topology!!](/blog/tree-river.png)
+
+These two trees are topologically identical. One of them is a river system creating some of the most fertile land on earth, supporting a population of over 300 million people (admittedly, not in its correct orientation). And the other is a phylogenetic tree of the An. gambiae complex. One of them is also tattooed on my arm. extra points for if you can the rivers. 
+
+#### Anopheles gambiae; a *complex* world
+
+The major malaria mosquito *Anopheles gambiae*, is a species complex of at least seven recognised species, and at least four additional cryptic taxa. These different species have varying contributions to malaria transmission, with *An gambiae s.s*, *An. coluzzii* considered the most important vectors, followed by *An. arabiensis*. [Earlier research](https://doi.org/10.1126/science.1258524) showed that *gambiae* and *coluzzii* diverged from the rest of the complex approximately 2 million years ago.  
+
+![Range of species in the gambiae complex](/blog/range.png)
+
+*An. gambiae* sensu stricto and *An. coluzzii* are the primary malaria vectors across much of Africa due to their highly anthropophily (preferring human blood meals). *An. arabiensis* on the other hand, shows more flexible host preferences but remains an important vector, particularly in drier areas, where it tends to dominate. Meanwhile, *An. merus* and *An. melas* are salt-tolerant coastal species and minor vectors. *An. quadriannulatus* is zoophilic (prefers animal blood) and is thought to play virtually no role in malaria transmission despite being competent to carry the parasite. Despite these important phenotypic differences, these species are morphologically identical (you can't tell them apart even under a microscope).
+
+Traditionally, researchers have relied on molecular methods to identify members of the *An. gambiae* complex. The gold standard has been PCR-based assays targeting the ribosomal DNA intergenic spacer regions (IGS), developed by [Scott et al. in 1993](https://doi.org/10.4269/ajtmh.1993.49.520) and later refined by [Santolamazza et al. in 2008](https://doi.org/10.1186/1475-2875-7-163) with the SINE200 method. Importantly, both methods rely on single genetic loci, which can miss hybridization between species. Secondly, these methods cannot detect cryptic taxa, and in those cases provide incorrect species assignments.
+
+#### Neural networks for taxon prediction
+
+I've long been intrigued by the potential of machine learning to solve biological problems, however, most of this has been restricted to traditional machine learning methods, and not deep-learning. For our recent manuscript presenting a [platform for targeted genomic surveillance of vectors](https://doi.org/10.1101/2025.02.14.637727), I had been trying out some machine learning methods, but with Large language models (LLMs) demonstrating remarkable capabilities in so many fields, I thought it was finally time to code up a neural network of my own.
+
+Neural networks are computing systems inspired by the human brain's architecture. They consist of interconnected nodes ("neurons") organized in layers - an input layer that receives data, one or more hidden layers that process the information, and an output layer that produces the final result. Each connection between neurons has an associated weight, determining how much influence one neuron has on another. The network "learns" by adjusting these weights through a process called backpropagation, guided by a loss function that measures how far predictions deviate from known values.
+
+Using the TensorFlow and Keras libraries and free GPUs provided in Google Colab, I trained the network on ancestry informative markers within whole-genome sequence data from the Anopheles gambiae 1000 Genomes Project (Ag1000G). The neural network performed exceptionally well, achieving 100% accuracy in classifying all five species in the complex with sufficient numbers of samples: *An. gambiae*, *An. coluzzii*, *An. arabiensis*, *An. melas*, and the recently described Bissau molecular form.
+
+#### Four SNPs to Rule Them All, and in the Darkness, Predict Taxa
+
+So, pretty amazing that a neural network can classify 5 species with 100% accuracy. Or is it? well, it turns out that neural nets are kind of overkill for this problem. In fact, what I found in the Ag-vampIR/AmpSeeker paper, was that a simple decision tree using only four ancestry informative markers (AIMs) could predict the same taxa to a very high level. 
+
+![A decision tree for Anopheles gambiae species identification](/blog/decision-tree.png)
+
+The decision tree showed remarkable accuracy for most species: *An. gambiae* (F1 = 0.995), *An. coluzzii* (F1 = 0.995), *An. arabiensis* (F1 = 1.000), and *An. melas* (F1 = 1.000). It performed slightly less well for the Bissau form (F1 = 0.849), likely because this cryptic taxon harbors less consistent AIM genotypes compared to the other species. The discovery that just four SNPs can reliably distinguish malaria vector species demonstrates the power of leveraging large genomic datasets to find highly informative genetic markers. In theory, this approach could make molecular identification of mosquito species more accessible in resource-limited settings, improving our ability to target control efforts against the most problematic vectors.
+
+--- 
+
+And back to my opening question - the right image depicts the Five Rivers of Punjab (Jhelum, Chenab, Ravi, Beas, and Sutlej, tributaries of the Indus). The word Punjab literally means 'land of the five (panj) waters (ab)' The similar topology between these two systems - one representing my scientific work, and the other my cultural heritage - serves as a personal reminder of the unexpected connections we can find in nature.
