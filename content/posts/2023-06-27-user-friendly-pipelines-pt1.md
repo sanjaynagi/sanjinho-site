@@ -40,3 +40,5 @@ I and our collaborators at UVRI, Trevor Mugoya and Edward Lukyamezi, have recent
 </figure>
 
 I hope that others might find this a useful approach to building workflows. Exciting as it is, it now means I have the task of converting [rna-seq-pop](https://github.com/sanjaynagi/rna-seq-pop) to this way of workflow infrastructure! Wish me luck!
+
+2025 update: An example of the AmpSeeker results book is now online [here](https://sanjaynagi.github.io/agvampir002-results/intro.html)
