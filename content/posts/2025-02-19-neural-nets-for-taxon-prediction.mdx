@@ -62,19 +62,8 @@ So, pretty amazing that a neural network can classify 5 species with 100% accura
 
 The decision tree (Figure 3) showed remarkable accuracy for most species: *An. gambiae* (F1 = 0.995), *An. coluzzii* (F1 = 0.995), *An. arabiensis* (F1 = 1.000), and *An. melas* (F1 = 1.000). Although these SNPs were selected to distinguish between gambiae and coluzzi, it seems that they get fixed in different ways in the various species, allowing us to use these combinations to predict taxa. It performed slightly less well for the Bissau form (F1 = 0.849), likely because this cryptic taxon harbors less consistent AIM genotypes compared to the other species. 
 
-<center>
-  <figure>
-    <img
-      src="/blog/tree.svg"
-      alt="decision tree"
-      width="650"
-      height="650"
-    />
-    <figcaption>
-      Figure 3. A simplification of a decision tree for taxon prediction
-    </figcaption>
-  </figure>
-</center>
+![decision tree](/blog/tree.svg)
+Figure 3. A simplified representation of a decision tree trained on four AIMs to predict species in the Anopheles gambiae complex
 
 The discovery that just four SNPs can reliably distinguish malaria vector species demonstrates the power of leveraging large genomic datasets to find highly informative genetic markers. You can find the notebook for deep learning taxon prediction [here](https://colab.research.google.com/drive/1rcanKIJyD5Pnzg_17HCBUuVeIWe5QA5j?usp=sharing).
 
