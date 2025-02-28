@@ -54,7 +54,7 @@ I've long been intrigued by the potential of machine learning to solve biologica
 
 Neural networks are computing systems inspired by the human brain's architecture. They consist of interconnected nodes ("neurons") organized in layers - an input layer that receives data, one or more hidden layers that process the information, and an output layer that produces the final result. Each connection between neurons has an associated weight, determining how much influence one neuron has on another. The network "learns" by adjusting these weights through a process called backpropagation, guided by a loss function that measures how far predictions deviate from known values.
 
-Using free GPUs provided in Google Colab, alongside the TensorFlow and Keras libraries, I trained the network on ancestry informative markers within whole-genome sequence data from the Anopheles gambiae 1000 Genomes Project (Ag1000G). The neural network performed exceptionally well, achieving 100% accuracy in classifying all five species in the complex with sufficient numbers of samples: *An. gambiae*, *An. coluzzii*, *An. arabiensis*, *An. melas*, and the recently described Bissau molecular form.
+Using free GPUs provided in Google Colab, alongside the TensorFlow and Keras libraries, I trained the network on ancestry informative markers within whole-genome sequence data from the Anopheles gambiae 1000 Genomes Project (Ag1000G). The neural network performed exceptionally well, achieving 100% accuracy in classifying all five species in the complex with sufficient numbers of samples: *An. gambiae*, *An. coluzzii*, *An. arabiensis*, *An. melas*, and the recently described Bissau molecular form. You can find the notebook for deep learning taxon prediction [here](https://colab.research.google.com/drive/1rcanKIJyD5Pnzg_17HCBUuVeIWe5QA5j?usp=sharing).
 
 #### Four SNPs to Rule Them All, and in the Darkness, Predict Taxa
 
@@ -65,7 +65,7 @@ The decision tree (Figure 3) showed remarkable accuracy for most species: *An. g
 ![decision tree](/blog/tree.svg)
 Figure 3. A simplified representation of a decision tree trained on four AIMs to predict species in the Anopheles gambiae complex
 
-The discovery that just four SNPs can reliably distinguish malaria vector species demonstrates the power of leveraging large genomic datasets to find highly informative genetic markers. You can find the notebook for deep learning taxon prediction [here](https://colab.research.google.com/drive/1rcanKIJyD5Pnzg_17HCBUuVeIWe5QA5j?usp=sharing).
+The discovery that just four SNPs can reliably distinguish malaria vector species demonstrates the power of leveraging large genomic datasets to find highly informative genetic markers.
 
 --- 
 
