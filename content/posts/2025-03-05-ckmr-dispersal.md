@@ -1,6 +1,6 @@
 ---
-title: "AnoKin: Using genomics to estimating dispersal in malaria mosquitoes"
-shorttitle: "AnoKin: Using genomics to estimating dispersal in malaria mosquitoes"
+title: "AnoKin: Using genomics to estimate dispersal in malaria mosquitoes"
+shorttitle: "AnoKin: Using genomics to estimate dispersal in malaria mosquitoes"
 slug: anokin-ckmr-dispersal
 date: 03/05/2025
 thumbnail: '/thumbnails/dispersal.png'
