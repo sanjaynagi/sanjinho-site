@@ -11,7 +11,7 @@ export const getRecentBlogPosts = async () => {
 
   const recentPosts = posts
     .sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
-    .slice(0, 10);
+    .slice(0, 5);
 
   return recentPosts;
 };
