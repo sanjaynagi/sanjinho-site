@@ -1,6 +1,6 @@
 ---
 title: "AnoKin: Using genomics to estimate dispersal in malaria mosquitoes"
-shorttitle: "AnoKin: a close-kin mark-recapture study
+shorttitle: "AnoKin: a close-kin mark-recapture study"
 slug: anokin-ckmr-dispersal
 date: 03/05/2025
 thumbnail: '/thumbnails/dispersal.png'
