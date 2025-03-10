@@ -8,9 +8,11 @@ tag: ckmr, dispersal
 canonicalUrl: 'https://sanjaycnagi.com/blog/anokin-ckmr-dispersal/'
 ---
 
-Despite hundreds of years of research, we do not understand how far the malaria mosquito can fly.
+![anokin logo](/blog/anokin-logo.png)
 
 ---
+
+Despite hundreds of years of research, we do not understand how far the malaria mosquito can fly.
 
 This is challenging for many reasons. How can we design a cluster randomised controlled trial (cRCT), without knowing if mosquitoes will fly from a control cluster into an intervention cluster? How can we model the spread of gene drives without knowing how far a single mosquito could transport the drive? 
 
