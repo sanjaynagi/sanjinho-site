@@ -11,7 +11,7 @@ export const SoftwareList = [
     id: '6',
     title: ' 🌍 The malaria vector selection atlas 🌍',
     description: `A web resource of selection signals in An. gambiae s.l mosquitoes from phase 3 of the Anopheles 1000 genomes project`,
-    href: 'https://anopheles-genomic-surveillance.github.io/selection-atlas/home-page.html',
+    href: 'https://anopheles-genomic-surveillance.github.io/selection-atlas/',
     githubIcon: true
   },
   {
