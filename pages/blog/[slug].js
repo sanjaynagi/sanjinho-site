@@ -17,7 +17,7 @@ import path from 'path';
 import readingTime from 'reading-time';
 
 import { getAllBlogPosts } from './index';
-import { BlogDocumentHead, MDXComponents } from '../../src/components';
+import { BlogDocumentHead, MDXComponents, Comments } from '../../src/components';
 import imageMetadata from '../../src/utils/imageMetaData';
 import {
   ShareArticle,
@@ -129,10 +129,7 @@ const BlogPostPage = ({
         <Center>
         </Center>
         <MDXRemote {...source} components={MDXComponents} />
-        {/* Share article on Twitter */}
-        <HStack justifyContent="center" pt="10">
-          <ShareArticle title={title} slug={slug} />
-        </HStack>
+        <Comments/>
         <Divider />
         {/* Article Navigator */}
         <ArticleNavigator

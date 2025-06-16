@@ -13,6 +13,7 @@ import DocumentHead from './SEO';
 import BlogDocumentHead from './SEOblog';
 import TagsSummary from './TagSummary';
 import useBetterMediaQuery from './BetterMediaQuery';
+import Comments from './Comments';
 
 export {
   MainLayout,
@@ -29,5 +30,6 @@ export {
   DocumentHead,
   BlogDocumentHead,
   TagsSummary,
-  useBetterMediaQuery
+  useBetterMediaQuery,
+  Comments
 };
