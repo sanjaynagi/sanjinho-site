@@ -39,7 +39,8 @@
     "react-photo-album": "^2.1.0",
     "reading-time": "^1.5.0",
     "slugify": "^1.6.4",
-    "unist-util-visit": "^4.1.0"
+    "unist-util-visit": "^4.1.0",
+    "utterances-react-component": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",

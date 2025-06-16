@@ -15,9 +15,10 @@ import { promises as fs } from 'fs';
 import path from 'path';
 
 import readingTime from 'reading-time';
+import { Utterances } from 'utterances-react-component';
 
 import { getAllBlogPosts } from './index';
-import { BlogDocumentHead, MDXComponents, Comments } from '../../src/components';
+import { BlogDocumentHead, MDXComponents } from '../../src/components';
 import imageMetadata from '../../src/utils/imageMetaData';
 import {
   ShareArticle,
@@ -129,7 +130,11 @@ const BlogPostPage = ({
         <Center>
         </Center>
         <MDXRemote {...source} components={MDXComponents} />
-        <Comments/>
+        <Utterances
+              repo="sanjaynagi/sanjinho-site"
+              theme="github-light"
+              issueTerm="pathname"
+            />        
         <Divider />
         {/* Article Navigator */}
         <ArticleNavigator
