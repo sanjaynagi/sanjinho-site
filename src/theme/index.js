@@ -30,6 +30,10 @@ const components = {
   }
 };
 
+const colors = {
+  twitter: '#1EA1F1'
+};
+
 const fonts = {
   heading: `Cal Sans, ${base.fonts.heading}`,
   body: `Inter, ${base.fonts.body}`
