@@ -53,12 +53,6 @@ const BlogDocumentHead = ({ pageTitle, postPath, canonicalUrl, thumbnail, shortt
       <meta property="og:url" content={postPath ? postUrl : siteURL} />
       <meta property="og:type" content={postPath ? 'article' : 'website'} />
       <meta property="og:site_name" content="Sanjay's blog" />
-
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content={shortname} />
-      <meta name="twitter:title" content={shorttitle} />
-      <meta name="twitter:description" content={description} />
-      <meta property="twitter:image" content={`${siteURL}${thumbnail}`} />
     </Head>
   );
 };

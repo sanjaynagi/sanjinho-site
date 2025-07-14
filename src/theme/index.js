@@ -14,10 +14,6 @@ const styles = {
   })
 };
 
-const colors = {
-  twitter: '#1EA1F1'
-};
-
 const components = {
   Heading: {
     variants: {
