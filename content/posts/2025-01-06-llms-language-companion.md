@@ -5,7 +5,7 @@ slug: claude-ai-hindi
 date: 01/06/2025
 thumbnail: '/thumbnails/hindi.png'
 tag: llm
-canonicalUrl: 'https://sanjaycnagi.com/blog/2025-01-06-claude-ai-hindi/'
+canonicalUrl: 'https://sanjaycnagi.com/blog/2025-01-06-llms-language-companion/'
 ---
 
 ![punjab](/blog/punjab.jpeg)
