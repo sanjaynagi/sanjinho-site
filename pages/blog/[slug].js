@@ -21,7 +21,6 @@ import { getAllBlogPosts } from './index';
 import { BlogDocumentHead, MDXComponents } from '../../src/components';
 import imageMetadata from '../../src/utils/imageMetaData';
 import {
-  ShareArticle,
   ArticleNavigator,
   TimeToRead,
   PublishedDate,
