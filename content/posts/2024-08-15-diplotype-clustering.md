@@ -5,7 +5,7 @@ slug: diplotype-clustering
 date: 08/15/2024
 thumbnail: /thumbnails/dendro.png
 tag: genetics 
-canonicalUrl: https://sanjaycnagi.com/blog/diplotype-clustering/
+canonicalUrl: https://sanjaycnagi.com/blog/2024-08-15-diplotype-clustering/
 ---
 
 Vectors of disease evolve rapidly in response to the interventions we throw at them. By monitoring genetic changes in these populations over time, we can detect emerging insecticide resistance mechanisms and monitor the spread of known mechanisms, with the aim of informing vector control strategies. In a world of limited active ingredients, this surveillance will be crucial for maintaining the effectiveness of front-line interventions like long-lasting insecticide-treated bed nets (LLINs) and indoor residual spraying (IRS).

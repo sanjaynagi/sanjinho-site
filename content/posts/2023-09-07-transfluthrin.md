@@ -5,7 +5,7 @@ slug: "transfluthrin-resistance"
 date: "09/07/2023"
 thumbnail: '/thumbnails/tft.png'
 tag: repellent 
-canonicalUrl: 'https://sanjaycnagi.com/blog/transfluthrin-resistance/'
+canonicalUrl: 'https://sanjaycnagi.com/blog/2023-09-07-transfluthrin-resistance/'
 ---
 
 ![mosquito_shield](/blog/mosquito-shield.jpg)        

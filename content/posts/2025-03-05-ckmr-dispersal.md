@@ -5,7 +5,7 @@ slug: anokin-ckmr-dispersal
 date: 03/05/2025
 thumbnail: '/thumbnails/dispersal.png'
 tag: ckmr, dispersal
-canonicalUrl: 'https://sanjaycnagi.com/blog/anokin-ckmr-dispersal/'
+canonicalUrl: 'https://sanjaycnagi.com/blog/2025-03-05-anokin-ckmr-dispersal/'
 ---
 
 ![anokin logo](/blog/anokin-logo.png)

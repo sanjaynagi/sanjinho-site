@@ -5,7 +5,7 @@ slug: "Paranthas-Are-The-Best"
 date: "03/30/2023"
 thumbnail: '/thumbnails/parantha.png'
 tag: food
-canonicalUrl: 'https://sanjaycnagi.dev/blog/year-rewind-2020/'
+canonicalUrl: 'https://sanjaycnagi.dev/blog/2023-03-30-parantha-reviews/'
 ---
 
 ![parantha](/blog/parantha_mj.png)

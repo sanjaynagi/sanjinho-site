@@ -5,7 +5,7 @@ slug: "Ultra-user-friendly-bioinformatics-pipelines-pt1"
 date: 06/25/2023
 thumbnail: '/thumbnails/jb.png'
 tag: snakemake
-canonicalUrl: 'https://sanjaycnagi.com/blog/ultra-user-friendly-bioinformatics-pipelines-pt1/'
+canonicalUrl: 'https://sanjaycnagi.com/blog/2023-06-27-ultra-user-friendly-bioinformatics-pipelines-pt1/'
 ---
 
 Workflow managers such as [Snakemake](https://snakemake.github.io/) and [Nextflow](https://www.nextflow.io/) are wonderful tools - they allow us to build complex pipelines to reproducibly analyse genomic data with relative ease. These workflows run command line tools or scripts, performing some processing and analysis on input data, and writing outputs, tables and figures to results directories for the user to explore. Interpreting these genomic analyses, however, can be challenging, particularly for those who are less familiar with computational biology. To compound that, bioinformatic pipelines rarely have sufficient documentation, if at all. 
