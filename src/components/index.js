@@ -13,6 +13,8 @@ import DocumentHead from './SEO';
 import BlogDocumentHead from './SEOblog';
 import TagsSummary from './TagSummary';
 import useBetterMediaQuery from './BetterMediaQuery';
+import PublicationCard from './PublicationCard';
+import PosterCard from './PosterCard';
 
 export {
   MainLayout,
@@ -24,6 +26,8 @@ export {
   ContactMe,
   ThemeToggleButton,
   BlogPostCard,
+  PublicationCard,
+  PosterCard,
   MDXComponents,
   LatestPostsSection,
   DocumentHead,
