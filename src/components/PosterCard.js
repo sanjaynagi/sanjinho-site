@@ -5,23 +5,23 @@ import {
   Text,
   LinkBox,
   LinkOverlay,
-  Image,
+  Icon,
   Badge,
   useColorModeValue
 } from '@chakra-ui/react';
+import { FaFilePdf } from 'react-icons/fa';
 import ExternalLink from './ExternalLink';
 
-const PublicationCard = ({
+const PosterCard = ({
   id,
   title,
   authors,
   year,
-  journal,
-  journalLogo,
-  doi
+  venue,
+  pdfPath
 }) => {
-  const bgColorStack = useColorModeValue('gray.200', 'teal.600');
-  const doiUrl = `https://doi.org/${doi}`;
+  const bgColorStack = useColorModeValue('purple.100', 'purple.700');
+  const iconColor = useColorModeValue('purple.600', 'purple.200');
 
   return (
     <LinkBox as="article">
@@ -37,20 +37,7 @@ const PublicationCard = ({
         transitionTimingFunction="ease-out"
         _hover={{ transform: 'scale(1.025, 1.025)' }}
       >
-        {journalLogo && (
-          <Image
-            src={journalLogo}
-            alt={`${journal} logo`}
-            w={20}
-            h={20}
-            objectFit="contain"
-            fallback={
-              <Badge colorScheme="teal" fontSize="sm" p={2}>
-                {journal}
-              </Badge>
-            }
-          />
-        )}
+        <Icon as={FaFilePdf} w={12} h={12} color={iconColor} />
         <VStack spacing={3} flex={1}>
           <VStack w="full" spacing={2}>
             <Stack
@@ -59,15 +46,14 @@ const PublicationCard = ({
               justifyContent={{ base: 'flex-start', md: 'space-between' }}
               alignItems={{ base: 'flex-start', md: 'center' }}
             >
-              <Heading fontSize="1.1rem" fontWeight="semibold">
-<<<<<<< HEAD
-                <LinkOverlay as={ExternalLink} href={doiUrl} color="gray.600" _hover={{ textDecoration: 'none' }}>
-=======
-                <LinkOverlay as={ExternalLink} href={doiUrl} color="gray.600">
->>>>>>> 69c310d81fa47f0c82491907f1ee61688e194659
+              <Heading size="md" fontWeight="semibold">
+                <LinkOverlay as={ExternalLink} href={pdfPath}>
                   {title}
                 </LinkOverlay>
               </Heading>
+              <Badge colorScheme="purple" variant="subtle">
+                {year}
+              </Badge>
             </Stack>
             <Text fontSize="sm" color="gray.600" w="full">
               {authors}
@@ -78,11 +64,11 @@ const PublicationCard = ({
               justifyContent="space-between"
               alignItems={{ base: 'flex-start', sm: 'center' }}
             >
-              <Text fontSize="xs" color="gray.600">
-                DOI: {doi}
+              <Text fontSize="sm" fontStyle="italic">
+                Presented at {venue}
               </Text>
-              <Badge colorScheme="blue" variant="subtle">
-                {year}
+              <Badge colorScheme="purple" variant="outline" size="sm">
+                POSTER
               </Badge>
             </Stack>
           </VStack>
@@ -92,4 +78,4 @@ const PublicationCard = ({
   );
 };
 
-export default PublicationCard;
+export default PosterCard;
