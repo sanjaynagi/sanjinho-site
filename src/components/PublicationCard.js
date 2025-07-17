@@ -60,11 +60,7 @@ const PublicationCard = ({
               alignItems={{ base: 'flex-start', md: 'center' }}
             >
               <Heading fontSize="1.1rem" fontWeight="semibold">
-<<<<<<< HEAD
                 <LinkOverlay as={ExternalLink} href={doiUrl} color="gray.600" _hover={{ textDecoration: 'none' }}>
-=======
-                <LinkOverlay as={ExternalLink} href={doiUrl} color="gray.600">
->>>>>>> 69c310d81fa47f0c82491907f1ee61688e194659
                   {title}
                 </LinkOverlay>
               </Heading>
