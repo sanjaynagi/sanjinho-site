@@ -20,7 +20,7 @@ const PublicationCard = ({
   journalLogo,
   doi
 }) => {
-  const bgColorStack = useColorModeValue('gray.200', 'teal.600');
+  const bgColorStack = useColorModeValue('gray.100', 'teal.100');
   const doiUrl = `https://doi.org/${doi}`;
 
   return (

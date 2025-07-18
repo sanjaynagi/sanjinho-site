@@ -20,8 +20,8 @@ const PosterCard = ({
   venue,
   pdfPath
 }) => {
-  const bgColorStack = useColorModeValue('purple.100', 'purple.700');
-  const iconColor = useColorModeValue('purple.600', 'purple.200');
+  const bgColorStack = useColorModeValue('transparent', 'teal.100');
+  const iconColor = useColorModeValue('teal.600', 'teal.200');
 
   return (
     <LinkBox as="article">
@@ -46,12 +46,12 @@ const PosterCard = ({
               justifyContent={{ base: 'flex-start', md: 'space-between' }}
               alignItems={{ base: 'flex-start', md: 'center' }}
             >
-              <Heading size="md" fontWeight="semibold">
-                <LinkOverlay as={ExternalLink} href={pdfPath}>
+              <Heading size="md" fontWeight="semibold" >
+                <LinkOverlay as={ExternalLink} href={pdfPath} color="gray.600">
                   {title}
                 </LinkOverlay>
               </Heading>
-              <Badge colorScheme="purple" variant="subtle">
+              <Badge colorScheme="blue" variant="subtle">
                 {year}
               </Badge>
             </Stack>
@@ -67,7 +67,7 @@ const PosterCard = ({
               <Text fontSize="sm" fontStyle="italic">
                 Presented at {venue}
               </Text>
-              <Badge colorScheme="purple" variant="outline" size="sm">
+              <Badge colorScheme="blue" variant="outline" size="sm">
                 POSTER
               </Badge>
             </Stack>

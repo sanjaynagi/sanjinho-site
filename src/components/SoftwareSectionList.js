@@ -10,7 +10,7 @@ const SoftwareSectionList = ({ projects }) => {
 
       <VStack spacing={4} alignItems="center" w="full" as="section" pt={2} >
         <Button leftIcon={<FaGithub/>} colorScheme='teal' size='lg' variant='ghost'> 
-          <Link href="https://github.com/sanjaynagi">My GitHub</Link>
+          <Link href="https://github.com/sanjaynagi">GitHub</Link>
         </Button>
       </VStack>      
 
