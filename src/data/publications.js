@@ -6,7 +6,7 @@ export const PublicationsList = [
     year: '2025',
     journal: 'bioRxiv',
     journalLogo: '/logos/biorxiv.png',
-    doi: '10.1101/2025.07.17.664900'
+    doi: '10.1101/2025.07.16.664900'
   },
   {
     id: '2',
