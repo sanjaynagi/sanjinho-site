@@ -17,8 +17,6 @@ devouring. As a self-proclaimed parantha addict, I have traveled far
 and wide in search of the perfect parantha. And let me tell you, it's 
 been a delicious journey.
 
-<br></br>
-
 **Reviews**
 
 **Anands sweets, LS6 Leeds**  
@@ -43,7 +41,7 @@ There are many options, and (aloo) paranthas were quite delicious!
 
 Rating 7.8/10
 
-**Amritsari Naan stall, Banga, Punjab**
+**Amritsari Naan stall, Banga, Punjab**  
 Delicious and cheap, made in the tandoor. 3 minute walk from the house. love it. 
 
-Rating 9/10
+Rating 10/10
