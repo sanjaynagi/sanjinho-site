@@ -13,7 +13,7 @@ const InterestsList = () => {
   return (
     <UnorderedList pl={6} spacing={2}>
       <ListItem>Music</ListItem>
-      <ListItem>The Great Outdoors (trail-running, camping, hiking, <strong>the all-trails app</strong>)</ListItem>
+      <ListItem>The Great Outdoors (hiking, trail-running, camping)</ListItem>
       <ListItem>Sports (football, tennis, darts, cricket, <strong>the cricinfo app</strong>)</ListItem>
       <ListItem>Meditation</ListItem>
       <ListItem>Food</ListItem>
