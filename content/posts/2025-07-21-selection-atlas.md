@@ -10,7 +10,7 @@ canonicalUrl: 'https://sanjaycnagi.com/blog/2025-07-21-selection-atlas/'
 
 [![selection atlas signals](/blog/signals.png)](doi.org/10.1101/2025.07.16.664900)
 
-Dual-active ingredient ITNs are now being deployed in sub-Saharan Africa [en masse](https://allianceformalariaprevention.com/itn-dashboards/net-mapping-project/). We know that these nets are not only highly effective, but effective against pyrethroid-resistant malaria vectors. This should help to reduce the burden of malaria. But given the evolutionary adaptability of malaria mosquitoes, we must rapidly find ways to detect resistance before it becomes widespread, in order to protect the lifespan of these critical tools. 
+Dual-active ingredient ITNs are now being deployed in sub-Saharan Africa. We know that these nets are not only highly effective but effective against pyrethroid-resistant malaria vectors, which should help in the fight against malaria. But given the evolutionary adaptability of malaria mosquitoes, we must rapidly find ways to detect resistance before it becomes widespread, in order employ insecticide resistance management practices and protect the lifespan of these critical tools. 
 
 When a beneficial mutation arises — like one that helps a mosquito survive insecticide exposure — it begins to spread through a population, leaving a signature of reduced genetic diversity around it. We can exploit this signature to pinpoint regions of the genome that are under selection and threatening malaria vector control efforts. 
 
