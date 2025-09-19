@@ -66,10 +66,10 @@ export const PublicationsList = [
     id: '8',
     title: 'Genomic diversity of the African malaria vector Anopheles funestus',
     authors: 'Marilou Boddé, Joachim Nwezeobi, ..., Sanjay C Nagi, ..., Mara K. N. Lawniczak',
-    year: '2024',
-    journal: 'bioRxiv',
-    journalLogo: '/logos/biorxiv.png',
-    doi: '10.1101/2024.12.14.628470'
+    year: '2025',
+    journal: 'Science',
+    journalLogo: '/logos/science.svg',
+    doi: '10.1126/science.adu3596'
   },
   {
     id: '9',
