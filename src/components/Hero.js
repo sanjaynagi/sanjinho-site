@@ -41,15 +41,9 @@ const Hero = () => {
           }
           </Stack>
           <Text lineHeight="175%" as="h2" fontSize="lg">
-            I&apos;m a Post-Doc studying genomics of the major malaria mosquito, <em>Anopheles gambiae </em> 
-            at the Liverpool School of Tropical Medicine. 
-          </Text>
-          <Text lineHeight="175%" as="h2" fontSize="lg">
-            A major focus of my research is the rapid evolution and spread of resistance 
-            in the major malaria vector, and how we can use population genomics to 
-            ultimately inform malaria control programmes. I enjoy developing open-source 
-            computational tools that can aid the community and empower researchers to analyse 
-            their own data.
+            I&apos;m a research scientist at the Ellison Institute of Technology, developing methods and resources 
+            to improve the diagnosis and treatment of infectious pathogens. I enjoy developing open-source 
+            computational tools that can aid the community and empower researchers to analyse their own data.
           </Text>
         </VStack>
       </Stack>
