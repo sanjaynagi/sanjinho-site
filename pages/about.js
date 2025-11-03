@@ -31,8 +31,8 @@ const AboutPage = () => {
           About Me
         </Heading>
         <Text>
-        Hello! I&apos;m Sanjay Curtis Nagi, currently a post-doc at the <Link href="https://www.lstmed.ac.uk/" color='teal'>
-          Liverpool School of Tropical Medicine</Link> in the Vector Informatics and Genomics group. 
+        Hello! I&apos;m Sanjay Curtis Nagi, currently a genomics research scientist at the <Link href="https://www.eit.org/" color='teal'>
+          Ellison Institute of Technology</Link> within the pathogen programme. 
         </Text>
         <Text>
         To date, my work has primarily focused on mosquito vectors of disease. In particular, the rapid evolution and spread of resistance 
