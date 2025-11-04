@@ -31,7 +31,7 @@ const AboutPage = () => {
           About Me
         </Heading>
         <Text>
-        Hello! I&apos;m Sanjay Curtis Nagi, currently a genomics research scientist at the <Link href="https://www.eit.org/" color='blue.600'>
+        Hello! I&apos;m Sanjay Curtis Nagi, a genomics research scientist at the <Link href="https://www.eit.org/" color='blue.600'>
           Ellison Institute of Technology</Link> within the pathogen programme. 
         </Text>
         <Text>
