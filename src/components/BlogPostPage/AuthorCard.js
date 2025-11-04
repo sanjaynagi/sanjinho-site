@@ -21,7 +21,7 @@ const AuthorCard = () => {
           <HStack justifyContent="space-between">
             <Text fontSize="md" fontWeight="600" color={textMode}>
               <Link href="/about">Sanjay Curtis Nagi</Link>{' '}
-              <Text fontSize="sm" color="teal.500" as="i">
+              <Text fontSize="sm" color="blue.500" as="i">
                 author
               </Text>
             </Text>
@@ -33,14 +33,14 @@ const AuthorCard = () => {
                 border="1px solid #805AD5"
               > */}
               <Link isExternal href="https://ko-fi.com/sanjaycnagi">
-                <Text fontSize="13px" color="teal.500" fontWeight="bold">
+                <Text fontSize="13px" color="blue.500" fontWeight="bold">
                   Buy me coffee
                 </Text>
               </Link>
               {/* </Box> */}
               <Box>&nbsp;</Box>
               <Link isExternal href="https://sanjaycnagi.substack.com/">
-                <Text fontSize="13px" color="teal.500" fontWeight="bold">
+                <Text fontSize="13px" color="blue.500" fontWeight="bold">
                   Newsletter
                 </Text>
               </Link>
@@ -53,7 +53,7 @@ const AuthorCard = () => {
                 border="1px solid #805AD5"
               > */}
               <Link isExternal href="https://twitter.com/sanjaycnagi">
-                <Text fontSize="13px" color="teal.500" fontWeight="bold">
+                <Text fontSize="13px" color="blue.500" fontWeight="bold">
                   Twitter
                 </Text>
               </Link>

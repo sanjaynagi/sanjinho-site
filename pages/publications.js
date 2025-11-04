@@ -24,7 +24,7 @@ const PublicationsPage = () => {
         <ButtonGroup spacing={4}>
           <Button
             leftIcon={<FaGoogle />}
-            colorScheme="teal"
+            color="blue.600"
             size="lg"
             variant="ghost"
           >
@@ -34,7 +34,7 @@ const PublicationsPage = () => {
           </Button>
           <Button
             leftIcon={<FaOrcid />}
-            colorScheme="teal"
+            color="blue.600"
             size="lg"
             variant="ghost"
           >
