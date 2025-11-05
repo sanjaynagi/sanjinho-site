@@ -36,11 +36,11 @@ const Navbar = props => {
         <Flex align="center">
             <InternalLink href="/" height="%50">
             <Text
-              fontSize={{ base: '0px', md: '18px' }}
+              fontSize={{ base: '0px', md: '20px' }}
               fontWeight={{ base: '0', md: '600' }}
               sx={{
                 background:
-                  'linear-gradient(45deg, #00E1B0, #5c5e5b 30%, #ffffff 60%)',
+                  'linear-gradient(45deg, #3237c1ff 0%, #007ebdff 10% )',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundSize: '800%'

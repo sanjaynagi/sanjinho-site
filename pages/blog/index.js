@@ -74,8 +74,7 @@ const Blog = ({ posts }) => {
           Blog
         </Heading>
         <Text fontSize="xl">
-          Recent blog posts. I write about vector control, genomic surveillance and bioinformatics, and sometimes 
-          my favourite food, paranthas. 
+          Recent blog posts. I write about vector control, genomic surveillance and bioinformatics.
         </Text>
         {/* <Text fontSize="xl">
           In total I&#39;ve written <strong>{Object.keys(posts).length}</strong>{' '}

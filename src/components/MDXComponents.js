@@ -36,7 +36,7 @@ const Table = props => (
 
 const THead = props => (
   <chakra.th
-    bg={useColorModeValue('gray.50', 'whiteAlpha.100')}
+    bg={useColorModeValue('gray.50', 'whibluepha.100')}
     fontWeight="semibold"
     p={2}
     fontSize="sm"
@@ -86,10 +86,10 @@ const CodeHighlight = ({ children: codeString, className }) => {
     }
   };
 
-  // Custom theme with dark teal background and white text
+  // Custom theme with dark blue background and white text
   const customTheme = {
     plain: {
-      backgroundColor: '#014d4e',  // Dark teal background
+      backgroundColor: '#014d4e',  // Dark blue background
       color: '#ffffff'             // White text
     },
     styles: [
@@ -150,7 +150,7 @@ const CodeHighlight = ({ children: codeString, className }) => {
     ]
   };
 
-  const lineNumberColor = 'whiteAlpha.500';
+  const lineNumberColor = 'whibluepha.500';
   const preBackground = 'transparent'; // Changed to transparent to let theme background show
   const showLineNumbers = !['shell', 'text'].includes(language);
 
@@ -216,8 +216,8 @@ const CodeHighlight = ({ children: codeString, className }) => {
 const InlineCode = props => (
   <chakra.code
     apply="mdx.code"
-    color={useColorModeValue('teal.500', 'white.200')}
-    bg={useColorModeValue('teal.50', 'teal.700')}
+    color={useColorModeValue('blue.500', 'white.200')}
+    bg={useColorModeValue('blue.50', 'blue.700')}
     px={1}
     py={0.5}
     rounded={{ base: 'none', md: 'md' }}
@@ -240,7 +240,7 @@ const LinkedHeading = props => {
       </Box>
       <chakra.span
         aria-label="anchor"
-        color="teal.500"
+        color="blue.500"
         userSelect="none"
         fontWeight="normal"
         fontSize="1.5rem"
@@ -276,7 +276,7 @@ const Anchor = props => {
   const { colorMode } = useColorMode();
   return (
     <chakra.a
-      color={mode('teal.500', 'white.300')({ colorMode })}
+      color={mode('blue.500', 'white.300')({ colorMode })}
       _hover={{ textDecoration: 'underline' }}
       {...props}
     />
