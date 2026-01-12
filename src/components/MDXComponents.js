@@ -217,7 +217,7 @@ const InlineCode = props => (
   <chakra.code
     apply="mdx.code"
     color={useColorModeValue('blue.500', 'white.200')}
-    bg={useColorModeValue('blue.50', 'blue.700')}
+    bg={useColorModeValue('blue.50', '#89b5a2')}
     px={1}
     py={0.5}
     rounded={{ base: 'none', md: 'md' }}

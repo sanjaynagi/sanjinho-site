@@ -40,7 +40,7 @@ const Navbar = props => {
               fontWeight={{ base: '0', md: '600' }}
               sx={{
                 background:
-                  'linear-gradient(45deg, #3237c1ff 0%, #007ebdff 10% )',
+                  'linear-gradient(45deg, #43544c 0%, #95a8a0 10% )',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 backgroundSize: '800%'
