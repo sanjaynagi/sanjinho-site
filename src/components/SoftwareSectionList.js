@@ -9,7 +9,7 @@ const SoftwareSectionList = ({ projects }) => {
       <Heading size="lg">Open Source Software I&#39;ve developed or contributed to</Heading>
 
       <VStack spacing={4} alignItems="center" w="full" as="section" pt={2} >
-        <Button leftIcon={<FaGithub/>} color='blue.600' size='lg' variant='ghost'> 
+        <Button leftIcon={<FaGithub/>} color='#89b5a2' size='lg' variant='ghost'> 
           <Link href="https://github.com/sanjaynagi">GitHub</Link>
         </Button>
       </VStack>      

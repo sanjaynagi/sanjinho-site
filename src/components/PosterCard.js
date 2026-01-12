@@ -21,7 +21,7 @@ const PosterCard = ({
   pdfPath
 }) => {
   const bgColorStack = useColorModeValue('transparent', 'blue.100');
-  const iconColor = useColorModeValue('blue.600', 'blue.200');
+  const iconColor = useColorModeValue('#89b5a2', 'blue.200');
 
   return (
     <LinkBox as="article">
