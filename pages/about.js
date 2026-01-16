@@ -35,8 +35,8 @@ const AboutPage = () => {
           Ellison Institute of Technology</Link> within the pathogen programme. 
         </Text>
         <Text>
-        To date, my work has primarily focused on mosquito vectors of disease. In particular, the rapid evolution and spread of resistance 
-        in the major malaria vector, <em>Anopheles gambiae</em>, is a major focus, and how we can use population genomics to ultimately inform 
+        Previously, my work focused on mosquito vectors of disease. In particular, the rapid evolution and spread of resistance 
+        in the major malaria vector, <em>Anopheles gambiae</em>, and how we can use population genomics to ultimately inform 
         malaria control programmes. I enjoy developing open-source computational tools that can aid the community and empower researchers 
         to analyse their own data.
         </Text>

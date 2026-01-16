@@ -20,7 +20,7 @@ const PublicationCard = ({
   journalLogo,
   doi
 }) => {
-  const bgColorStack = useColorModeValue('gray.100', 'blue.100');
+  const bgColorStack = useColorModeValue('gray.100', '#89b5a2');
   const doiUrl = `https://doi.org/${doi}`;
 
   return (
@@ -45,7 +45,7 @@ const PublicationCard = ({
             h={20}
             objectFit="contain"
             fallback={
-              <Badge colorScheme="blue" fontSize="sm" p={2}>
+              <Badge colorScheme="#433529" fontSize="sm" p={2}>
                 {journal}
               </Badge>
             }
@@ -77,7 +77,7 @@ const PublicationCard = ({
               <Text fontSize="xs" color="gray.600">
                 DOI: {doi}
               </Text>
-              <Badge colorScheme="blue" variant="subtle">
+              <Badge colorScheme="#433529" variant="subtle">
                 {year}
               </Badge>
             </Stack>

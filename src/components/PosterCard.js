@@ -20,8 +20,8 @@ const PosterCard = ({
   venue,
   pdfPath
 }) => {
-  const bgColorStack = useColorModeValue('transparent', 'blue.100');
-  const iconColor = useColorModeValue('#89b5a2', 'blue.200');
+  const bgColorStack = useColorModeValue('transparent', '#89b5a2');
+  const iconColor = useColorModeValue('#89b5a2', '#433529');
 
   return (
     <LinkBox as="article">
@@ -51,7 +51,7 @@ const PosterCard = ({
                   {title}
                 </LinkOverlay>
               </Heading>
-              <Badge colorScheme="blue" variant="subtle">
+              <Badge colorScheme="#433529" variant="subtle">
                 {year}
               </Badge>
             </Stack>
@@ -67,7 +67,7 @@ const PosterCard = ({
               <Text fontSize="sm" fontStyle="italic">
                 Presented at {venue}
               </Text>
-              <Badge colorScheme="blue" variant="outline" size="sm">
+              <Badge colorScheme="#433529" variant="outline" size="sm">
                 POSTER
               </Badge>
             </Stack>
