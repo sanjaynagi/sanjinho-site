@@ -1,11 +1,11 @@
-import { Link, useColorModeValue as mode } from '@chakra-ui/react';
+import { Link } from '@chakra-ui/react';
 
 const ExternalLink = ({ children, ...linkProps }) => {
   return (
     <span>
       <Link
         {...linkProps}
-        color={mode('#89b5a2', '#89b5a2')}
+        color="brand.primary"
         display="inline-flex"
         alignItems="center"
         isExternal

@@ -36,7 +36,7 @@ const Table = props => (
 
 const THead = props => (
   <chakra.th
-    bg={useColorModeValue('gray.50', '#433529')}
+    bg={useColorModeValue('gray.50', 'brand.secondary')}
     fontWeight="semibold"
     p={2}
     fontSize="sm"

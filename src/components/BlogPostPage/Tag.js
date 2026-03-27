@@ -102,7 +102,7 @@ const Tag = ({ tag }) => {
   }
 
   return (
-    <Box bg="#433529" p={1} borderRadius={4}>
+    <Box bg="brand.secondary" p={1} borderRadius={4}>
       <TagsSummary tag={tag} />
     </Box>
   );

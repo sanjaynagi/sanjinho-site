@@ -14,14 +14,14 @@ const AuthorCard = () => {
       borderRadius="md"
       padding="8px 12px"
       alignItems="center"
-      border="1px solid #805AD5"
+      border="1px solid" borderColor="brand.accent"
     >
       <HStack justifyContent="flex-start">
         <VStack alignItems="stretch" as="section" pt={2}>
           <HStack justifyContent="space-between">
             <Text fontSize="md" fontWeight="600" color={textMode}>
               <Link href="/about">Sanjay Curtis Nagi</Link>{' '}
-              <Text fontSize="sm" color="#89b5a2" as="i">
+              <Text fontSize="sm" color="brand.primary" as="i">
                 author
               </Text>
             </Text>
@@ -30,17 +30,17 @@ const AuthorCard = () => {
                 borderRadius="md"
                 padding="2px 2px"
                 alignItems="center"
-                border="1px solid #805AD5"
+                border="1px solid" borderColor="brand.accent"
               > */}
               <Link isExternal href="https://ko-fi.com/sanjaycnagi">
-                <Text fontSize="13px" color="#89b5a2" fontWeight="bold">
+                <Text fontSize="13px" color="brand.primary" fontWeight="bold">
                   Buy me coffee
                 </Text>
               </Link>
               {/* </Box> */}
               <Box>&nbsp;</Box>
               <Link isExternal href="https://sanjaycnagi.substack.com/">
-                <Text fontSize="13px" color="#89b5a2" fontWeight="bold">
+                <Text fontSize="13px" color="brand.primary" fontWeight="bold">
                   Newsletter
                 </Text>
               </Link>
@@ -50,10 +50,10 @@ const AuthorCard = () => {
                 borderRadius="md"
                 padding="2px 2px"
                 alignItems="center"
-                border="1px solid #805AD5"
+                border="1px solid" borderColor="brand.accent"
               > */}
               <Link isExternal href="https://twitter.com/sanjaycnagi">
-                <Text fontSize="13px" color="#89b5a2" fontWeight="bold">
+                <Text fontSize="13px" color="brand.primary" fontWeight="bold">
                   Twitter
                 </Text>
               </Link>

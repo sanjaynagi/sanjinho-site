@@ -11,6 +11,7 @@ const HeroImage = () => {
             width={314}
             height={278}
             alt="Avatar Image"
+            priority
           />
         </Box>
       </AspectRatio>
