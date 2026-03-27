@@ -75,10 +75,10 @@ export const PublicationsList = [
     id: '9',
     title: 'Population genomics of Anopheles darlingi, the principal South American malaria vector mosquito',
     authors: 'Jacob A. Tennessen, Raphael Brosula, ..., Sanjay C Nagi, ..., Daniel E. Neafsey',
-    year: '2025',
-    journal: 'bioRxiv',
-    journalLogo: '/logos/biorxiv.png',
-    doi: '10.1101/2025.03.13.643102'
+    year: '2026',
+    journal: 'Science',
+    journalLogo: '/logos/science.svg',
+    doi: '10.1126/science.adw9761'
   },
   {
     id: '10',

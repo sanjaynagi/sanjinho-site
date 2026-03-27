@@ -2,11 +2,11 @@
 
 const withMDX = require('@next/mdx')()
 
-nextConfig = {
+const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   images: {
-    domains: ['i.imgur.com', 'res.cloudinary.com', 'i.gr-assets.com', 'cdn-images-1.medium.com', 'miro.medium.com', 'blog.jscrambler.com', 'crowdbotics.ghost.io',
+    domains: ['i.imgur.com', 'res.cloudinary.com', 'upload.wikimedia.org', 'i.gr-assets.com', 'cdn-images-1.medium.com', 'miro.medium.com', 'blog.jscrambler.com', 'crowdbotics.ghost.io',
     'img.youtube.com', 'blog.logrocket.com', 'hackernoon.com', 'imgur.com', 'blog.appsignal.com', 'hackernoon.imgix.net', 'appjs.co', 'pbs.twimg.com', '2022.appjs.co'],
     // next/image support `srcSet` using the below deviceSizes
     // for more info, visit https://nextjs.org/docs/basic-features/image-optimization#device-sizes
@@ -15,7 +15,7 @@ nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
