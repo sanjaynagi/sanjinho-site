@@ -10,13 +10,11 @@ const ArticleNavigator = ({ previousArticle, nextArticle }) => {
         <Text as="h2" fontSize="2xl" fontWeight="600" color={textMode}>
           More Posts
         </Text>
-        <NextLink href="/blog">
-          <Link>
-            <Text fontWeight="600" color="brand.primary">
-              Browse all posts
-            </Text>
-          </Link>
-        </NextLink>
+        <Link as={NextLink} href="/blog">
+          <Text fontWeight="600" color="brand.primary">
+            Browse all posts
+          </Text>
+        </Link>
       </HStack>
       <HStack justifyContent="space-between">
         {previousArticle !== null ? (
@@ -26,13 +24,11 @@ const ArticleNavigator = ({ previousArticle, nextArticle }) => {
             padding="8px 12px"
             alignItems="center"
           >
-            <NextLink href={previousArticle.slug}>
-              <Link>
-                <Text as="h2" fontSize="md" fontWeight="600" color={textMode}>
-                  ⬅️ Previous: {previousArticle.title}
-                </Text>
-              </Link>
-            </NextLink>
+            <Link as={NextLink} href={previousArticle.slug}>
+              <Text as="h2" fontSize="md" fontWeight="600" color={textMode}>
+                ⬅️ Previous: {previousArticle.title}
+              </Text>
+            </Link>
           </Box>
         ) : null}
         {nextArticle !== null ? (
@@ -43,13 +39,11 @@ const ArticleNavigator = ({ previousArticle, nextArticle }) => {
             alignItems="center"
             justifyContent="center"
           >
-            <NextLink href={nextArticle.slug}>
-              <Link>
-                <Text as="h2" fontSize="md" fontWeight="600" color={textMode}>
-                  Next: {nextArticle.title} ➡️
-                </Text>
-              </Link>
-            </NextLink>
+            <Link as={NextLink} href={nextArticle.slug}>
+              <Text as="h2" fontSize="md" fontWeight="600" color={textMode}>
+                Next: {nextArticle.title} ➡️
+              </Text>
+            </Link>
           </Box>
         ) : null}
       </HStack>

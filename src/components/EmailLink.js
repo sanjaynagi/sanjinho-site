@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
 
 // Validates the first half of an email address.
 const validateText = (text) => {
@@ -44,7 +43,7 @@ const useInterval = (callback, delay) => {
   }, [delay]);
 };
 
-const EmailLink = ({ loopMessage }) => {
+const EmailLink = ({ loopMessage = false }) => {
   const hold = 50; // ticks to wait after message is complete before rendering next message
   const delay = 50; // tick length in mS
 
@@ -87,14 +86,6 @@ const EmailLink = ({ loopMessage }) => {
       </a>
     </div>
   );
-};
-
-EmailLink.defaultProps = {
-  loopMessage: false,
-};
-
-EmailLink.propTypes = {
-  loopMessage: PropTypes.bool,
 };
 
 export default EmailLink;

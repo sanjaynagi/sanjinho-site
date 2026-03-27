@@ -15,7 +15,6 @@ import { promises as fs } from 'fs';
 import path from 'path';
 
 import readingTime from 'reading-time';
-import { Utterances } from 'utterances-react-component';
 
 import { getAllBlogPosts } from './index';
 import { BlogDocumentHead, MDXComponents } from '../../src/components';
@@ -26,6 +25,26 @@ import {
   PublishedDate,
   Tag,
 } from '../../src/components/BlogPostPage';
+
+const UtterancesComments = () => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || el.childNodes.length > 0) return;
+
+    const script = document.createElement('script');
+    script.src = 'https://utteranc.es/client.js';
+    script.setAttribute('repo', 'sanjaynagi/sanjinho-site');
+    script.setAttribute('issue-term', 'pathname');
+    script.setAttribute('theme', 'github-light');
+    script.setAttribute('crossorigin', 'anonymous');
+    script.async = true;
+    el.appendChild(script);
+  }, []);
+
+  return <div ref={ref} />;
+};
 
 export const readBlogPost = async (slug) => {
   const mdPath = path.join(process.cwd(), './content/posts', `${slug}.md`);
@@ -129,11 +148,7 @@ const BlogPostPage = ({
         <Center>
         </Center>
         <MDXRemote {...source} components={MDXComponents} />
-        <Utterances
-              repo="sanjaynagi/sanjinho-site"
-              theme="github-light"
-              issueTerm="pathname"
-            />        
+        <UtterancesComments />        
         <Divider />
         {/* Article Navigator */}
         <ArticleNavigator

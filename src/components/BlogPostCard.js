@@ -42,7 +42,7 @@ const BlogPostCard = ({ title, shorttitle, date, slug, thumbnail, timeToRead }) 
         <VStack w="full" alignItems="stretch">
           {isMobile ? (
             <VStack justifyContent="space-between" alignItems="flex-start">
-              <Link href={`/blog/${slug}`} passHref>
+              <Link href={`/blog/${slug}`} legacyBehavior passHref>
                 <LinkOverlay>
                   <Text as="h2" fontSize="md" fontWeight="600" color={textMode}>
                     {shorttitle}
@@ -63,7 +63,7 @@ const BlogPostCard = ({ title, shorttitle, date, slug, thumbnail, timeToRead }) 
             </VStack>
           ) : (
             <HStack justify="space-between">
-              <Link href={`/blog/${slug}`} passHref>
+              <Link href={`/blog/${slug}`} legacyBehavior passHref>
                 <LinkOverlay>
                   <Text as="h2" fontSize="lg" fontWeight="600" color={textMode}>
                     {shorttitle}
