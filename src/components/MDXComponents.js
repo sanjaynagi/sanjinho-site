@@ -13,7 +13,7 @@ import {
 import { mode } from '@chakra-ui/theme-tools';
 import NextImage from 'next/image';
 import slugify from 'slugify';
-import Highlight, { defaultProps } from 'prism-react-renderer';
+import { Highlight } from 'prism-react-renderer';
 import { IoClipboardOutline } from 'react-icons/io5';
 import HTMLPlot from './HTMLPlot';
 import {
@@ -156,7 +156,6 @@ const CodeHighlight = ({ children: codeString, className }) => {
 
   return (
     <ChakraHighlight
-      {...defaultProps}
       code={codeString}
       language={language}
       theme={customTheme}
@@ -216,8 +215,8 @@ const CodeHighlight = ({ children: codeString, className }) => {
 const InlineCode = props => (
   <chakra.code
     apply="mdx.code"
-    color={useColorModeValue('#89b5a2', 'white.200')}
-    bg={useColorModeValue('#433529', '#89b5a2')}
+    color={useColorModeValue('brand.primary', 'white.200')}
+    bg={useColorModeValue('brand.secondary', 'brand.primary')}
     px={1}
     py={0.5}
     rounded={{ base: 'none', md: 'md' }}
@@ -240,7 +239,7 @@ const LinkedHeading = props => {
       </Box>
       <chakra.span
         aria-label="anchor"
-        color="#89b5a2"
+        color="brand.primary"
         userSelect="none"
         fontWeight="normal"
         fontSize="1.5rem"

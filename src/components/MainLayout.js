@@ -1,12 +1,10 @@
 import { Box, Container, VStack } from '@chakra-ui/react';
 import { Analytics } from '@vercel/analytics/react';
 
-import PropTypes from 'prop-types';
-
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-const MainLayout = ({ children }) => {
+const MainLayout = ({ children = null }) => {
   return (
     <Box as="main" pb={8}>
       <Navbar />
@@ -24,23 +22,6 @@ const MainLayout = ({ children }) => {
       </Container>
     </Box>
   );
-};
-
-MainLayout.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node,
-  ]),
-  fullPage: PropTypes.bool,
-  title: PropTypes.string,
-  description: PropTypes.string,
-};
-
-MainLayout.defaultProps = {
-  children: null,
-  fullPage: false,
-  title: null,
-  description: "Sanjay Curtis Nagi's personal website.",
 };
 
 export default MainLayout;

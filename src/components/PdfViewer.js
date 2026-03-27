@@ -1,10 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { Document, Page, pdfjs} from 'react-pdf';
+import dynamic from 'next/dynamic';
 import {
   Box,
 } from '@chakra-ui/react';
-import "react-pdf/dist/esm/Page/TextLayer.css";
-// import "react-pdf/dist/esm/Page/AnnotationLayer.css"
+
+const PDFDocument = dynamic(
+  () => import('react-pdf').then(mod => {
+    mod.pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${mod.pdfjs.version}/pdf.worker.min.mjs`;
+    return { default: mod.Document };
+  }),
+  { ssr: false }
+);
+
+const PDFPage = dynamic(
+  () => import('react-pdf').then(mod => ({ default: mod.Page })),
+  { ssr: false }
+);
 
 const PdfViewer = () => {
   const url = "/SanjayCNagi-CV-2024.pdf";
@@ -14,18 +25,12 @@ const PdfViewer = () => {
     setWidth(window.innerWidth);
   }, []);
 
-    // set the worker source
-    pdfjs.GlobalWorkerOptions.workerSrc =
-    pdfjs.version === "2.9.359" 
-    ? "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.worker.js"
-    : `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
   return (
     <Box style={{ display: "flex", flexDirection: "row", gap: "0px" }}>
-      <Document file={url} className="d-flex justify-content-center">
-        <Page pageNumber={1} scale={width > 786 ? 1.5 : 0.6}  renderAnnotationLayer={false}/>
-        <Page pageNumber={2} scale={width > 786 ? 1.5 : 0.6}  renderAnnotationLayer={false}/>
-      </Document>    
+      <PDFDocument file={url} className="d-flex justify-content-center">
+        <PDFPage pageNumber={1} scale={width > 786 ? 1.5 : 0.6} renderAnnotationLayer={false}/>
+        <PDFPage pageNumber={2} scale={width > 786 ? 1.5 : 0.6} renderAnnotationLayer={false}/>
+      </PDFDocument>
     </Box>
   );
 };

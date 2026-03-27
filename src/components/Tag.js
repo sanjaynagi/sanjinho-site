@@ -14,7 +14,7 @@ const Tag = ({ children, url }) => {
   if (url) {
     tag = (
       <ChakraLink as={Link} href={url}>
-        <a>{tag}</a>
+        {tag}
       </ChakraLink>
     );
   }

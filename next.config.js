@@ -6,12 +6,27 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   images: {
-    domains: ['i.imgur.com', 'res.cloudinary.com', 'upload.wikimedia.org', 'i.gr-assets.com', 'cdn-images-1.medium.com', 'miro.medium.com', 'blog.jscrambler.com', 'crowdbotics.ghost.io',
-    'img.youtube.com', 'blog.logrocket.com', 'hackernoon.com', 'imgur.com', 'blog.appsignal.com', 'hackernoon.imgix.net', 'appjs.co', 'pbs.twimg.com', '2022.appjs.co'],
-    // next/image support `srcSet` using the below deviceSizes
-    // for more info, visit https://nextjs.org/docs/basic-features/image-optimization#device-sizes
+    remotePatterns: [
+      { hostname: 'i.imgur.com' },
+      { hostname: 'imgur.com' },
+      { hostname: 'res.cloudinary.com' },
+      { hostname: 'upload.wikimedia.org' },
+      { hostname: 'i.gr-assets.com' },
+      { hostname: 'cdn-images-1.medium.com' },
+      { hostname: 'miro.medium.com' },
+      { hostname: 'blog.jscrambler.com' },
+      { hostname: 'crowdbotics.ghost.io' },
+      { hostname: 'img.youtube.com' },
+      { hostname: 'blog.logrocket.com' },
+      { hostname: 'hackernoon.com' },
+      { hostname: 'blog.appsignal.com' },
+      { hostname: 'hackernoon.imgix.net' },
+      { hostname: 'appjs.co' },
+      { hostname: 'pbs.twimg.com' },
+      { hostname: '2022.appjs.co' },
+    ],
+    qualities: [25, 50, 75, 100],
     deviceSizes: [320, 480, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    // https://nextjs.org/docs/basic-features/image-optimization#image-sizes
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   typescript: {
@@ -19,10 +34,11 @@ const nextConfig = {
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
-      config.module.rules.push({
-        test: /\.md$/,
-        use: ['raw-loader'],
-      });
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+      };
     }
     return config;
   },

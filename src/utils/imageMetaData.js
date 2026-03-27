@@ -1,4 +1,5 @@
 import imageSize from 'image-size';
+import fs from 'fs';
 import path from 'path';
 import { getPlaiceholder } from 'plaiceholder';
 import { visit } from 'unist-util-visit';
@@ -23,8 +24,10 @@ async function addProps(node) {
   const isExternal = node.properties.src.startsWith('http');
 
   if (!isExternal) {
-    res = await sizeOf(path.join(process.cwd(), 'public', node.properties.src));
-    blur64 = (await getPlaiceholder(node.properties.src)).base64;
+    const filePath = path.join(process.cwd(), 'public', node.properties.src);
+    const buffer = fs.readFileSync(filePath);
+    res = await sizeOf(filePath);
+    blur64 = (await getPlaiceholder(buffer)).base64;
   } else {
     const imageRes = await fetch(node.properties.src);
     const arrayBuffer = await imageRes.arrayBuffer();
