@@ -2,7 +2,7 @@ import { HStack, Box, Text, Link, useColorModeValue } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
 const ArticleNavigator = ({ previousArticle, nextArticle }) => {
-  const bgColor = useColorModeValue('gray.200', '#89b5a2');
+  const bgColor = useColorModeValue('gray.200', 'brand.primary');
   const textMode = useColorModeValue('black', 'white');
   return (
     <>
@@ -12,7 +12,7 @@ const ArticleNavigator = ({ previousArticle, nextArticle }) => {
         </Text>
         <NextLink href="/blog">
           <Link>
-            <Text fontWeight="600" color="#89b5a2">
+            <Text fontWeight="600" color="brand.primary">
               Browse all posts
             </Text>
           </Link>

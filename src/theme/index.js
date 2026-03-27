@@ -6,6 +6,15 @@ const config = {
   useSystemColorMode: false
 };
 
+const colors = {
+  brand: {
+    primary: '#89b5a2',
+    secondary: '#433529',
+    accent: '#805AD5',
+    browser: '#5fb0a1'
+  }
+};
+
 const styles = {
   global: props => ({
     body: {
@@ -35,6 +44,6 @@ const fonts = {
   body: `Inter, ${base.fonts.body}`
 };
 
-const theme = extendTheme({ config, styles, components, fonts });
+const theme = extendTheme({ config, colors, styles, components, fonts });
 
 export default theme;
