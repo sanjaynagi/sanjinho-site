@@ -18,7 +18,7 @@ import { PublicationsList, PostersList } from '../src/data/publications';
 const PublicationsPage = () => {
   return (
     <>
-      <DocumentHead pageTitle="Publications" postPath="/cv" />
+      <DocumentHead pageTitle="Publications" postPath="/publications" description="Selected publications and posters by Sanjay Curtis Nagi on genomics, malaria, and vector control." />
       <VStack spacing={4} as="section" pt={28}>
         <Heading size="lg">Publications</Heading>
         <ButtonGroup spacing={4}>

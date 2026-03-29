@@ -5,6 +5,14 @@ const withMDX = require('@next/mdx')()
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
+  async rewrites() {
+    return [
+      {
+        source: '/sitemap.xml',
+        destination: '/api/sitemap',
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       { hostname: 'i.imgur.com' },

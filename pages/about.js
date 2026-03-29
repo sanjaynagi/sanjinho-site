@@ -25,7 +25,7 @@ const InterestsList = () => {
 const AboutPage = () => {
   return (
     <>
-      <DocumentHead pageTitle="About" postPath="/about" />
+      <DocumentHead pageTitle="About" postPath="/about" description="About Sanjay Curtis Nagi — genomics research scientist at the Ellison Institute of Technology." />
       <VStack spacing={5} alignItems="flex-start" w="full" as="section" pt={28}>
         <Heading size="lg" as="h1">
           About Me

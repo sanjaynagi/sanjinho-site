@@ -37,7 +37,7 @@ const BlogPostCard = ({ title, shorttitle, date, slug, thumbnail, timeToRead }) 
         }}
       >
         {isMobile ? null : (
-          <Image src={thumbnail} alt="React logo" width={32} height={32} />
+          <Image src={thumbnail} alt={`${shorttitle} thumbnail`} width={32} height={32} />
         )}
         <VStack w="full" alignItems="stretch">
           {isMobile ? (
