@@ -258,7 +258,7 @@ const LinkedHeading = props => {
 const Image = props => {
   if (!props.blurDataURL) {
     // eslint-disable-next-line
-    return <img src={props.src} width={300} height={300} />;
+    return <img src={props.src} alt={props.alt || ''} width={300} height={300} />;
   }
   return (
     <NextImage

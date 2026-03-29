@@ -5,7 +5,7 @@ const ContactMe = () => {
   return (
     <>
       <VStack spacing={3} alignItems="flex-start" w="full" as="section">
-      <Heading size="lg" as="h1" textAlign="left" >
+      <Heading size="lg" as="h2" textAlign="left" >
               Contact Me!
             </Heading>
             <Text>Feel free to get in touch. You can email me at: </Text>
