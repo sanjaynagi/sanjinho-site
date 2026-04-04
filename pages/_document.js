@@ -7,24 +7,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link
-          rel="preload"
-          href="/fonts/CalSans-SemiBold.ttf"
-          as="font"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="/fonts/CalSans-SemiBold.woff"
-          as="font"
-          crossOrigin=""
-        />
-        <link
-          rel="preload"
-          href="/fonts/CalSans-SemiBold.woff2"
-          as="font"
-          crossOrigin=""
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       </Head>
       <script
         async

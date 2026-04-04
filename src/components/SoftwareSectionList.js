@@ -1,20 +1,28 @@
 import { VStack, Heading, List, ListItem, Button } from '@chakra-ui/react';
 import Link from 'next/link';
-import { FaGithub } from "react-icons/fa";
+import { FaGithub } from 'react-icons/fa';
 import ProjectInfoCard from './ProjectInfoCard';
 
 const SoftwareSectionList = ({ projects }) => {
   return (
     <VStack w="full" alignItems="center" spacing={4} as="section" mt={16}>
-      <Heading size="lg">Open Source Software I&#39;ve developed or contributed to</Heading>
+      <Heading size="lg" fontWeight="700" textAlign="center">Open Source Software</Heading>
 
-      <VStack spacing={4} alignItems="center" w="full" as="section" pt={2} >
-        <Button leftIcon={<FaGithub/>} color='#89b5a2' size='lg' variant='ghost'> 
+      <VStack spacing={4} alignItems="center" w="full" as="section" pt={2}>
+        <Button
+          leftIcon={<FaGithub />}
+          color="brand.primary"
+          size="md"
+          variant="ghost"
+          fontFamily="body"
+          fontWeight="500"
+          _hover={{ bg: 'rgba(196, 93, 62, 0.08)' }}
+        >
           <Link href="https://github.com/sanjaynagi">GitHub</Link>
         </Button>
-      </VStack>      
+      </VStack>
 
-      <List spacing={6}>
+      <List spacing={4} w="full">
         {projects.map(project => (
           <ListItem key={project.href}>
             <ProjectInfoCard {...project} />

@@ -1,54 +1,46 @@
-import { Box, Stack, VStack, Heading, Text, HStack } from '@chakra-ui/react';
+import { Box, Stack, VStack, Heading, Text } from '@chakra-ui/react';
 import useBetterMediaQuery from './BetterMediaQuery';
-import HeroImage from "./HeroImage"
+import HeroImage from './HeroImage';
 import ContactIcons from './ContactIcons';
 
 const Hero = () => {
   const isMobile = useBetterMediaQuery('(max-width: 768px)');
   return (
     <Box pt={28}>
-      <Stack 
-        pb={8}
+      <Stack
+        pb={10}
         alignItems="center"
-        spacing={12}
+        spacing={{ base: 8, md: 16 }}
         w="full"
         direction={{ base: 'column-reverse', md: 'row' }}
         as="section"
       >
-        <VStack spacing={3} alignItems="flex-start" w="full">
-          <Stack
-            spacing={3}
-            w="full"
-            direction={{ base: 'column', md: 'row' }}
-            justifyContent={{ base: 'space-between', md: 'flex-start' }}
-            alignItems="center"
+        <VStack spacing={5} alignItems="flex-start" w="full">
+          <Heading
+            as="h1"
+            fontSize={{ base: '3xl', md: '4xl' }}
+            fontWeight="700"
+            lineHeight="1.15"
           >
-          {isMobile ? (
-            <VStack width="100%" justifyContent={'space-between'}>
-              <Heading size="lg" as="h1">
-                Hey, I&apos;m Sanjay
-              </Heading>     
-              <HeroImage />
-            </VStack>  
-          ) : (
-            <HStack width="100%" justifyContent={'space-between'}>
-              <Heading size="lg" as="h1">
-                 Hey, I&apos;m Sanjay
-              </Heading>     
-              <HeroImage />
-             </HStack>  
-            )
-          }
-          </Stack>
-          <Text lineHeight="175%" as="h2" fontSize="lg">
-            I&apos;m a research scientist at the Ellison Institute of Technology, developing methods and resources 
-            to improve the diagnosis and treatment of infectious pathogens. I enjoy developing open-source 
+            Hey, I&apos;m Sanjay
+          </Heading>
+          <Text
+            lineHeight="1.8"
+            as="h2"
+            fontSize={{ base: 'md', md: 'lg' }}
+            fontWeight="300"
+            color="brand.muted"
+          >
+            I&apos;m a research scientist at the Ellison Institute of Technology, developing methods and resources
+            to improve the diagnosis and treatment of infectious pathogens. I enjoy developing open-source
             computational tools that can aid the community and empower researchers to analyse their own data.
           </Text>
+          <Box pt={2}>
+            <ContactIcons />
+          </Box>
         </VStack>
+        <HeroImage />
       </Stack>
-      <ContactIcons />   
-
     </Box>
   );
 };

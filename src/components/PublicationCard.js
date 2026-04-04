@@ -7,6 +7,7 @@ import {
   LinkOverlay,
   Image,
   Badge,
+  Box,
   useColorModeValue
 } from '@chakra-ui/react';
 import ExternalLink from './ExternalLink';
@@ -20,7 +21,9 @@ const PublicationCard = ({
   journalLogo,
   doi
 }) => {
-  const bgColorStack = useColorModeValue('gray.100', 'brand.primary');
+  const bgColor = useColorModeValue('rgba(26, 26, 26, 0.02)', 'rgba(232, 224, 212, 0.04)');
+  const hoverBorderColor = useColorModeValue('#c45d3e', '#c45d3e');
+  const metaColor = useColorModeValue('brand.muted', 'brand.warmGray');
   const doiUrl = `https://doi.org/${doi}`;
 
   return (
@@ -28,60 +31,65 @@ const PublicationCard = ({
       <Stack
         direction={{ base: 'column', md: 'row' }}
         p={5}
-        spacing={{ base: 8, md: 5 }}
-        bg={bgColorStack}
+        spacing={{ base: 5, md: 5 }}
+        bg={bgColor}
         rounded="md"
-        alignItems="center"
-        transitionProperty="transform"
-        transitionDuration="slow"
-        transitionTimingFunction="ease-out"
-        _hover={{ transform: 'scale(1.025, 1.025)' }}
+        alignItems={{ base: 'flex-start', md: 'center' }}
+        borderLeft="3px solid"
+        borderColor="transparent"
+        transition="all 0.25s cubic-bezier(0.23, 1, 0.32, 1)"
+        _hover={{
+          borderColor: hoverBorderColor
+        }}
       >
         {journalLogo && (
-          <Image
-            src={journalLogo}
-            alt={`${journal} logo`}
-            w={20}
-            h={20}
-            objectFit="contain"
-            fallback={
-              <Badge colorScheme="brand.secondary" fontSize="sm" p={2}>
-                {journal}
-              </Badge>
-            }
-          />
+          <Box flexShrink={0}>
+            <Image
+              src={journalLogo}
+              alt={`${journal} logo`}
+              w={16}
+              h={16}
+              objectFit="contain"
+              opacity={0.7}
+              fallback={
+                <Badge colorScheme="orange" fontSize="xs" px={2} py={1}>
+                  {journal}
+                </Badge>
+              }
+            />
+          </Box>
         )}
-        <VStack spacing={3} flex={1}>
-          <VStack w="full" spacing={2}>
-            <Stack
-              w="full"
-              direction={{ base: 'column', md: 'row' }}
-              justifyContent={{ base: 'flex-start', md: 'space-between' }}
-              alignItems={{ base: 'flex-start', md: 'center' }}
-            >
-              <Heading fontSize="1.1rem" fontWeight="semibold">
-                <LinkOverlay as={ExternalLink} href={doiUrl} color="gray.600" _hover={{ textDecoration: 'none' }}>
-                  {title}
-                </LinkOverlay>
-              </Heading>
-            </Stack>
-            <Text fontSize="sm" color="gray.600" w="full">
-              {authors}
+        <VStack spacing={2} flex={1} alignItems="flex-start">
+          <Heading fontSize="1rem" fontFamily="body" fontWeight="500" lineHeight="1.5">
+            <LinkOverlay as={ExternalLink} href={doiUrl} _hover={{ textDecoration: 'none' }} textDecoration="none">
+              {title}
+            </LinkOverlay>
+          </Heading>
+          <Text fontSize="sm" color={metaColor} lineHeight="1.6">
+            {authors}
+          </Text>
+          <Stack
+            w="full"
+            direction={{ base: 'column', sm: 'row' }}
+            justifyContent="space-between"
+            alignItems={{ base: 'flex-start', sm: 'center' }}
+            spacing={2}
+          >
+            <Text fontSize="xs" color={metaColor} fontFamily="mono">
+              {doi}
             </Text>
-            <Stack
-              w="full"
-              direction={{ base: 'column', sm: 'row' }}
-              justifyContent="space-between"
-              alignItems={{ base: 'flex-start', sm: 'center' }}
+            <Badge
+              bg="brand.primary"
+              color="white"
+              fontSize="xs"
+              px={2}
+              py={0.5}
+              borderRadius="full"
+              fontWeight="500"
             >
-              <Text fontSize="xs" color="gray.600">
-                DOI: {doi}
-              </Text>
-              <Badge colorScheme="brand.secondary" variant="subtle">
-                {year}
-              </Badge>
-            </Stack>
-          </VStack>
+              {year}
+            </Badge>
+          </Stack>
         </VStack>
       </Stack>
     </LinkBox>

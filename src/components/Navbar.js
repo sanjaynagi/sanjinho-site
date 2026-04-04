@@ -1,9 +1,8 @@
 import {
   Container,
   Box,
-  Stack,
+  HStack,
   Flex,
-  Divider,
   useColorModeValue,
   Text,
   useMediaQuery,
@@ -12,81 +11,89 @@ import {
 import InternalLink from './InternalLink';
 import ThemeToggleButton from './ThemeToggleButton';
 
+const NavLink = ({ href, children, ...props }) => {
+  const hoverColor = useColorModeValue('brand.primary', 'brand.primary');
+  const color = useColorModeValue('brand.muted', 'brand.warmGray');
+  return (
+    <InternalLink
+      href={href}
+      fontSize="sm"
+      fontWeight="400"
+      letterSpacing="0.04em"
+      textTransform="uppercase"
+      color={color}
+      _hover={{ color: hoverColor, textDecoration: 'none' }}
+      px={3}
+      py={1}
+      {...props}
+    >
+      {children}
+    </InternalLink>
+  );
+};
+
 const Navbar = props => {
   const [isMobile] = useMediaQuery('(max-width: 768px)');
+  const bgColor = useColorModeValue('rgba(255, 255, 242, 0.85)', 'rgba(28, 25, 23, 0.85)');
+  const borderColor = useColorModeValue('rgba(26, 26, 26, 0.06)', 'rgba(232, 224, 212, 0.06)');
+  const wordmarkColor = useColorModeValue('#1a1a1a', '#e8e0d4');
+
   return (
     <Box
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#5c5e5b')}
-      css={{ backdropFilter: 'blur(10px)' }}
-      zIndex={1}
+      bg={bgColor}
+      css={{ backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)' }}
+      zIndex={10}
+      borderBottom="1px solid"
+      borderColor={borderColor}
       {...props}
     >
       <Container
         display="flex"
-        p={2}
+        py={4}
+        px={{ base: 4, md: 6 }}
         maxW="container.lg"
-        wrap="wrap"
-        as='nav'
-        align="center"
-        justify="space-between"
+        as="nav"
+        alignItems="center"
+        justifyContent="space-between"
       >
         <Flex align="center">
-            <InternalLink href="/" height="%50">
+          <InternalLink href="/" _hover={{ textDecoration: 'none' }}>
             <Text
-              fontSize={{ base: '0px', md: '20px' }}
-              fontWeight={{ base: '0', md: '600' }}
-              sx={{
-                background:
-                  'linear-gradient(45deg, #43544c 0%, #95a8a0 10% )',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundSize: '800%'
-              }}
+              fontSize={{ base: '0px', md: '22px' }}
+              fontFamily="heading"
+              fontWeight="700"
+              color={wordmarkColor}
+              letterSpacing="-0.01em"
             >
               Sanjay Curtis Nagi
             </Text>
           </InternalLink>
         </Flex>
 
-
-        {isMobile ? (
-          <Stack
-            direction={{ base: 'row', md: 'row' }}
-            display={{ base: 'row', md: 'flex' }}
-            width={{ base: 'full', md: 'auto' }}
-            alignItems="center"
-            flexGrow={1}
-            mt={{ base: 4, md: 0 }}
-
-          >
-            <InternalLink href="/about" fontSize="sm">About</InternalLink>
-            <InternalLink href="/blog" fontSize="sm">Blog</InternalLink>
-            <InternalLink href="/publications" fontSize="sm">Publications</InternalLink>
-            <InternalLink href="/software" fontSize="sm">Software</InternalLink>
-          </Stack>
-        ) : (
-          <Stack
-            direction={{ base: 'row', md: 'row' }}
-            display={{ base: 'row', md: 'flex' }}
-            width={{ base: 'full', md: 'auto' }}
-            alignItems="center"
-            flexGrow={1}
-            mt={{ base: 4, md: 0 }}
-          >     
-            <Divider orientation='vertical' ml="3"/>       
-            <InternalLink href="/about">About</InternalLink>
-            <InternalLink href="/blog">Blog</InternalLink>
-            <InternalLink href="/cv">CV</InternalLink>
-            <InternalLink href="/publications">Publications</InternalLink>
-            <InternalLink href="/software">Software</InternalLink>
-          </Stack>
-        )}
-        <Box flex={1} align="right" >
-          <ThemeToggleButton />
-        </Box>
+        <HStack spacing={{ base: 1, md: 2 }} alignItems="center">
+          {isMobile ? (
+            <>
+              <NavLink href="/about" fontSize="xs" px={2}>About</NavLink>
+              <NavLink href="/blog" fontSize="xs" px={2}>Blog</NavLink>
+              <NavLink href="/publications" fontSize="xs" px={2}>Pubs</NavLink>
+              <NavLink href="/software" fontSize="xs" px={2}>Software</NavLink>
+            </>
+          ) : (
+            <>
+              <NavLink href="/about">About</NavLink>
+              <NavLink href="/blog">Blog</NavLink>
+              <NavLink href="/cv">CV</NavLink>
+              <NavLink href="/publications">Publications</NavLink>
+              <NavLink href="/software">Software</NavLink>
+            </>
+          )}
+          <Box pl={2}>
+            <ThemeToggleButton />
+          </Box>
+        </HStack>
       </Container>
     </Box>
   );

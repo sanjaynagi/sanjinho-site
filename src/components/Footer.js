@@ -1,34 +1,32 @@
 import {
-  Stack,
   VStack,
+  HStack,
   Divider,
-  Link,
-  Center,
-  useColorModeValue,
-  useMediaQuery
+  Text,
+  useColorModeValue
 } from '@chakra-ui/react';
 
 import InternalLink from './InternalLink';
 import ContactIcons from './ContactIcons';
 
 const Footer = () => {
-  const [isMobile] = useMediaQuery('(max-width: 768px)');
-  const linkColor = useColorModeValue('gray.600', 'white');
-  const textMode = useColorModeValue('gray.500', 'gray.500');
+  const mutedColor = useColorModeValue('brand.muted', 'brand.warmGray');
 
   return (
-    <VStack pb={8} as="footer" alignItems="center">
+    <VStack pb={8} pt={4} as="footer" spacing={5} alignItems="center">
       <Divider />
-
-      <Stack
-        w="full"
-        direction={{ base: 'column', md: 'row' }}
-        alignItems="center"
-        justifyContent={{ base: 'center', md: 'space-between' }}
-      >
       <ContactIcons />
-      </Stack>
-      <Center><InternalLink href="/" color='grey' fontSize="14px">Home</InternalLink></Center>
+      <HStack spacing={6}>
+        <InternalLink href="/" color={mutedColor} fontSize="13px" _hover={{ color: 'brand.primary' }}>
+          Home
+        </InternalLink>
+        <InternalLink href="/about" color={mutedColor} fontSize="13px" _hover={{ color: 'brand.primary' }}>
+          About
+        </InternalLink>
+        <InternalLink href="/blog" color={mutedColor} fontSize="13px" _hover={{ color: 'brand.primary' }}>
+          Blog
+        </InternalLink>
+      </HStack>
     </VStack>
   );
 };
