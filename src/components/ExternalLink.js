@@ -5,11 +5,16 @@ const ExternalLink = ({ children, ...linkProps }) => {
     <span>
       <Link
         {...linkProps}
-        color="brand.primary"
+        color="brand.secondary"
         display="inline-flex"
         alignItems="center"
         isExternal
         target="_blank"
+        _hover={{ color: 'brand.primary' }}
+        transition="color 0.2s ease"
+        textDecoration="underline"
+        textUnderlineOffset="3px"
+        textDecorationColor="currentColor"
       >
         {children}
       </Link>

@@ -9,7 +9,7 @@ import {
   HStack,
   Text,
   Divider,
-  Center
+  useColorModeValue
 } from '@chakra-ui/react';
 import { promises as fs } from 'fs';
 import path from 'path';
@@ -111,6 +111,7 @@ const BlogPostPage = ({
 }) => {
   const { query } = useRouter();
   const slug = query.slug;
+  const metaColor = useColorModeValue('brand.muted', 'brand.warmGray');
 
   const postIndex = allPosts.findIndex(post => post.slug === slug);
   const previousArticle = allPosts[postIndex - 1] || null;
@@ -128,36 +129,29 @@ const BlogPostPage = ({
       />
       <VStack spacing={8} alignItems="stetch" w="full" as="section" pt={28}>
         <VStack spacing={3} alignItems="flex-start">
-          {/* Post Title */}
-          <Heading size="lg">{title}</Heading>
-          {/* Post Meta */}
+          <Heading size="lg" fontWeight="700" lineHeight="1.2">
+            {title}
+          </Heading>
           <HStack
+            spacing={0}
             divider={
-              <Text color="gray.500" mx={2}>
-                •
+              <Text color={metaColor} mx={2} fontSize="sm">
+                /
               </Text>
             }
           >
-            {/* Published Date */}
             <PublishedDate date={date} />
-            {/* Time to read */}
             <TimeToRead timeToRead={timeToRead} />
-            {/* Tag */}
             <Tag tag={tag} />
           </HStack>
         </VStack>
-        <Center>
-        </Center>
         <MDXRemote {...source} components={MDXComponents} />
-        <UtterancesComments />        
+        <UtterancesComments />
         <Divider />
-        {/* Article Navigator */}
         <ArticleNavigator
           previousArticle={previousArticle}
           nextArticle={nextArticle}
         />
-        {/* Author Card */}
-        {/* <AuthorCard /> */}
       </VStack>
     </>
   );

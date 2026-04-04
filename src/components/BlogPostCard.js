@@ -7,78 +7,64 @@ import {
   VStack,
   HStack,
   Stack,
+  Box,
   useColorModeValue,
   useMediaQuery
 } from '@chakra-ui/react';
-import dayjs from 'dayjs';
 
 import TimeToRead from './BlogPostPage/TimeToRead';
 import PublishedDate from './BlogPostPage/PublishedDate';
 
 const BlogPostCard = ({ title, shorttitle, date, slug, thumbnail, timeToRead }) => {
   const [isMobile] = useMediaQuery('(max-width: 768px)');
-  const bgColorHover = useColorModeValue('gray.200', 'gray.600');
-  const textMode = useColorModeValue('black', 'white');
+  const hoverBg = useColorModeValue('rgba(26, 26, 26, 0.03)', 'rgba(232, 224, 212, 0.04)');
+  const borderColor = useColorModeValue('transparent', 'transparent');
+  const hoverBorderColor = useColorModeValue('#c45d3e', '#c45d3e');
+  const metaColor = useColorModeValue('brand.muted', 'brand.warmGray');
 
   return (
     <LinkBox as="article">
       <Stack
-        direction={{ base: 'row', md: 'row' }}
+        direction="row"
         p={4}
-        spacing={{ base: 8, md: 5 }}
+        spacing={{ base: 4, md: 5 }}
         rounded="md"
         alignItems="center"
-        transitionProperty="transform"
-        transitionDuration="slow"
-        transitionTimingFunction="ease-out"
+        borderLeft="3px solid"
+        borderColor={borderColor}
+        transition="all 0.25s cubic-bezier(0.23, 1, 0.32, 1)"
         _hover={{
-          transform: 'scale(1.025, 1.025)',
-          backgroundColor: bgColorHover
+          borderColor: hoverBorderColor,
+          backgroundColor: hoverBg
         }}
       >
         {isMobile ? null : (
-          <Image src={thumbnail} alt={`${shorttitle} thumbnail`} width={32} height={32} />
+          <Box flexShrink={0} borderRadius="6px" overflow="hidden" opacity={0.85}>
+            <Image src={thumbnail} alt={`${shorttitle} thumbnail`} width={32} height={32} />
+          </Box>
         )}
-        <VStack w="full" alignItems="stretch">
-          {isMobile ? (
-            <VStack justifyContent="space-between" alignItems="flex-start">
-              <LinkOverlay as={Link} href={`/blog/${slug}`}>
-                  <Text as="h2" fontSize="md" fontWeight="600" color={textMode}>
-                    {shorttitle}
-                  </Text>
-                </LinkOverlay>
-              <HStack
-                justify="space-between"
-                divider={
-                  <Text color="gray.500" mx={2}>
-                    •
-                  </Text>
-                }
-              >
-                <PublishedDate date={date} />
-                <TimeToRead timeToRead={timeToRead} />
-              </HStack>
-            </VStack>
-          ) : (
-            <HStack justify="space-between">
-              <LinkOverlay as={Link} href={`/blog/${slug}`}>
-                  <Text as="h2" fontSize="lg" fontWeight="600" color={textMode}>
-                    {shorttitle}
-                  </Text>
-                  <HStack
-                    justifyContent="flex-start"
-                    divider={
-                      <Text color="gray.500" mx={2}>
-                        •
-                      </Text>
-                    }
-                  >
-                    <PublishedDate date={date} />
-                    <TimeToRead timeToRead={timeToRead} />
-                  </HStack>
-                </LinkOverlay>
-            </HStack>
-          )}
+        <VStack w="full" alignItems="stretch" spacing={1}>
+          <LinkOverlay as={Link} href={`/blog/${slug}`}>
+            <Text
+              as="h2"
+              fontSize={{ base: 'md', md: 'lg' }}
+              fontWeight="500"
+              lineHeight="1.4"
+            >
+              {shorttitle}
+            </Text>
+          </LinkOverlay>
+          <HStack
+            spacing={0}
+            divider={
+              <Text color={metaColor} mx={2} fontSize="xs">
+                /
+              </Text>
+            }
+          >
+            <PublishedDate date={date} />
+            <TimeToRead timeToRead={timeToRead} />
+          </HStack>
         </VStack>
       </Stack>
     </LinkBox>

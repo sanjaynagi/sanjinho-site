@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heading, Text, VStack, List, ListItem } from '@chakra-ui/react';
+import { Heading, Text, VStack, List, ListItem, useColorModeValue } from '@chakra-ui/react';
 import { promises as fs } from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -54,43 +54,18 @@ export const getStaticProps = async () => {
 
 const Blog = ({ posts }) => {
   const [displayPosts, setDisplayPosts] = useState(posts);
-
-  // const onSearch = () => {
-  //   console.log(event);
-  //   const query = event.currentTarget.value;
-
-  //   const filteredPosts = posts.filter(post =>
-  //     post.title.toLowerCase().includes(query)
-  //   );
-
-  //   setDisplayPosts(filteredPosts);
-  // };
+  const mutedColor = useColorModeValue('brand.muted', 'brand.warmGray');
 
   return (
     <>
       <DocumentHead pageTitle="Blog" postPath="/blog" description="Blog posts on vector control, genomic surveillance, and bioinformatics by Sanjay Curtis Nagi." />
       <VStack spacing={3} alignItems="flex-start" w="full" as="section" pt={28}>
-        <Heading size="xl" as="h1">
+        <Heading size="xl" as="h1" fontWeight="700">
           Blog
         </Heading>
-        <Text fontSize="xl">
+        <Text fontSize="lg" color={mutedColor} lineHeight="1.8">
           Recent blog posts. I write about vector control, genomic surveillance and bioinformatics.
         </Text>
-        {/* <Text fontSize="xl">
-          In total I&#39;ve written <strong>{Object.keys(posts).length}</strong>{' '}
-          tutorials and posts.
-        </Text> */}
-        {/* <InputGroup>
-          <InputLeftElement pointerEvents="none">
-            <Icon as={HiOutlineSearch} color="gray.400" />
-          </InputLeftElement>
-          <Input
-            placeholder="Search a post by title, or topic..."
-            variant="filled"
-            onChange={onSearch}
-          />
-        </InputGroup> */}
-        {/* Common Tags cloud */}
       </VStack>
       <List spacing={1} w="full">
         {displayPosts.map(post => (

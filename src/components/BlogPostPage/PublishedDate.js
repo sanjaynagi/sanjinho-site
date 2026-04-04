@@ -3,16 +3,16 @@ import dayjs from 'dayjs';
 
 const PublishedDate = ({ date }) => {
   const [isMobile] = useMediaQuery('(max-width: 768px)');
-  const textMode = useColorModeValue('#555', 'white');
+  const textColor = useColorModeValue('brand.muted', 'brand.warmGray');
   return (
     <>
       {isMobile ? (
-        <Text color={textMode} fontSize="sm">
+        <Text color={textColor} fontSize="sm">
           {dayjs(date).format('MMM D, YYYY')}
         </Text>
       ) : (
-        <Text color={textMode} fontSize="sm">
-          Published on {dayjs(date).format('MMM D, YYYY')}
+        <Text color={textColor} fontSize="sm">
+          {dayjs(date).format('MMM D, YYYY')}
         </Text>
       )}
     </>

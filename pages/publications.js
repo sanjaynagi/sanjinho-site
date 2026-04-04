@@ -10,23 +10,29 @@ import {
   Button,
   ButtonGroup,
   Divider,
-  SimpleGrid
+  SimpleGrid,
+  useColorModeValue
 } from '@chakra-ui/react';
 import { FaGoogle, FaOrcid } from 'react-icons/fa';
 import { PublicationsList, PostersList } from '../src/data/publications';
 
 const PublicationsPage = () => {
+  const mutedColor = useColorModeValue('brand.muted', 'brand.warmGray');
+
   return (
     <>
       <DocumentHead pageTitle="Publications" postPath="/publications" description="Selected publications and posters by Sanjay Curtis Nagi on genomics, malaria, and vector control." />
-      <VStack spacing={4} as="section" pt={28}>
-        <Heading size="lg">Publications</Heading>
+      <VStack spacing={4} as="section" pt={28} alignItems="center" w="full">
+        <Heading size="lg" fontWeight="600">Publications</Heading>
         <ButtonGroup spacing={4}>
           <Button
             leftIcon={<FaGoogle />}
             color="brand.primary"
-            size="lg"
+            size="md"
             variant="ghost"
+            fontFamily="body"
+            fontWeight="500"
+            _hover={{ bg: 'rgba(196, 93, 62, 0.08)' }}
           >
             <Link href="https://scholar.google.com/citations?user=P-ImwEcAAAAJ&hl=en&oi=ao">
               Google Scholar
@@ -35,28 +41,29 @@ const PublicationsPage = () => {
           <Button
             leftIcon={<FaOrcid />}
             color="brand.primary"
-            size="lg"
+            size="md"
             variant="ghost"
+            fontFamily="body"
+            fontWeight="500"
+            _hover={{ bg: 'rgba(196, 93, 62, 0.08)' }}
           >
-            <Link href="https://orcid.org/0000-0003-1214-8523">Orcid</Link>
+            <Link href="https://orcid.org/0000-0003-1214-8523">ORCID</Link>
           </Button>
         </ButtonGroup>
-        <Text pb="5">
+        <Text pb="5" color={mutedColor}>
           If you need access to any of the below, please get in touch!
         </Text>
         <Divider />
-        
-        {/* Publications Section */}
-        <Heading size="md" pt={4}>Selected Publications</Heading>
-        <SimpleGrid columns={{ base: 1 }} spacing={6} w="full" pt={2}>
+
+        <Heading size="md" pt={4} fontWeight="600">Selected Publications</Heading>
+        <SimpleGrid columns={{ base: 1 }} spacing={4} w="full" pt={2}>
           {PublicationsList.map((publication) => (
             <PublicationCard key={publication.id} {...publication} />
           ))}
         </SimpleGrid>
 
-        {/* Posters Section */}
-        <Heading size="md" pt={8}>Posters</Heading>
-        <SimpleGrid columns={{ base: 1 }} spacing={6} w="full" pt={2}>
+        <Heading size="md" pt={8} fontWeight="600">Posters</Heading>
+        <SimpleGrid columns={{ base: 1 }} spacing={4} w="full" pt={2}>
           {PostersList.map((poster) => (
             <PosterCard key={poster.id} {...poster} />
           ))}

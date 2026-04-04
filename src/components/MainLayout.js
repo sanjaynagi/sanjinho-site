@@ -8,13 +8,12 @@ const MainLayout = ({ children = null }) => {
   return (
     <Box as="main" pb={8}>
       <Navbar />
-      {/* <Sidebar /> */}
       <Container
         maxW="container.md"
         minH={{ base: 'auto', md: '100vh' }}
-        px={{ base: 4, lg: 0 }}
+        px={{ base: 5, lg: 0 }}
       >
-        <VStack spacing={16} flex={1} w="full" as="main" mb={16}>
+        <VStack spacing={20} flex={1} w="full" as="main" mb={16}>
           {children}
         </VStack>
         <Analytics />

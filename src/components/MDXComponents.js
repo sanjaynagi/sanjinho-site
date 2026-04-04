@@ -36,7 +36,7 @@ const Table = props => (
 
 const THead = props => (
   <chakra.th
-    bg={useColorModeValue('gray.50', 'brand.secondary')}
+    bg={useColorModeValue('rgba(26, 26, 26, 0.04)', 'rgba(232, 224, 212, 0.06)')}
     fontWeight="semibold"
     p={2}
     fontSize="sm"
@@ -59,7 +59,7 @@ const CopyButton = ({ value }) => {
   const { onCopy, hasCopied } = useClipboard(value);
   return (
     <Button
-      color="white"
+      color="rgba(232, 224, 212, 0.6)"
       aria-label="Copy text"
       textTransform="uppercase"
       role="button"
@@ -67,91 +67,73 @@ const CopyButton = ({ value }) => {
       fontSize="md"
       mr={1}
       p={1}
-      bgColor="#202020"
+      bgColor="transparent"
+      _hover={{ color: '#e8e0d4' }}
     >
-      <IoClipboardOutline size={20} color="ffffff" />
+      <IoClipboardOutline size={18} color="currentColor" />
     </Button>
   );
 };
+
 const CodeHighlight = ({ children: codeString, className }) => {
   const language = className ? className.replace('language-', '') : 'text';
   const showLanguage = () => {
     switch (language) {
       case 'typescript':
-        return <SiTypescript size={18} color="#ffffff" />;
+        return <SiTypescript size={16} color="rgba(232, 224, 212, 0.5)" />;
       case 'python':
-        return <SiPython size={18} color="#ffffff" />;
+        return <SiPython size={16} color="rgba(232, 224, 212, 0.5)" />;
       default:
         break;
     }
   };
 
-  // Custom theme with dark blue background and white text
   const customTheme = {
     plain: {
-      backgroundColor: '#014d4e',  // Dark blue background
-      color: '#ffffff'             // White text
+      backgroundColor: '#1c1917',
+      color: '#e8e0d4'
     },
     styles: [
       {
         types: ['comment', 'prolog', 'doctype', 'cdata'],
-        style: {
-          color: '#88A0A8'
-        }
+        style: { color: '#7a756e' }
       },
       {
         types: ['namespace'],
-        style: {
-          opacity: 0.7
-        }
+        style: { opacity: 0.7 }
       },
       {
         types: ['string', 'attr-value'],
-        style: {
-          color: '#9EEAF9'
-        }
+        style: { color: '#d4a574' }
       },
       {
         types: ['punctuation', 'operator'],
-        style: {
-          color: '#E6E6E6'
-        }
+        style: { color: '#b8b2a8' }
       },
       {
         types: ['entity', 'url', 'symbol', 'number', 'boolean', 'variable', 'constant', 'property', 'regex', 'inserted'],
-        style: {
-          color: '#85E89D'
-        }
+        style: { color: '#6b8f71' }
       },
       {
         types: ['atrule', 'keyword', 'attr-name', 'selector'],
-        style: {
-          color: '#FF8FA3'
-        }
+        style: { color: '#c45d3e' }
       },
       {
         types: ['function', 'deleted', 'tag'],
-        style: {
-          color: '#79C0FF'
-        }
+        style: { color: '#d4a574' }
       },
       {
         types: ['function-variable'],
-        style: {
-          color: '#79C0FF'
-        }
+        style: { color: '#d4a574' }
       },
       {
         types: ['tag', 'selector', 'keyword'],
-        style: {
-          color: '#FF8FA3'
-        }
+        style: { color: '#c45d3e' }
       }
     ]
   };
 
-  const lineNumberColor = '#433529';
-  const preBackground = 'transparent'; // Changed to transparent to let theme background show
+  const lineNumberColor = '#4a4540';
   const showLineNumbers = !['shell', 'text'].includes(language);
 
   return (
@@ -169,9 +151,10 @@ const CodeHighlight = ({ children: codeString, className }) => {
               sx={{ ...style }}
               overflowX="auto"
               borderRadius="md"
-              p={2}
+              p={4}
               mx={-4}
               fontSize="sm"
+              lineHeight="1.7"
             >
               <HStack justifyContent="flex-end" pb={2}>
                 <CopyButton value={codeString.trim()} />
@@ -215,11 +198,13 @@ const CodeHighlight = ({ children: codeString, className }) => {
 const InlineCode = props => (
   <chakra.code
     apply="mdx.code"
-    color={useColorModeValue('brand.primary', 'white.200')}
-    bg={useColorModeValue('brand.secondary', 'brand.primary')}
-    px={1}
+    color={useColorModeValue('#c45d3e', '#d4a574')}
+    bg={useColorModeValue('rgba(196, 93, 62, 0.08)', 'rgba(196, 93, 62, 0.15)')}
+    px={1.5}
     py={0.5}
-    rounded={{ base: 'none', md: 'md' }}
+    rounded="md"
+    fontSize="0.9em"
+    fontWeight="400"
     {...props}
   />
 );
@@ -232,8 +217,9 @@ const LinkedHeading = props => {
         {...props}
         display="inline"
         fontFamily="heading"
-        color={useColorModeValue('gray.700', 'white')}
+        color={useColorModeValue('#1a1a1a', '#e8e0d4')}
         fontSize="3xl"
+        fontWeight="700"
       >
         {props.children}
       </Box>
@@ -242,14 +228,15 @@ const LinkedHeading = props => {
         color="brand.primary"
         userSelect="none"
         fontWeight="normal"
-        fontSize="1.5rem"
+        fontSize="1rem"
         outline="none"
         _focus={{ opacity: 1, boxShadow: 'outline' }}
         opacity={0}
-        _groupHover={{ opacity: 1 }}
+        _groupHover={{ opacity: 0.6 }}
         ml="0.35rem"
+        transition="opacity 0.2s ease"
       >
-        🔗
+        #
       </chakra.span>
     </Link>
   );
@@ -275,8 +262,9 @@ const Anchor = props => {
   const { colorMode } = useColorMode();
   return (
     <chakra.a
-      color={mode('#89b5a2', 'white.300')({ colorMode })}
-      _hover={{ textDecoration: 'underline' }}
+      color={mode('#6b8f71', '#d4a574')({ colorMode })}
+      _hover={{ color: '#c45d3e', textDecoration: 'underline' }}
+      transition="color 0.2s ease"
       {...props}
     />
   );
@@ -305,18 +293,20 @@ const MDXComponents = {
   th: THead,
   td: TData,
   a: Anchor,
-  p: props => <chakra.p apply="mdx.p" fontSize="lg" {...props} />,
+  p: props => <chakra.p apply="mdx.p" fontSize="lg" lineHeight="1.8" {...props} />,
   ul: props => <chakra.ul px={{ base: 4, md: 8 }} apply="mdx.ul" {...props} />,
   ol: props => <chakra.ol apply="mdx.ul" {...props} />,
-  li: props => <chakra.li pb="4px" fontSize="lg" {...props} />,
+  li: props => <chakra.li pb="4px" fontSize="lg" lineHeight="1.8" {...props} />,
   blockquote: props => (
     <Box>
       <Alert
         role="none"
-        status="info"
+        status="warning"
         variant="left-accent"
         as="blockquote"
         rounded="4px"
+        borderLeftColor="brand.primary"
+        bg="rgba(196, 93, 62, 0.06)"
         {...props}
         mx={-4}
         w="unset"

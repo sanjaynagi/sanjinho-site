@@ -4,32 +4,35 @@ import {
   List,
   ListItem,
   Text,
-  Link,
   HStack,
-  Box
+  useColorModeValue
 } from '@chakra-ui/react';
 
+import InternalLink from './InternalLink';
 import BlogPostCard from './BlogPostCard';
 
 const LatestPostsSection = ({ posts }) => {
+  const seeAllColor = useColorModeValue('brand.primary', 'brand.primary');
+
   return (
     <VStack
       w="full"
       alignItems="flex-start"
       justifyContent="center"
       as="section"
+      spacing={6}
     >
-      <HStack justifyContent="center" alignItems="center">
-        <Heading size="lg">Latest Posts</Heading>
-        <HStack justifyContent="flex-end">
-          <Link href="/blog">
-            <Text fontSize="lg" color="brand.primary" textAlign="center">
-              See all
-            </Text>
-          </Link>
-        </HStack>
+      <HStack justifyContent="space-between" alignItems="baseline" w="full">
+        <Heading size="lg" fontWeight="700">
+          Latest Posts
+        </Heading>
+        <InternalLink href="/blog" p={0}>
+          <Text fontSize="sm" color={seeAllColor} fontWeight="500" letterSpacing="0.03em" textTransform="uppercase">
+            See all
+          </Text>
+        </InternalLink>
       </HStack>
-      <List spacing={6}>
+      <List spacing={2} w="full">
         {posts.map(post => (
           <ListItem key={post.slug}>
             <BlogPostCard {...post} />
