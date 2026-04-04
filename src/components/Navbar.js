@@ -5,7 +5,6 @@ import {
   Flex,
   useColorModeValue,
   Text,
-  useMediaQuery,
 } from '@chakra-ui/react';
 
 import InternalLink from './InternalLink';
@@ -33,7 +32,6 @@ const NavLink = ({ href, children, ...props }) => {
 };
 
 const Navbar = props => {
-  const [isMobile] = useMediaQuery('(max-width: 768px)');
   const bgColor = useColorModeValue('rgba(255, 255, 242, 0.85)', 'rgba(28, 25, 23, 0.85)');
   const borderColor = useColorModeValue('rgba(26, 26, 26, 0.06)', 'rgba(232, 224, 212, 0.06)');
   const wordmarkColor = useColorModeValue('#1a1a1a', '#e8e0d4');
@@ -52,17 +50,18 @@ const Navbar = props => {
     >
       <Container
         display="flex"
-        py={4}
+        flexDirection={{ base: 'column', md: 'row' }}
+        py={{ base: 2, md: 4 }}
         px={{ base: 4, md: 6 }}
         maxW="container.lg"
         as="nav"
-        alignItems="center"
+        alignItems={{ base: 'flex-start', md: 'center' }}
         justifyContent="space-between"
       >
-        <Flex align="center">
+        <Flex align="center" justify="space-between" w={{ base: '100%', md: 'auto' }}>
           <InternalLink href="/" _hover={{ textDecoration: 'none' }}>
             <Text
-              fontSize={{ base: '0px', md: '22px' }}
+              fontSize={{ base: '18px', md: '22px' }}
               fontFamily="heading"
               fontWeight="700"
               color={wordmarkColor}
@@ -71,26 +70,21 @@ const Navbar = props => {
               Sanjay Curtis Nagi
             </Text>
           </InternalLink>
+          <Box display={{ base: 'block', md: 'none' }} pl={2}>
+            <ThemeToggleButton />
+          </Box>
         </Flex>
 
-        <HStack spacing={{ base: 1, md: 2 }} alignItems="center">
-          {isMobile ? (
-            <>
-              <NavLink href="/about" fontSize="xs" px={2}>About</NavLink>
-              <NavLink href="/blog" fontSize="xs" px={2}>Blog</NavLink>
-              <NavLink href="/publications" fontSize="xs" px={2}>Pubs</NavLink>
-              <NavLink href="/software" fontSize="xs" px={2}>Software</NavLink>
-            </>
-          ) : (
-            <>
-              <NavLink href="/about">About</NavLink>
-              <NavLink href="/blog">Blog</NavLink>
-              <NavLink href="/cv">CV</NavLink>
-              <NavLink href="/publications">Publications</NavLink>
-              <NavLink href="/software">Software</NavLink>
-            </>
-          )}
-          <Box pl={2}>
+        <HStack spacing={{ base: 1, md: 2 }} alignItems="center" mt={{ base: 1, md: 0 }}>
+          <NavLink href="/about" fontSize={{ base: 'xs', md: 'sm' }} px={{ base: 2, md: 3 }}>About</NavLink>
+          <NavLink href="/blog" fontSize={{ base: 'xs', md: 'sm' }} px={{ base: 2, md: 3 }}>Blog</NavLink>
+          <NavLink href="/cv" display={{ base: 'none', md: 'inline-flex' }}>CV</NavLink>
+          <NavLink href="/publications" fontSize={{ base: 'xs', md: 'sm' }} px={{ base: 2, md: 3 }}>
+            <Box as="span" display={{ base: 'none', md: 'inline' }}>Publications</Box>
+            <Box as="span" display={{ base: 'inline', md: 'none' }}>Pubs</Box>
+          </NavLink>
+          <NavLink href="/software" fontSize={{ base: 'xs', md: 'sm' }} px={{ base: 2, md: 3 }}>Software</NavLink>
+          <Box pl={2} display={{ base: 'none', md: 'block' }}>
             <ThemeToggleButton />
           </Box>
         </HStack>
