@@ -1,54 +1,50 @@
 export const SoftwareList = [
   {
     id: '7',
-    title: ' 🦚 AmpSeeker 🦚',
-    description: `A scalable, reproducible snakemake pipeline to analyse Illumina amplicon sequencing data. 
-                  Builds a webpage to conveniently explore the results`,
+    title: 'AmpSeeker',
+    description: `A scalable, reproducible Snakemake pipeline to analyse Illumina amplicon sequencing data`,
     href: 'https://github.com/sanjaynagi/AmpSeeker',
-    githubIcon: true
+    logo: '/logos/software/ampseeker.png',
   },
   {
     id: '6',
-    title: ' 🌍 The malaria vector selection atlas 🌍',
-    description: `A web resource of selection signals in An. gambiae s.l mosquitoes from phase 3 of the Anopheles 1000 genomes project`,
+    title: 'Selection Atlas',
+    description: `A web resource of selection signals in An. gambiae s.l mosquitoes from the Ag1000G project`,
     href: 'https://anopheles-genomic-surveillance.github.io/selection-atlas/',
-    githubIcon: true
+    logo: '/logos/software/selection-atlas.png',
   },
   {
     id: '2',
-    title: '🦕 RNA-Seq-Pop 🦕',
-    description: `A reproducible snakemake pipeline to analyse RNA-Seq data from any organism. Calls variants 
-                  and performs population genomic analyses as well as typical transcriptomic analyses`,
+    title: 'RNA-Seq-Pop',
+    description: `A reproducible Snakemake pipeline for RNA-Seq analysis with variant calling and population genomics`,
     href: 'https://github.com/sanjaynagi/rna-seq-pop',
-    githubIcon: true
+    logo: '/logos/software/rna-seq-pop.png',
   },
   {
     id: '3',
-    title: '🦟 malariagen_data 🦟 ',
-    description: `A python package to access and analyse data from the Anopheles 1000 genomes project in the cloud `,
+    title: 'malariagen_data',
+    description: `A Python package to access and analyse data from the Anopheles 1000 genomes project in the cloud`,
     href: 'https://github.com/malariagen/malariagen-data-python',
-    githubIcon: true
+    logo: '/logos/software/malariagen-data.svg',
   },
   {
     id: '4',
-    title: '🌺 AnoExpress 🌺',
-    description: `A python package to load and explore data from a meta-analysis of transcriptomic studies into insecticide
-                  resistance in Anopheles mosquitoes`,
+    title: 'AnoExpress',
+    description: `A Python package for meta-analysis of transcriptomic studies into insecticide resistance in Anopheles`,
     href: 'https://github.com/sanjaynagi/AnoExpress',
-    githubIcon: true
+    logo: '/logos/software/anoexpress.png',
   },
   {
     id: '5',
-    title: '🧬 AnoPrimer 🧬',
-    description: `A python package to design primers in Anopheles gambiae and funestus whilst considering genetic variation.`,
+    title: 'AnoPrimer',
+    description: `A Python package to design primers in Anopheles gambiae and funestus considering genetic variation`,
     href: 'https://github.com/sanjaynagi/AnoPrimer',
-    githubIcon: true
+    logo: '/logos/software/anoprimer.png',
   },
   {
     id: '8',
-    title: '🦴 ancIBD 🦴',
-    description: `A python package to identify segments of identity by descent in ancient DNA`,
+    title: 'ancIBD',
+    description: `A Python package to identify segments of identity by descent in ancient DNA`,
     href: 'https://github.com/hringbauer/ancIBD',
-    githubIcon: true
   },
 ];
