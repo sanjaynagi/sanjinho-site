@@ -28,8 +28,8 @@ const PdfViewer = () => {
   return (
     <Box style={{ display: "flex", flexDirection: "row", gap: "0px" }}>
       <PDFDocument file={url} className="d-flex justify-content-center">
-        <PDFPage pageNumber={1} scale={width > 786 ? 1.5 : 0.6} renderAnnotationLayer={false}/>
-        <PDFPage pageNumber={2} scale={width > 786 ? 1.5 : 0.6} renderAnnotationLayer={false}/>
+        <PDFPage pageNumber={1} scale={width > 786 ? 1.5 : 0.6} renderAnnotationLayer={false} renderTextLayer={false}/>
+        <PDFPage pageNumber={2} scale={width > 786 ? 1.5 : 0.6} renderAnnotationLayer={false} renderTextLayer={false}/>
       </PDFDocument>
     </Box>
   );
