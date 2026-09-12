@@ -79,3 +79,18 @@ export const SoftwareList = [
     fullBleed: true,
   },
 ];
+
+// Which logos share a row on the software wall, top to bottom.
+//
+// Row height follows from the membership: a row's tiles divide the width in
+// proportion to their shapes, so a row holding fewer (or narrower) logos is a
+// taller row, and its logos are drawn larger. Pairing ginkgo with tempera alone
+// is what makes those two the largest on the page. Anything not listed here
+// falls into a final row of its own.
+export const SoftwareRows = [
+  ['ginkgo', 'tempera'],
+  ['AmpSeeker', 'malariagen_data'],
+  ['Selection Atlas', 'RNA-Seq-Pop'],
+  ['AnoExpress'],
+  ['AnoPrimer', 'ancIBD'],
+];

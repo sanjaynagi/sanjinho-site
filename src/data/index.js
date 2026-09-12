@@ -1,3 +1,3 @@
-import { SoftwareList } from './software';
+import { SoftwareList, SoftwareRows } from './software';
 
-export { SoftwareList };
+export { SoftwareList, SoftwareRows };

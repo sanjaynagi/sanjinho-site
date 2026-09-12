@@ -16,18 +16,23 @@ import ExternalLink from './ExternalLink';
 
 // Justified layout, as a photo gallery lays out mixed-shape pictures.
 //
-// Each tile is given `aspect-ratio: <logo ratio>` and allowed to flex in
-// proportion to that ratio, so within any row every tile resolves to the same
-// height while keeping its own width — a square mark gets a square tile, a
+// Each tile is given `aspect-ratio: <logo ratio>` and flexes in proportion to
+// that ratio, so the tiles sharing a row divide the width between them by shape
+// and all resolve to the same height — a square mark gets a square tile, a
 // wordmark five times wider than tall gets a tile to match. Because the tile is
 // the logo's shape, a logo that is a solid block of its own can fill it edge to
 // edge with no whitespace at all.
+//
+// Row membership is stated in the data rather than left to flex wrapping, so
+// the page can be composed deliberately. It also sets scale: a row's height is
+// the width divided by the total of its ratios, so a row of fewer or narrower
+// logos is a taller row and draws its logos larger.
 const TARGET_HEIGHT = { base: 76, md: 104 };
-// A row with only a couple of tiles in it would otherwise grow them until it
-// filled the width, towering over its neighbours. Capping each tile's width at
-// its ratio times this height bounds how tall any row can get; a row that then
-// cannot fill the width is centred instead.
-const MAX_HEIGHT = { base: 104, md: 140 };
+// One narrow logo alone on a row would otherwise stretch to the full width and
+// tower over everything. Capping each tile's width at its ratio times this
+// height bounds any row's height; a row that then cannot fill the width is
+// centred instead.
+const MAX_HEIGHT = { base: 130, md: 200 };
 
 const LogoWordmark = ({ title }) => (
   <Text
@@ -58,10 +63,10 @@ const SoftwareTile = ({ title, description, href, logo, ratio, fullBleed }) => {
       role="group"
       flexGrow={ratio}
       flexShrink={1}
-      flexBasis={{
-        base: `${ratio * TARGET_HEIGHT.base}px`,
-        md: `${ratio * TARGET_HEIGHT.md}px`,
-      }}
+      // On a wide screen the basis is zero, so the row's width is split purely
+      // in proportion to shape. Narrow screens keep a real basis so a row of
+      // several logos can still wrap rather than shrink to nothing.
+      flexBasis={{ base: `${ratio * TARGET_HEIGHT.base}px`, md: 0 }}
       minW={{ base: '110px', md: '140px' }}
       maxW={{
         base: `${ratio * MAX_HEIGHT.base}px`,
@@ -155,7 +160,19 @@ const SoftwareTile = ({ title, description, href, logo, ratio, fullBleed }) => {
   );
 };
 
-const SoftwareLogoGrid = ({ projects }) => {
+// Resolve the configured rows of titles into rows of projects. Anything the
+// configuration misses still gets shown, in a row at the end.
+const toRows = (projects, rows = []) => {
+  const byTitle = new Map(projects.map(p => [p.title, p]));
+  const resolved = rows
+    .map(row => row.map(title => byTitle.get(title)).filter(Boolean))
+    .filter(row => row.length);
+  const placed = new Set(resolved.flat());
+  const rest = projects.filter(p => !placed.has(p));
+  return rest.length ? [...resolved, rest] : resolved;
+};
+
+const SoftwareLogoGrid = ({ projects, rows }) => {
   return (
     <VStack w="full" alignItems="center" spacing={8} as="section" mt={16}>
       <VStack spacing={3}>
@@ -175,11 +192,22 @@ const SoftwareLogoGrid = ({ projects }) => {
         </Button>
       </VStack>
 
-      <Flex w="full" wrap="wrap" gap={4} align="flex-start" justify="center">
-        {projects.map(project => (
-          <SoftwareTile key={project.id} {...project} />
+      <VStack w="full" spacing={4}>
+        {toRows(projects, rows).map((row, i) => (
+          <Flex
+            key={`row-${i}`}
+            w="full"
+            gap={4}
+            align="flex-start"
+            justify="center"
+            wrap={{ base: 'wrap', md: 'nowrap' }}
+          >
+            {row.map(project => (
+              <SoftwareTile key={project.id} {...project} />
+            ))}
+          </Flex>
         ))}
-      </Flex>
+      </VStack>
     </VStack>
   );
 };
