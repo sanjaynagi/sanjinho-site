@@ -1,6 +1,7 @@
-// `ratio` is the logo's intrinsic width / height. The software grid uses it to
-// lay the logos out justified, so wide wordmarks and near-square marks can sit
-// in the same row without being squashed into a uniform box.
+// `ratio` is the logo's intrinsic width / height; the software grid shapes each
+// tile to it, so wide wordmarks and near-square marks keep their proportions.
+// `fullBleed` marks a logo that is a solid block of its own colour, which fills
+// its tile edge to edge rather than sitting padded on a plate.
 export const SoftwareList = [
   {
     id: '9',
@@ -56,7 +57,8 @@ export const SoftwareList = [
     description: `A Python package for meta-analysis of transcriptomic studies into insecticide resistance in Anopheles`,
     href: 'https://github.com/sanjaynagi/AnoExpress',
     logo: '/logos/software/anoexpress.png',
-    ratio: 4.96,
+    ratio: 5.06,
+    fullBleed: true,
   },
   {
     id: '5',
@@ -65,12 +67,15 @@ export const SoftwareList = [
     href: 'https://github.com/sanjaynagi/AnoPrimer',
     logo: '/logos/software/anoprimer.png',
     ratio: 3.85,
+    fullBleed: true,
   },
   {
     id: '8',
     title: 'ancIBD',
     description: `A Python package to identify segments of identity by descent in ancient DNA`,
     href: 'https://github.com/hringbauer/ancIBD',
-    ratio: 2.6,
+    logo: '/logos/software/ancibd.png',
+    ratio: 1.0,
+    fullBleed: true,
   },
 ];
