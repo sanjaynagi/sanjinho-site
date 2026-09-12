@@ -36,7 +36,7 @@ const Table = props => (
 
 const THead = props => (
   <chakra.th
-    bg={useColorModeValue('rgba(26, 26, 26, 0.04)', 'rgba(232, 224, 212, 0.06)')}
+    bg={useColorModeValue('rgba(22, 36, 26, 0.04)', 'rgba(226, 235, 221, 0.06)')}
     fontWeight="semibold"
     p={2}
     fontSize="sm"
@@ -59,7 +59,7 @@ const CopyButton = ({ value }) => {
   const { onCopy, hasCopied } = useClipboard(value);
   return (
     <Button
-      color="rgba(232, 224, 212, 0.6)"
+      color="rgba(226, 235, 221, 0.6)"
       aria-label="Copy text"
       textTransform="uppercase"
       role="button"
@@ -68,7 +68,7 @@ const CopyButton = ({ value }) => {
       mr={1}
       p={1}
       bgColor="transparent"
-      _hover={{ color: '#e8e0d4' }}
+      _hover={{ color: '#e2ebdd' }}
     >
       <IoClipboardOutline size={18} color="currentColor" />
     </Button>
@@ -80,9 +80,9 @@ const CodeHighlight = ({ children: codeString, className }) => {
   const showLanguage = () => {
     switch (language) {
       case 'typescript':
-        return <SiTypescript size={16} color="rgba(232, 224, 212, 0.5)" />;
+        return <SiTypescript size={16} color="rgba(226, 235, 221, 0.5)" />;
       case 'python':
-        return <SiPython size={16} color="rgba(232, 224, 212, 0.5)" />;
+        return <SiPython size={16} color="rgba(226, 235, 221, 0.5)" />;
       default:
         break;
     }
@@ -90,13 +90,13 @@ const CodeHighlight = ({ children: codeString, className }) => {
 
   const customTheme = {
     plain: {
-      backgroundColor: '#1c1917',
-      color: '#e8e0d4'
+      backgroundColor: '#131a14',
+      color: '#e2ebdd'
     },
     styles: [
       {
         types: ['comment', 'prolog', 'doctype', 'cdata'],
-        style: { color: '#7a756e' }
+        style: { color: '#5f7561' }
       },
       {
         types: ['namespace'],
@@ -104,36 +104,36 @@ const CodeHighlight = ({ children: codeString, className }) => {
       },
       {
         types: ['string', 'attr-value'],
-        style: { color: '#d4a574' }
+        style: { color: '#a9c67f' }
       },
       {
         types: ['punctuation', 'operator'],
-        style: { color: '#b8b2a8' }
+        style: { color: '#a3b6a4' }
       },
       {
         types: ['entity', 'url', 'symbol', 'number', 'boolean', 'variable', 'constant', 'property', 'regex', 'inserted'],
-        style: { color: '#6b8f71' }
+        style: { color: '#86a35c' }
       },
       {
         types: ['atrule', 'keyword', 'attr-name', 'selector'],
-        style: { color: '#c45d3e' }
+        style: { color: '#3f8a4f' }
       },
       {
         types: ['function', 'deleted', 'tag'],
-        style: { color: '#d4a574' }
+        style: { color: '#a9c67f' }
       },
       {
         types: ['function-variable'],
-        style: { color: '#d4a574' }
+        style: { color: '#a9c67f' }
       },
       {
         types: ['tag', 'selector', 'keyword'],
-        style: { color: '#c45d3e' }
+        style: { color: '#3f8a4f' }
       }
     ]
   };
 
-  const lineNumberColor = '#4a4540';
+  const lineNumberColor = '#3b473c';
   const showLineNumbers = !['shell', 'text'].includes(language);
 
   return (
@@ -198,8 +198,8 @@ const CodeHighlight = ({ children: codeString, className }) => {
 const InlineCode = props => (
   <chakra.code
     apply="mdx.code"
-    color={useColorModeValue('#c45d3e', '#d4a574')}
-    bg={useColorModeValue('rgba(196, 93, 62, 0.08)', 'rgba(196, 93, 62, 0.15)')}
+    color={useColorModeValue('#3f8a4f', '#a9c67f')}
+    bg={useColorModeValue('rgba(63, 138, 79, 0.08)', 'rgba(63, 138, 79, 0.15)')}
     px={1.5}
     py={0.5}
     rounded="md"
@@ -217,7 +217,7 @@ const LinkedHeading = props => {
         {...props}
         display="inline"
         fontFamily="heading"
-        color={useColorModeValue('#1a1a1a', '#e8e0d4')}
+        color={useColorModeValue('#16241a', '#e2ebdd')}
         fontSize="3xl"
         fontWeight="700"
       >
@@ -262,8 +262,8 @@ const Anchor = props => {
   const { colorMode } = useColorMode();
   return (
     <chakra.a
-      color={mode('#6b8f71', '#d4a574')({ colorMode })}
-      _hover={{ color: '#c45d3e', textDecoration: 'underline' }}
+      color={mode('#86a35c', '#a9c67f')({ colorMode })}
+      _hover={{ color: '#3f8a4f', textDecoration: 'underline' }}
       transition="color 0.2s ease"
       {...props}
     />
@@ -306,7 +306,7 @@ const MDXComponents = {
         as="blockquote"
         rounded="4px"
         borderLeftColor="brand.primary"
-        bg="rgba(196, 93, 62, 0.06)"
+        bg="rgba(63, 138, 79, 0.06)"
         {...props}
         mx={-4}
         w="unset"

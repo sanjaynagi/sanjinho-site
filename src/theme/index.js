@@ -8,21 +8,26 @@ const config = {
 
 const colors = {
   brand: {
-    primary: '#c45d3e',
-    secondary: '#6b8f71',
-    accent: '#c45d3e',
-    browser: '#c45d3e',
-    ink: '#1a1a1a',
-    muted: '#7a756e',
-    warmGray: '#b8b2a8'
+    primary: '#3f8a4f',
+    secondary: '#86a35c',
+    accent: '#3f8a4f',
+    browser: '#3f8a4f',
+    ink: '#16241a',
+    muted: '#5f7561',
+    warmGray: '#a3b6a4'
   }
 };
 
 const styles = {
   global: props => ({
     body: {
-      bg: mode('#fffff2', '#1c1917')(props),
-      color: mode('#1a1a1a', '#e8e0d4')(props),
+      bg: mode('#f3f8ea', '#131a14')(props),
+      color: mode('#16241a', '#e2ebdd')(props),
+      backgroundImage: mode(
+        'radial-gradient(ellipse 90% 55% at 50% -15%, rgba(134, 163, 92, 0.38), transparent 72%), radial-gradient(ellipse 70% 45% at 105% 105%, rgba(63, 138, 79, 0.22), transparent 72%), radial-gradient(ellipse 60% 40% at -10% 60%, rgba(134, 163, 92, 0.16), transparent 70%)',
+        'radial-gradient(ellipse 90% 55% at 50% -15%, rgba(134, 163, 92, 0.16), transparent 72%), radial-gradient(ellipse 70% 45% at 105% 105%, rgba(63, 138, 79, 0.14), transparent 72%), radial-gradient(ellipse 60% 40% at -10% 60%, rgba(63, 138, 79, 0.10), transparent 70%)'
+      )(props),
+      backgroundAttachment: 'fixed',
       '&::before': {
         content: '""',
         position: 'fixed',
@@ -40,8 +45,8 @@ const styles = {
       }
     },
     '::selection': {
-      bg: mode('rgba(196, 93, 62, 0.2)', 'rgba(196, 93, 62, 0.35)')(props),
-      color: mode('#1a1a1a', '#e8e0d4')(props)
+      bg: mode('rgba(63, 138, 79, 0.2)', 'rgba(63, 138, 79, 0.35)')(props),
+      color: mode('#16241a', '#e2ebdd')(props)
     }
   })
 };
@@ -49,7 +54,7 @@ const styles = {
 const components = {
   Heading: {
     baseStyle: props => ({
-      color: mode('#1a1a1a', '#e8e0d4')(props),
+      color: mode('#16241a', '#e2ebdd')(props),
       letterSpacing: '-0.02em'
     }),
     variants: {
@@ -67,7 +72,7 @@ const components = {
           left: 0,
           width: '40px',
           height: '3px',
-          bg: 'brand.primary',
+          bgGradient: 'linear(to-r, brand.primary, brand.secondary)',
           borderRadius: '2px'
         }
       }
@@ -80,7 +85,7 @@ const components = {
   },
   Divider: {
     baseStyle: props => ({
-      borderColor: mode('rgba(26, 26, 26, 0.1)', 'rgba(232, 224, 212, 0.12)')(props)
+      borderColor: mode('rgba(22, 36, 26, 0.1)', 'rgba(226, 235, 221, 0.12)')(props)
     })
   }
 };

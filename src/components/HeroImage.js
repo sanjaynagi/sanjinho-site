@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const HeroImage = () => {
   const shadowColor = useColorModeValue(
-    'rgba(196, 93, 62, 0.12)',
-    'rgba(196, 93, 62, 0.2)'
+    'rgba(63, 138, 79, 0.12)',
+    'rgba(63, 138, 79, 0.2)'
   );
 
   return (

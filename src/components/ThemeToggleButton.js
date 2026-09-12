@@ -4,9 +4,9 @@ import { FiSun, FiMoon } from 'react-icons/fi';
 
 const ThemeToggleButton = () => {
   const { toggleColorMode } = useColorMode();
-  const bg = useColorModeValue('rgba(26, 26, 26, 0.06)', 'rgba(232, 224, 212, 0.1)');
-  const hoverBg = useColorModeValue('rgba(26, 26, 26, 0.1)', 'rgba(232, 224, 212, 0.15)');
-  const iconColor = useColorModeValue('#7a756e', '#b8b2a8');
+  const bg = useColorModeValue('rgba(22, 36, 26, 0.06)', 'rgba(226, 235, 221, 0.1)');
+  const hoverBg = useColorModeValue('rgba(22, 36, 26, 0.1)', 'rgba(226, 235, 221, 0.15)');
+  const iconColor = useColorModeValue('#5f7561', '#a3b6a4');
 
   return (
     <AnimatePresence mode="wait" initial={false}>

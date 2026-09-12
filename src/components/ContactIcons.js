@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import data from '../data/contact';
 
 const ContactIcons = () => {
-  const iconColor = useColorModeValue('#7a756e', '#b8b2a8');
-  const hoverColor = useColorModeValue('#c45d3e', '#c45d3e');
+  const iconColor = useColorModeValue('#5f7561', '#a3b6a4');
+  const hoverColor = useColorModeValue('#3f8a4f', '#3f8a4f');
 
   return (
     <HStack spacing={5} as="ul" listStyleType="none">
