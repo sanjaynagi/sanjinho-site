@@ -8,7 +8,7 @@ export const SoftwareList = [
     description: `A scientific workflow orchestrator for data science and bioinformatics, with workflows defined in plain Python`,
     href: 'https://github.com/sanjaynagi/ginkgo',
     logo: '/logos/software/ginkgo.png',
-    ratio: 1.89,
+    ratio: 2.09,
   },
   {
     id: '10',
@@ -16,7 +16,7 @@ export const SoftwareList = [
     description: `A Python package that distills colour from historic paintings into ready-to-use plotting palettes`,
     href: 'https://github.com/sanjaynagi/tempera',
     logo: '/logos/software/tempera.png',
-    ratio: 2.66,
+    ratio: 3.04,
   },
   {
     id: '7',
@@ -24,7 +24,7 @@ export const SoftwareList = [
     description: `A scalable, reproducible Snakemake pipeline to analyse Illumina amplicon sequencing data`,
     href: 'https://github.com/sanjaynagi/AmpSeeker',
     logo: '/logos/software/ampseeker.png',
-    ratio: 1.68,
+    ratio: 1.76,
   },
   {
     id: '6',
@@ -32,7 +32,7 @@ export const SoftwareList = [
     description: `A web resource of selection signals in An. gambiae s.l mosquitoes from the Ag1000G project`,
     href: 'https://anopheles-genomic-surveillance.github.io/selection-atlas/',
     logo: '/logos/software/selection-atlas.png',
-    ratio: 1.5,
+    ratio: 1.65,
   },
   {
     id: '2',
@@ -40,7 +40,7 @@ export const SoftwareList = [
     description: `A reproducible Snakemake pipeline for RNA-Seq analysis with variant calling and population genomics`,
     href: 'https://github.com/sanjaynagi/rna-seq-pop',
     logo: '/logos/software/rna-seq-pop.png',
-    ratio: 2.32,
+    ratio: 2.77,
   },
   {
     id: '3',
@@ -56,7 +56,7 @@ export const SoftwareList = [
     description: `A Python package for meta-analysis of transcriptomic studies into insecticide resistance in Anopheles`,
     href: 'https://github.com/sanjaynagi/AnoExpress',
     logo: '/logos/software/anoexpress.png',
-    ratio: 5.0,
+    ratio: 4.96,
   },
   {
     id: '5',
