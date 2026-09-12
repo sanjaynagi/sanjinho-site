@@ -16,7 +16,7 @@ const SoftwareSectionList = ({ projects }) => {
           variant="ghost"
           fontFamily="body"
           fontWeight="500"
-          _hover={{ bg: 'rgba(196, 93, 62, 0.08)' }}
+          _hover={{ bg: 'rgba(51, 118, 63, 0.12)' }}
         >
           <Link href="https://github.com/sanjaynagi">GitHub</Link>
         </Button>

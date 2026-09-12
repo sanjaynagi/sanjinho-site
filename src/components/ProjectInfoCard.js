@@ -5,8 +5,7 @@ import {
   Text,
   LinkBox,
   LinkOverlay,
-  Icon,
-  useColorModeValue
+  Icon
 } from '@chakra-ui/react';
 import { SiExpo, SiGithub } from 'react-icons/si';
 import ExternalLink from './ExternalLink';
@@ -19,9 +18,9 @@ const ProjectInfoCard = ({
   expoIcon,
   githubIcon
 }) => {
-  const bgColor = useColorModeValue('rgba(26, 26, 26, 0.02)', 'rgba(232, 224, 212, 0.04)');
-  const hoverBorderColor = useColorModeValue('#c45d3e', '#c45d3e');
-  const iconColor = useColorModeValue('#7a756e', '#b8b2a8');
+  const bgColor = 'brand.surface';
+  const hoverBorderColor = 'brand.primary';
+  const iconColor = 'brand.muted';
 
   return (
     <LinkBox as="article">

@@ -1,9 +1,9 @@
-import { HStack, Box, Text, Link, useColorModeValue } from '@chakra-ui/react';
+import { HStack, Box, Text, Link } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
 const ArticleNavigator = ({ previousArticle, nextArticle }) => {
-  const bgColor = useColorModeValue('rgba(26, 26, 26, 0.03)', 'rgba(232, 224, 212, 0.05)');
-  const hoverBorderColor = useColorModeValue('#c45d3e', '#c45d3e');
+  const bgColor = 'brand.surface';
+  const hoverBorderColor = 'brand.primary';
 
   return (
     <>

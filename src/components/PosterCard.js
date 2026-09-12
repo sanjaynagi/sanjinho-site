@@ -20,9 +20,9 @@ const PosterCard = ({
   venue,
   pdfPath
 }) => {
-  const bgColor = useColorModeValue('rgba(26, 26, 26, 0.02)', 'rgba(232, 224, 212, 0.04)');
-  const hoverBorderColor = useColorModeValue('#c45d3e', '#c45d3e');
-  const iconColor = useColorModeValue('#c45d3e', '#d4a574');
+  const bgColor = 'brand.surface';
+  const hoverBorderColor = 'brand.primary';
+  const iconColor = 'brand.primary';
   const metaColor = useColorModeValue('brand.muted', 'brand.warmGray');
 
   return (

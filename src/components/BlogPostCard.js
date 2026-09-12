@@ -17,9 +17,9 @@ import PublishedDate from './BlogPostPage/PublishedDate';
 
 const BlogPostCard = ({ title, shorttitle, date, slug, thumbnail, timeToRead }) => {
   const [isMobile] = useMediaQuery('(max-width: 768px)');
-  const hoverBg = useColorModeValue('rgba(26, 26, 26, 0.03)', 'rgba(232, 224, 212, 0.04)');
+  const hoverBg = 'brand.surfaceHover';
   const borderColor = useColorModeValue('transparent', 'transparent');
-  const hoverBorderColor = useColorModeValue('#c45d3e', '#c45d3e');
+  const hoverBorderColor = 'brand.primary';
   const metaColor = useColorModeValue('brand.muted', 'brand.warmGray');
 
   return (

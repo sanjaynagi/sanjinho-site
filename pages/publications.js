@@ -32,7 +32,7 @@ const PublicationsPage = () => {
             variant="ghost"
             fontFamily="body"
             fontWeight="500"
-            _hover={{ bg: 'rgba(196, 93, 62, 0.08)' }}
+            _hover={{ bg: 'rgba(51, 118, 63, 0.12)' }}
           >
             <Link href="https://scholar.google.com/citations?user=P-ImwEcAAAAJ&hl=en&oi=ao">
               Google Scholar
@@ -45,7 +45,7 @@ const PublicationsPage = () => {
             variant="ghost"
             fontFamily="body"
             fontWeight="500"
-            _hover={{ bg: 'rgba(196, 93, 62, 0.08)' }}
+            _hover={{ bg: 'rgba(51, 118, 63, 0.12)' }}
           >
             <Link href="https://orcid.org/0000-0003-1214-8523">ORCID</Link>
           </Button>

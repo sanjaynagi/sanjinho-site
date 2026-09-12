@@ -21,8 +21,8 @@ const PublicationCard = ({
   journalLogo,
   doi
 }) => {
-  const bgColor = useColorModeValue('rgba(26, 26, 26, 0.02)', 'rgba(232, 224, 212, 0.04)');
-  const hoverBorderColor = useColorModeValue('#c45d3e', '#c45d3e');
+  const bgColor = 'brand.surface';
+  const hoverBorderColor = 'brand.primary';
   const metaColor = useColorModeValue('brand.muted', 'brand.warmGray');
   const doiUrl = `https://doi.org/${doi}`;
 
@@ -52,7 +52,7 @@ const PublicationCard = ({
               objectFit="contain"
               opacity={0.7}
               fallback={
-                <Badge colorScheme="orange" fontSize="xs" px={2} py={1}>
+                <Badge colorScheme="green" fontSize="xs" px={2} py={1}>
                   {journal}
                 </Badge>
               }

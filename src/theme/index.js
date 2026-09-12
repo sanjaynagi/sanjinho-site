@@ -6,23 +6,62 @@ const config = {
   useSystemColorMode: false
 };
 
+// Raw palette. The leaf greens come in a light-ground and a dark-ground pair:
+// a single mid-green cannot hold its contrast against both, so the brand
+// tokens below resolve to whichever member of the pair suits the mode.
 const colors = {
+  leaf: {
+    deep: '#2e6e3a',
+    mid: '#33763f',
+    bright: '#68b573',
+    moss: '#647f38',
+    mossLight: '#9ec46a'
+  },
+  ground: {
+    light: '#eaf3dd',
+    dark: '#0f1c12'
+  },
   brand: {
-    primary: '#c45d3e',
-    secondary: '#6b8f71',
-    accent: '#c45d3e',
-    browser: '#c45d3e',
-    ink: '#1a1a1a',
-    muted: '#7a756e',
-    warmGray: '#b8b2a8'
+    ink: '#16241a',
+    parchment: '#e2ebdd'
+  }
+};
+
+// `brand.primary` and friends are mode-aware, so components can use one token
+// instead of pairing two literals through useColorModeValue.
+const semanticTokens = {
+  colors: {
+    'brand.primary': { default: 'leaf.mid', _dark: 'leaf.bright' },
+    'brand.secondary': { default: 'leaf.moss', _dark: 'leaf.mossLight' },
+    'brand.accent': { default: 'leaf.mid', _dark: 'leaf.bright' },
+    'brand.browser': { default: 'leaf.mid', _dark: 'leaf.bright' },
+    'brand.muted': { default: '#53694f', _dark: '#a3b6a4' },
+    'brand.warmGray': { default: '#53694f', _dark: '#a3b6a4' },
+    'brand.surface': {
+      default: 'rgba(51, 118, 63, 0.07)',
+      _dark: 'rgba(158, 196, 106, 0.09)'
+    },
+    'brand.surfaceHover': {
+      default: 'rgba(51, 118, 63, 0.12)',
+      _dark: 'rgba(158, 196, 106, 0.14)'
+    },
+    'brand.line': {
+      default: 'rgba(46, 110, 58, 0.16)',
+      _dark: 'rgba(158, 196, 106, 0.18)'
+    }
   }
 };
 
 const styles = {
   global: props => ({
     body: {
-      bg: mode('#fffff2', '#1c1917')(props),
-      color: mode('#1a1a1a', '#e8e0d4')(props),
+      bg: mode(colors.ground.light, colors.ground.dark)(props),
+      color: mode(colors.brand.ink, colors.brand.parchment)(props),
+      backgroundImage: mode(
+        'radial-gradient(ellipse 95% 60% at 50% -15%, rgba(120, 162, 74, 0.62), transparent 74%), radial-gradient(ellipse 75% 50% at 105% 105%, rgba(46, 110, 58, 0.42), transparent 72%), radial-gradient(ellipse 65% 45% at -10% 55%, rgba(120, 162, 74, 0.34), transparent 70%)',
+        'radial-gradient(ellipse 95% 60% at 50% -15%, rgba(104, 181, 115, 0.22), transparent 74%), radial-gradient(ellipse 75% 50% at 105% 105%, rgba(158, 196, 106, 0.16), transparent 72%), radial-gradient(ellipse 65% 45% at -10% 55%, rgba(104, 181, 115, 0.13), transparent 70%)'
+      )(props),
+      backgroundAttachment: 'fixed',
       '&::before': {
         content: '""',
         position: 'fixed',
@@ -40,8 +79,8 @@ const styles = {
       }
     },
     '::selection': {
-      bg: mode('rgba(196, 93, 62, 0.2)', 'rgba(196, 93, 62, 0.35)')(props),
-      color: mode('#1a1a1a', '#e8e0d4')(props)
+      bg: mode('rgba(51, 118, 63, 0.24)', 'rgba(104, 181, 115, 0.35)')(props),
+      color: mode(colors.brand.ink, colors.brand.parchment)(props)
     }
   })
 };
@@ -49,7 +88,7 @@ const styles = {
 const components = {
   Heading: {
     baseStyle: props => ({
-      color: mode('#1a1a1a', '#e8e0d4')(props),
+      color: mode(colors.brand.ink, colors.brand.parchment)(props),
       letterSpacing: '-0.02em'
     }),
     variants: {
@@ -67,7 +106,7 @@ const components = {
           left: 0,
           width: '40px',
           height: '3px',
-          bg: 'brand.primary',
+          bgGradient: 'linear(to-r, brand.primary, brand.secondary)',
           borderRadius: '2px'
         }
       }
@@ -79,17 +118,24 @@ const components = {
     }
   },
   Divider: {
-    baseStyle: props => ({
-      borderColor: mode('rgba(26, 26, 26, 0.1)', 'rgba(232, 224, 212, 0.12)')(props)
-    })
+    baseStyle: {
+      borderColor: 'brand.line'
+    }
   }
 };
 
 const fonts = {
-  heading: `'Plus Jakarta Sans', ${base.fonts.heading}`,
-  body: `'Libre Franklin', ${base.fonts.body}`
+  heading: `Cal Sans, ${base.fonts.heading}`,
+  body: `Inter, ${base.fonts.body}`
 };
 
-const theme = extendTheme({ config, colors, styles, components, fonts });
+const theme = extendTheme({
+  config,
+  colors,
+  semanticTokens,
+  styles,
+  components,
+  fonts
+});
 
 export default theme;
