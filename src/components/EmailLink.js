@@ -78,7 +78,7 @@ const EmailLink = ({ loopMessage = false }) => {
       className="inline-container"
       style={{
         fontFamily: "'Libre Franklin', sans-serif",
-        color: '#3f8a4f'
+        color: '#33763f'
       }}
       onMouseEnter={() => setIsActive(false)}
       onMouseLeave={() => (idx < messages.length) && setIsActive(true)}

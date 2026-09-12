@@ -36,7 +36,7 @@ const Table = props => (
 
 const THead = props => (
   <chakra.th
-    bg={useColorModeValue('rgba(22, 36, 26, 0.04)', 'rgba(226, 235, 221, 0.06)')}
+    bg="brand.surface"
     fontWeight="semibold"
     p={2}
     fontSize="sm"
@@ -90,7 +90,7 @@ const CodeHighlight = ({ children: codeString, className }) => {
 
   const customTheme = {
     plain: {
-      backgroundColor: '#131a14',
+      backgroundColor: '#0f1c12',
       color: '#e2ebdd'
     },
     styles: [
@@ -112,11 +112,11 @@ const CodeHighlight = ({ children: codeString, className }) => {
       },
       {
         types: ['entity', 'url', 'symbol', 'number', 'boolean', 'variable', 'constant', 'property', 'regex', 'inserted'],
-        style: { color: '#86a35c' }
+        style: { color: '#9ec46a' }
       },
       {
         types: ['atrule', 'keyword', 'attr-name', 'selector'],
-        style: { color: '#3f8a4f' }
+        style: { color: '#68b573' }
       },
       {
         types: ['function', 'deleted', 'tag'],
@@ -128,7 +128,7 @@ const CodeHighlight = ({ children: codeString, className }) => {
       },
       {
         types: ['tag', 'selector', 'keyword'],
-        style: { color: '#3f8a4f' }
+        style: { color: '#68b573' }
       }
     ]
   };
@@ -198,8 +198,8 @@ const CodeHighlight = ({ children: codeString, className }) => {
 const InlineCode = props => (
   <chakra.code
     apply="mdx.code"
-    color={useColorModeValue('#3f8a4f', '#a9c67f')}
-    bg={useColorModeValue('rgba(63, 138, 79, 0.08)', 'rgba(63, 138, 79, 0.15)')}
+    color={'brand.primary'}
+    bg={useColorModeValue('rgba(51, 118, 63, 0.12)', 'rgba(104, 181, 115, 0.18)')}
     px={1.5}
     py={0.5}
     rounded="md"
@@ -262,8 +262,8 @@ const Anchor = props => {
   const { colorMode } = useColorMode();
   return (
     <chakra.a
-      color={mode('#86a35c', '#a9c67f')({ colorMode })}
-      _hover={{ color: '#3f8a4f', textDecoration: 'underline' }}
+      color={mode('#647f38', '#9ec46a')({ colorMode })}
+      _hover={{ color: 'brand.primary', textDecoration: 'underline' }}
       transition="color 0.2s ease"
       {...props}
     />
@@ -306,7 +306,7 @@ const MDXComponents = {
         as="blockquote"
         rounded="4px"
         borderLeftColor="brand.primary"
-        bg="rgba(63, 138, 79, 0.06)"
+        bg="rgba(51, 118, 63, 0.09)"
         {...props}
         mx={-4}
         w="unset"

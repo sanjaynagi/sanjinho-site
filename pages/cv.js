@@ -24,7 +24,7 @@ const CvPage = () => {
           variant="ghost"
           fontFamily="body"
           fontWeight="500"
-          _hover={{ bg: 'rgba(63, 138, 79, 0.08)' }}
+          _hover={{ bg: 'rgba(51, 118, 63, 0.12)' }}
         >
           <Link href="/SanjayCNagi-CV-2024.pdf">Download CV</Link>
         </Button>

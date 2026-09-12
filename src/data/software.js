@@ -1,10 +1,30 @@
+// `ratio` is the logo's intrinsic width / height. The software grid uses it to
+// lay the logos out justified, so wide wordmarks and near-square marks can sit
+// in the same row without being squashed into a uniform box.
 export const SoftwareList = [
+  {
+    id: '9',
+    title: 'ginkgo',
+    description: `A scientific workflow orchestrator for data science and bioinformatics, with workflows defined in plain Python`,
+    href: 'https://github.com/sanjaynagi/ginkgo',
+    logo: '/logos/software/ginkgo.png',
+    ratio: 1.89,
+  },
+  {
+    id: '10',
+    title: 'tempera',
+    description: `A Python package that distills colour from historic paintings into ready-to-use plotting palettes`,
+    href: 'https://github.com/sanjaynagi/tempera',
+    logo: '/logos/software/tempera.png',
+    ratio: 2.66,
+  },
   {
     id: '7',
     title: 'AmpSeeker',
     description: `A scalable, reproducible Snakemake pipeline to analyse Illumina amplicon sequencing data`,
     href: 'https://github.com/sanjaynagi/AmpSeeker',
     logo: '/logos/software/ampseeker.png',
+    ratio: 1.68,
   },
   {
     id: '6',
@@ -12,6 +32,7 @@ export const SoftwareList = [
     description: `A web resource of selection signals in An. gambiae s.l mosquitoes from the Ag1000G project`,
     href: 'https://anopheles-genomic-surveillance.github.io/selection-atlas/',
     logo: '/logos/software/selection-atlas.png',
+    ratio: 1.5,
   },
   {
     id: '2',
@@ -19,6 +40,7 @@ export const SoftwareList = [
     description: `A reproducible Snakemake pipeline for RNA-Seq analysis with variant calling and population genomics`,
     href: 'https://github.com/sanjaynagi/rna-seq-pop',
     logo: '/logos/software/rna-seq-pop.png',
+    ratio: 2.32,
   },
   {
     id: '3',
@@ -26,6 +48,7 @@ export const SoftwareList = [
     description: `A Python package to access and analyse data from the Anopheles 1000 genomes project in the cloud`,
     href: 'https://github.com/malariagen/malariagen-data-python',
     logo: '/logos/software/malariagen-data.svg',
+    ratio: 3.63,
   },
   {
     id: '4',
@@ -33,6 +56,7 @@ export const SoftwareList = [
     description: `A Python package for meta-analysis of transcriptomic studies into insecticide resistance in Anopheles`,
     href: 'https://github.com/sanjaynagi/AnoExpress',
     logo: '/logos/software/anoexpress.png',
+    ratio: 5.0,
   },
   {
     id: '5',
@@ -40,11 +64,13 @@ export const SoftwareList = [
     description: `A Python package to design primers in Anopheles gambiae and funestus considering genetic variation`,
     href: 'https://github.com/sanjaynagi/AnoPrimer',
     logo: '/logos/software/anoprimer.png',
+    ratio: 3.85,
   },
   {
     id: '8',
     title: 'ancIBD',
     description: `A Python package to identify segments of identity by descent in ancient DNA`,
     href: 'https://github.com/hringbauer/ancIBD',
+    ratio: 2.6,
   },
 ];

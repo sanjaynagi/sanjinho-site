@@ -32,8 +32,8 @@ const NavLink = ({ href, children, ...props }) => {
 };
 
 const Navbar = props => {
-  const bgColor = useColorModeValue('rgba(243, 248, 234, 0.85)', 'rgba(19, 26, 20, 0.85)');
-  const borderColor = useColorModeValue('rgba(22, 36, 26, 0.06)', 'rgba(226, 235, 221, 0.06)');
+  const bgColor = useColorModeValue('rgba(234, 243, 221, 0.85)', 'rgba(15, 28, 18, 0.85)');
+  const borderColor = useColorModeValue('rgba(46, 110, 58, 0.14)', 'rgba(158, 196, 106, 0.14)');
   const wordmarkColor = useColorModeValue('#16241a', '#e2ebdd');
 
   return (
