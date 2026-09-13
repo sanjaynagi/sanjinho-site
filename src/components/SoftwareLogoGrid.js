@@ -114,8 +114,11 @@ const SoftwareTile = ({ title, description, href, logo, ratio, fullBleed }) => {
         )}
       </Flex>
 
-      {/* Detail overlay — hidden until the tile is hovered or focused. */}
+      {/* Detail overlay — desktop only, hidden until the tile is hovered or
+          focused. Mobile has no hover to reveal it, so the tile there shows
+          just the logo. */}
       <VStack
+        display={{ base: 'none', md: 'flex' }}
         position="absolute"
         inset={0}
         spacing={1}
@@ -127,8 +130,6 @@ const SoftwareTile = ({ title, description, href, logo, ratio, fullBleed }) => {
         transition="opacity 0.3s ease"
         _groupHover={{ opacity: 1 }}
         _focusWithin={{ opacity: 1 }}
-        // Touch devices never hover, so reveal the detail there permanently.
-        sx={{ '@media (hover: none)': { opacity: 1 } }}
       >
         <Heading
           as="h3"
