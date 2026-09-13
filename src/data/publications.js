@@ -107,6 +107,15 @@ export const PublicationsList = [
     journalLogo: '/logos/molecol.jpg',
     doi: '10.1111/mec.17542'
   },
+  {
+    id: '13',
+    title: 'The origin, history, and resistance architecture of an invasive urban malaria mosquito in Africa',
+    authors: 'Tristan P. W. Dennis, Julia E. Sulieman, ..., Sanjay C Nagi, ..., Martin J Donnelly, David Weetman',
+    year: '2026',
+    journal: 'Science',
+    journalLogo: '/logos/science.svg',
+    doi: '10.1126/science.adx6925'
+  },
 ];
 
 export const PostersList = [
