@@ -11,6 +11,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react';
 import ExternalLink from './ExternalLink';
+import { italicizeSpecies } from '../utils/italicizeSpecies';
 
 const PublicationCard = ({
   id,
@@ -62,7 +63,7 @@ const PublicationCard = ({
         <VStack spacing={2} flex={1} alignItems="flex-start">
           <Heading fontSize="1rem" fontFamily="body" fontWeight="500" lineHeight="1.5">
             <LinkOverlay as={ExternalLink} href={doiUrl} _hover={{ textDecoration: 'none' }} textDecoration="none">
-              {title}
+              {italicizeSpecies(title)}
             </LinkOverlay>
           </Heading>
           <Text fontSize="sm" color={metaColor} lineHeight="1.6">

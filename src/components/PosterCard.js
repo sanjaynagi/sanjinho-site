@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { FaFilePdf } from 'react-icons/fa';
 import ExternalLink from './ExternalLink';
+import { italicizeSpecies } from '../utils/italicizeSpecies';
 
 const PosterCard = ({
   id,
@@ -49,7 +50,7 @@ const PosterCard = ({
           >
             <Heading fontSize="1rem" fontFamily="body" fontWeight="500">
               <LinkOverlay as={ExternalLink} href={pdfPath} textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                {title}
+                {italicizeSpecies(title)}
               </LinkOverlay>
             </Heading>
             <Badge
