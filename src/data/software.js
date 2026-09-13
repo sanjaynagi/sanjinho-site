@@ -57,7 +57,7 @@ export const SoftwareList = [
     description: `A Python package for meta-analysis of transcriptomic studies into insecticide resistance in Anopheles`,
     href: 'https://github.com/sanjaynagi/AnoExpress',
     logo: '/logos/software/anoexpress.png',
-    ratio: 5.06,
+    ratio: 3.89,
     fullBleed: true,
   },
   {
