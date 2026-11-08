@@ -31,9 +31,12 @@ const Hero = () => {
             fontWeight="300"
             color="brand.muted"
           >
-            I&apos;m a research scientist at the Ellison Institute of Technology, developing methods and resources
-            to improve the diagnosis and treatment of infectious pathogens. I enjoy developing open-source
-            computational tools that can aid the community and empower researchers to analyse their own data.
+            I&apos;m a genomic data scientist at the Ellison Institute of Technology, building genomic resources and
+            methods to power the next generation of infectious disease diagnostics. My work spans fieldwork, the lab
+            bench, open-source software, large-scale data analysis and AI, and I&apos;m especially interested in how we
+            keep data science rigorous as agentic AI transforms it.
+            I enjoy developing open-source computational tools that can aid the community and empower researchers
+            to analyse their own data.
           </Text>
           <Box pt={2}>
             <ContactIcons />

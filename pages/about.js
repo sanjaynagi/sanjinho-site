@@ -28,20 +28,27 @@ const AboutPage = () => {
   const mutedColor = useColorModeValue('brand.muted', 'brand.warmGray');
   return (
     <>
-      <DocumentHead pageTitle="About" postPath="/about" description="About Sanjay Curtis Nagi — genomics research scientist at the Ellison Institute of Technology." />
+      <DocumentHead pageTitle="About" postPath="/about" description="About Sanjay Curtis Nagi, a genomic data scientist at the Ellison Institute of Technology." />
       <VStack spacing={5} alignItems="flex-start" w="full" as="section" pt={28}>
         <Heading size="lg" as="h1" fontWeight="700">
           About Me
         </Heading>
         <Text lineHeight="1.8" color={mutedColor}>
-        Hello! I&apos;m Sanjay Curtis Nagi, a genomics research scientist at the <Link href="https://www.eit.org/" color="brand.secondary" _hover={{ color: 'brand.primary' }}>
-          Ellison Institute of Technology</Link> within the pathogen programme.
+        Hello! I&apos;m Sanjay Curtis Nagi, a genomic data scientist in the pathogen programme at the <Link href="https://www.eit.org/" color="brand.secondary" _hover={{ color: 'brand.primary' }}>
+          Ellison Institute of Technology</Link>, building genomic resources and methods to power the next generation of
+        infectious disease diagnostics.
         </Text>
         <Text lineHeight="1.8" color={mutedColor}>
-        Previously, my work focused on mosquito vectors of disease. In particular, the rapid evolution and spread of resistance
-        in the major malaria vector, <em>Anopheles gambiae</em>, and how we can use population genomics to ultimately inform
-        malaria control programmes. I enjoy developing open-source computational tools that can aid the community and empower researchers
-        to analyse their own data.
+        Before that, I spent several years on the population genomics of mosquito vectors of disease, in particular the rapid
+        evolution and spread of insecticide resistance in the major malaria vector, <em>Anopheles gambiae</em>. Much of that work
+        centred on computational tools, pipelines and protocols that let researchers carry out effective, reproducible genomic
+        surveillance, in <em>Anopheles</em> and other taxa.
+        </Text>
+        <Text lineHeight="1.8" color={mutedColor}>
+        I&apos;ve been lucky that my work has spanned fieldwork and the lab bench, open-source software, large-scale data analysis
+        and artificial intelligence, and I most enjoy working where these meet. Agentic AI is transforming data science, and
+        I&apos;m especially interested in how we keep rigour and quality at scale. I care about transparent, reproducible
+        computational research: work that others can trust, reuse and build on.
         </Text>
         <Text lineHeight="1.8" color={mutedColor}>In no particular order, I enjoy these a lot:</Text>
 

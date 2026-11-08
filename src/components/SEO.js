@@ -4,7 +4,7 @@ const siteURL = 'https://sanjaycnagi.com';
 const author = 'Sanjay Curtis Nagi';
 const shortname = 'sanjaycnagi';
 const defaultDescription =
-  "I'm Sanjay Curtis Nagi. Researcher. Welcome to my personal website and blog!";
+  "Sanjay Curtis Nagi, genomic data scientist working on pathogens, evolution and AI-driven data science.";
 const socialBanner = '/card.png';
 
 const DocumentHead = ({ pageTitle, postPath, canonicalUrl, description }) => {
