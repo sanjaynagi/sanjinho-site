@@ -4,8 +4,8 @@ import { FiSun, FiMoon } from 'react-icons/fi';
 
 const ThemeToggleButton = () => {
   const { toggleColorMode } = useColorMode();
-  const bg = useColorModeValue('rgba(22, 36, 26, 0.06)', 'rgba(226, 235, 221, 0.1)');
-  const hoverBg = useColorModeValue('rgba(22, 36, 26, 0.1)', 'rgba(226, 235, 221, 0.15)');
+  const bg = 'brand.toggleBg';
+  const hoverBg = 'brand.toggleHover';
   const iconColor = 'brand.muted';
 
   return (

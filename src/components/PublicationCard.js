@@ -52,7 +52,7 @@ const PublicationCard = ({
               objectFit="contain"
               opacity={0.7}
               fallback={
-                <Badge colorScheme="green" fontSize="xs" px={2} py={1}>
+                <Badge colorScheme="teal" fontSize="xs" px={2} py={1}>
                   {journal}
                 </Badge>
               }

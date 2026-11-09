@@ -127,7 +127,9 @@ const BlogPostPage = ({
         shorttitle={shorttitle}
         date={date}
       />
-      <VStack spacing={8} alignItems="stetch" w="full" as="section" pt={28}>
+      {/* Wider than before, but capped: full page width would run to ~100
+          characters a line, which is tiring to read. */}
+      <VStack spacing={8} alignItems="stetch" w="full" maxW="4xl" as="section" pt={28}>
         <VStack spacing={3} alignItems="flex-start">
           <Heading size="lg" fontWeight="700" lineHeight="1.2">
             {title}
