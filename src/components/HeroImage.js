@@ -1,12 +1,7 @@
-import { Box, Flex, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 import Image from 'next/image';
 
 const HeroImage = () => {
-  const shadowColor = useColorModeValue(
-    'rgba(46, 110, 58, 0.20)',
-    'rgba(104, 181, 115, 0.28)'
-  );
-
   return (
     <Flex
       position="relative"
@@ -18,7 +13,7 @@ const HeroImage = () => {
         borderRadius="16px"
         w={{ base: 220, md: 280 }}
         h={{ base: 220, md: 280 }}
-        boxShadow={`0 24px 48px -12px ${shadowColor}`}
+        boxShadow="0 24px 48px -12px var(--chakra-colors-brand-shadow)"
         transition="transform 0.4s cubic-bezier(0.23, 1, 0.32, 1)"
         _hover={{ transform: 'translateY(-4px)' }}
       >

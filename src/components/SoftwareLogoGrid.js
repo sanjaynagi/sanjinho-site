@@ -8,7 +8,6 @@ import {
   Image,
   VStack,
   Button,
-  useColorModeValue,
 } from '@chakra-ui/react';
 import Link from 'next/link';
 import { FaGithub } from 'react-icons/fa';
@@ -39,7 +38,7 @@ const LogoWordmark = ({ title }) => (
     fontFamily="heading"
     fontSize={{ base: 'xl', md: '3xl' }}
     fontWeight="600"
-    color="leaf.deep"
+    color="brand.primary"
     letterSpacing="-0.01em"
     textAlign="center"
     px={4}
@@ -51,12 +50,6 @@ const LogoWordmark = ({ title }) => (
 const SoftwareTile = ({ title, description, href, logo, ratio, fullBleed }) => {
   // A flat mark needs a plate to sit on and room to breathe. A logo that is
   // already a solid block of its own needs neither, so it fills the tile.
-  const plateBg = useColorModeValue('#fdfefb', 'rgba(232, 240, 228, 0.94)');
-  const plateBorder = useColorModeValue(
-    'rgba(46, 110, 58, 0.18)',
-    'rgba(158, 196, 106, 0.24)'
-  );
-
   return (
     <LinkBox
       as="article"
@@ -76,13 +69,13 @@ const SoftwareTile = ({ title, description, href, logo, ratio, fullBleed }) => {
       position="relative"
       rounded="lg"
       overflow="hidden"
-      bg={fullBleed ? 'transparent' : plateBg}
+      bg={fullBleed ? 'transparent' : 'brand.plate'}
       border={fullBleed ? 'none' : '1px solid'}
-      borderColor={fullBleed ? undefined : plateBorder}
+      borderColor={fullBleed ? undefined : 'brand.plateLine'}
       transition="all 0.3s cubic-bezier(0.23, 1, 0.32, 1)"
       _hover={{
         transform: 'translateY(-3px)',
-        shadow: '0 16px 32px -12px rgba(46, 110, 58, 0.5)',
+        shadow: '0 16px 32px -12px var(--chakra-colors-brand-shadow)',
       }}
       _focusWithin={{ transform: 'translateY(-3px)' }}
     >
@@ -125,7 +118,7 @@ const SoftwareTile = ({ title, description, href, logo, ratio, fullBleed }) => {
         px={3}
         justify="center"
         textAlign="center"
-        bg="rgba(18, 44, 25, 0.93)"
+        bg="brand.overlay"
         opacity={0}
         transition="opacity 0.3s ease"
         _groupHover={{ opacity: 1 }}
@@ -135,22 +128,23 @@ const SoftwareTile = ({ title, description, href, logo, ratio, fullBleed }) => {
           as="h3"
           fontSize={{ base: 'sm', md: 'md' }}
           fontWeight="700"
-          color="#eaf3dd"
+          color="brand.overlayText"
           lineHeight="1.2"
         >
           <LinkOverlay
             as={ExternalLink}
             href={href}
-            color="#eaf3dd"
+            color="brand.overlayText"
             textDecoration="none"
-            _hover={{ color: '#eaf3dd', textDecoration: 'none' }}
+            _hover={{ color: 'brand.overlayText', textDecoration: 'none' }}
           >
             {title}
           </LinkOverlay>
         </Heading>
         <Text
           fontSize={{ base: '2xs', md: 'xs' }}
-          color="rgba(226, 235, 221, 0.88)"
+          color="brand.overlayText"
+          opacity={0.88}
           lineHeight="1.4"
           noOfLines={4}
         >
@@ -187,7 +181,7 @@ const SoftwareLogoGrid = ({ projects, rows }) => {
           variant="ghost"
           fontFamily="body"
           fontWeight="500"
-          _hover={{ bg: 'rgba(51, 118, 63, 0.12)' }}
+          _hover={{ bg: 'brand.surfaceHover' }}
         >
           <Link href="https://github.com/sanjaynagi">GitHub</Link>
         </Button>

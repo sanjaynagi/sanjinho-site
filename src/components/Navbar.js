@@ -32,20 +32,16 @@ const NavLink = ({ href, children, ...props }) => {
 };
 
 const Navbar = props => {
-  const bgColor = useColorModeValue('rgba(234, 243, 221, 0.85)', 'rgba(15, 28, 18, 0.85)');
-  const borderColor = useColorModeValue('rgba(46, 110, 58, 0.14)', 'rgba(158, 196, 106, 0.14)');
-  const wordmarkColor = useColorModeValue('#16241a', '#e2ebdd');
-
   return (
     <Box
       position="fixed"
       as="nav"
       w="100%"
-      bg={bgColor}
+      bg="brand.navBg"
       css={{ backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)' }}
       zIndex={10}
       borderBottom="1px solid"
-      borderColor={borderColor}
+      borderColor="brand.line"
       {...props}
     >
       <Container
@@ -64,7 +60,7 @@ const Navbar = props => {
               fontSize={{ base: '18px', md: '22px' }}
               fontFamily="heading"
               fontWeight="700"
-              color={wordmarkColor}
+              color="brand.ink"
               letterSpacing="-0.01em"
             >
               Sanjay Curtis Nagi

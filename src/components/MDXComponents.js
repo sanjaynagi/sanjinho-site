@@ -4,13 +4,11 @@ import {
   chakra,
   Link,
   Kbd,
-  useColorModeValue,
-  useColorMode,
+  useTheme,
   HStack,
   Button,
   useClipboard
 } from '@chakra-ui/react';
-import { mode } from '@chakra-ui/theme-tools';
 import NextImage from 'next/image';
 import slugify from 'slugify';
 import { Highlight } from 'prism-react-renderer';
@@ -57,9 +55,11 @@ const TData = props => (
 
 const CopyButton = ({ value }) => {
   const { onCopy, hasCopied } = useClipboard(value);
+  const { code } = useTheme().colors;
   return (
     <Button
-      color="rgba(226, 235, 221, 0.6)"
+      color={code.fg}
+      opacity={0.6}
       aria-label="Copy text"
       textTransform="uppercase"
       role="button"
@@ -68,7 +68,7 @@ const CopyButton = ({ value }) => {
       mr={1}
       p={1}
       bgColor="transparent"
-      _hover={{ color: '#e2ebdd' }}
+      _hover={{ opacity: 1 }}
     >
       <IoClipboardOutline size={18} color="currentColor" />
     </Button>
@@ -77,12 +77,24 @@ const CopyButton = ({ value }) => {
 
 const CodeHighlight = ({ children: codeString, className }) => {
   const language = className ? className.replace('language-', '') : 'text';
+  // The highlighter takes literal colours, not CSS variables, so read the
+  // palette's code colours straight from the theme.
+  const { code } = useTheme().colors;
+
+  // MDX 2 sends inline code (`like this`) through this same component. A fenced
+  // block's text always ends in a newline and an inline span's never does, so
+  // that tells them apart. Without this, the line-trimming below deletes the
+  // only line of an inline span and leaves an empty block.
+  if (!className && typeof codeString === 'string' && !codeString.includes('\n')) {
+    return <InlineCode>{codeString}</InlineCode>;
+  }
+
   const showLanguage = () => {
     switch (language) {
       case 'typescript':
-        return <SiTypescript size={16} color="rgba(226, 235, 221, 0.5)" />;
+        return <SiTypescript size={16} color={code.fg} style={{ opacity: 0.5 }} />;
       case 'python':
-        return <SiPython size={16} color="rgba(226, 235, 221, 0.5)" />;
+        return <SiPython size={16} color={code.fg} style={{ opacity: 0.5 }} />;
       default:
         break;
     }
@@ -90,13 +102,13 @@ const CodeHighlight = ({ children: codeString, className }) => {
 
   const customTheme = {
     plain: {
-      backgroundColor: '#0f1c12',
-      color: '#e2ebdd'
+      backgroundColor: code.bg,
+      color: code.fg
     },
     styles: [
       {
         types: ['comment', 'prolog', 'doctype', 'cdata'],
-        style: { color: '#5f7561' }
+        style: { color: code.comment }
       },
       {
         types: ['namespace'],
@@ -104,36 +116,28 @@ const CodeHighlight = ({ children: codeString, className }) => {
       },
       {
         types: ['string', 'attr-value'],
-        style: { color: '#a9c67f' }
+        style: { color: code.string }
       },
       {
         types: ['punctuation', 'operator'],
-        style: { color: '#a3b6a4' }
+        style: { color: code.punct }
       },
       {
         types: ['entity', 'url', 'symbol', 'number', 'boolean', 'variable', 'constant', 'property', 'regex', 'inserted'],
-        style: { color: '#9ec46a' }
+        style: { color: code.entity }
       },
       {
-        types: ['atrule', 'keyword', 'attr-name', 'selector'],
-        style: { color: '#68b573' }
+        types: ['atrule', 'keyword', 'attr-name', 'selector', 'tag'],
+        style: { color: code.keyword }
       },
       {
-        types: ['function', 'deleted', 'tag'],
-        style: { color: '#a9c67f' }
-      },
-      {
-        types: ['function-variable'],
-        style: { color: '#a9c67f' }
-      },
-      {
-        types: ['tag', 'selector', 'keyword'],
-        style: { color: '#68b573' }
+        types: ['function', 'function-variable', 'deleted'],
+        style: { color: code.string }
       }
     ]
   };
 
-  const lineNumberColor = '#3b473c';
+  const lineNumberColor = code.lineNo;
   const showLineNumbers = !['shell', 'text'].includes(language);
 
   return (
@@ -199,7 +203,7 @@ const InlineCode = props => (
   <chakra.code
     apply="mdx.code"
     color={'brand.primary'}
-    bg={useColorModeValue('rgba(51, 118, 63, 0.12)', 'rgba(104, 181, 115, 0.18)')}
+    bg="brand.inlineCode"
     px={1.5}
     py={0.5}
     rounded="md"
@@ -217,7 +221,7 @@ const LinkedHeading = props => {
         {...props}
         display="inline"
         fontFamily="heading"
-        color={useColorModeValue('#16241a', '#e2ebdd')}
+        color="brand.ink"
         fontSize="3xl"
         fontWeight="700"
       >
@@ -258,17 +262,17 @@ const Image = props => {
   );
 };
 
-const Anchor = props => {
-  const { colorMode } = useColorMode();
-  return (
-    <chakra.a
-      color={mode('#647f38', '#9ec46a')({ colorMode })}
-      _hover={{ color: 'brand.primary', textDecoration: 'underline' }}
-      transition="color 0.2s ease"
-      {...props}
-    />
-  );
-};
+const Anchor = props => (
+  <chakra.a
+    color="brand.primary"
+    textDecoration="underline"
+    textDecorationColor="brand.line"
+    textUnderlineOffset="3px"
+    _hover={{ textDecorationColor: 'brand.primary' }}
+    transition="color 0.2s ease, text-decoration-color 0.2s ease"
+    {...props}
+  />
+);
 
 const MDXComponents = {
   code: CodeHighlight,
@@ -306,7 +310,7 @@ const MDXComponents = {
         as="blockquote"
         rounded="4px"
         borderLeftColor="brand.primary"
-        bg="rgba(51, 118, 63, 0.09)"
+        bg="brand.quote"
         {...props}
         mx={-4}
         w="unset"
